@@ -10,7 +10,7 @@ function make(...arr) {
                return tempF;
           } else {
                for (let i = 0; i < tempArr.length; i++) {
-                    summ += tempArr[i];
+                    summ = nextArr[0](summ,tempArr[i]);
                }
                return summ;
           }
