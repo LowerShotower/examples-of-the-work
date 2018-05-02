@@ -53,6 +53,9 @@ let matchedCard = document.getElementsByClassName("match");
 // start button
 let startBtn = document.querySelector('.start-btn');
 
+// change user button
+let changeUserBtn = document.querySelector('.change-user-btn');
+
 // array of all btns
 let refs = document.querySelectorAll('a');
 
@@ -66,9 +69,7 @@ var openedCards = [];
 
 var gameSettings = new Settings('first','easy');
 
-let currentUser;
-
-let listOfUsers;
+let enterSubmitEvent = new Event('submit');
 
 let numberOfPositions = 10;
 
@@ -87,7 +88,7 @@ class User {
         this.skirt = skirt || 'first';
     }
 
-    setUser (user,firstName,lastName,email,difficulty,skirt) {
+    setUser (firstName,lastName,email,difficulty,skirt, user) {
         if(typeof(user) != 'Object') { user = this}
         user.firstName = firstName||'noName';
         user.lastName = lastName||'noName';
@@ -97,157 +98,7 @@ class User {
     }
 }
 
-currentUser = new User();
-
-//calc amount of cards depending on game difficulty
-function calcAmountByDifficulty(mode) {
- switch (mode) {
-     case 'easy':  return 10;
-     case 'medium': return 16;
-     case 'hard':  return 24;
- }
-}
-
-function calcSizeByDifficulty(card, difficulty){
-    switch (difficulty) {
-        case 'easy':
-            setCardSize(card,'16rem','16rem');
-        break;
-        case 'medium':
-            setCardSize(card,'10rem','10rem');
-        break;
-        case 'hard':
-            setCardSize(card,'10rem','10rem');
-        break;
-    }
-}
-
-function setCardSize(card,w,h){
- card.style.height = h;
- card.style.width = w;
-}
-
-function setCardImage(card, type, difficulty){
-
-    card.children[1].style.backgroundPositionY = 50 +'%';
-
-    if (difficulty == 'easy'){
-
-    card.children[1].style.backgroundPositionX = 55-type*250  +'px';
-    } else {
-        card.children[1].style.backgroundPositionX =   35 -type*155  +'px';
-    }
-}
-
-function setSkirt (card,type,difficulty) {
-    card.children[0].style.backgroundPositionY = '50%';
-    if (difficulty=='easy') {
-        switch (type) {
-            case 'first':
-            card.children[0].style.backgroundPositionX = ' 60px';
-            break;
-            case 'second':
-            card.children[0].style.backgroundPositionX = ' -260px';
-            break;
-            case 'third':
-            card.children[0].style.backgroundPositionX = '-580px';
-            break;
-        }
-    } else {
-        switch (type) {
-            case 'first':
-            card.children[0].style.backgroundPositionX = ' 45px';
-            break;
-            case 'second':
-            card.children[0].style.backgroundPositionX = ' -160px';
-            break;
-            case 'third':
-            card.children[0].style.backgroundPositionX = '-360px';
-            break;
-        }
-    }
-}
-
-// @description shuffles cards
-// @param {array}
-// @returns shuffledarray
-function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-
-    while (currentIndex !== 0) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-    }
-
-    return array;
-};
-
-
-// @description shuffles cards when page is refreshed / loads
-// document.body.onload = startGame();
-
-
-// @description function to start a new play 
-function startGame(){
-   
-    currentUser.difficulty = gameSettings.difficulty;
-    currentUser.skirt = gameSettings.skirt;
-    storage.setSettingsOfUser(currentUser);
-
-    openedCards = [];
-
-    cards = deckOfCards.slice(0, calcAmountByDifficulty(gameSettings.difficulty));
-    
-    // shuffle deck
-    cards = shuffle(cards);
-    // remove all exisiting classes from each card
-        deck.innerHTML = "";
-        [].forEach.call(cards, function(item) {
-            setSkirt(item, gameSettings.skirt,gameSettings.difficulty);
-            calcSizeByDifficulty(item,gameSettings.difficulty);
-            setCardImage(item,item.type, gameSettings.difficulty);
-            deck.appendChild(item);
-        });
-
-    // loop to add event listeners to each card
-    for (let i = 0; i < cards.length; i++){
-        let card = cards[i];
-        card.classList.remove("show", "open", "match", "disabled");
-        card.addEventListener("click", displayCard);
-        card.addEventListener("click", cardOpen);
-        // card.addEventListener("click", congratulations);
-    };
-
-
-    // reset moves
-    moves = 0;
-    counter.innerHTML = moves;
-    // reset rating
-    for (var i= 0; i < stars.length; i++){
-        stars[i].style.color = "#FFD700";
-        stars[i].style.visibility = "visible";
-    }
-    //reset timer
-    timeInSeconds = 0;
-    second = 0;
-    minute = 0; 
-    hour = 0;
-    var timer = document.querySelector(".timer");
-    timer.innerHTML = "0 min 0 sec";
-    clearInterval(interval);
-    startTimer();
-}
-
-
-// @description toggles open and show class to display cards
-var displayCard = function (){
-    this.classList.toggle("open");
-    this.classList.toggle("disabled");
-    
-}
+let currentUser = new User();
 
 Storage.prototype.createScoreTable = function (numberOfPositions) {
     let positions = new Array(numberOfPositions);
@@ -274,7 +125,6 @@ Storage.prototype.setScoreTable = function (table) {
         this['pos'+i+'stringMoves'] = table[i].stringMoves;
         this['pos'+i+'stringTime'] = table[i].stringTime;
     }
-    
 }
 
 Storage.prototype.getScoreTable = function() {
@@ -289,7 +139,6 @@ Storage.prototype.getScoreTable = function() {
             time: this['pos'+i+'time'],
             stringTime: this['pos'+i+'stringTime']
         });
-        
     }
     return table;
 }
@@ -315,15 +164,203 @@ Storage.prototype.saveUserToScoreTable = function(currentUser, moves, time){
     this.setScoreTable(table);
 }
 
-//storage.clear();
-storage.createScoreTable(numberOfPositions);
-//storage.getScoreTable();
+Storage.prototype.getListOfUsers = function(){
+    return JSON.parse(this['listOfUsers']);
+ }
 
-// @description add opened cards to OpenedCards list and check if cards are match or not
+Storage.prototype.setListOfUsers = function(listOfUsers){
+    this['listOfUsers'] = JSON.stringify(listOfUsers);
+ }
+
+Storage.prototype.getSettingsOfUser = function(currentUser){
+    let listOfUsers = JSON.parse(this['listOfUsers']);
+    for(let i = 0; i < listOfUsers.length; i++){
+        if(listOfUsers[i].firstName == currentUser.firstName && listOfUsers[i].lastName == currentUser.lastName && listOfUsers[i].email == currentUser.email){
+            currentUser.difficulty = listOfUsers[i].difficulty;
+            currentUser.skirt = listOfUsers[i].skirt;
+            return true;
+        }
+    } return false;
+}
+
+Storage.prototype.setSettingsOfUser = function(currentUser){
+    let listOfUsers = this.getListOfUsers();
+    for(let i = 0; i < listOfUsers.length; i++){
+        if(listOfUsers[i].firstName == currentUser.firstName && listOfUsers[i].lastName == currentUser.lastName && listOfUsers[i].email == currentUser.email){
+            listOfUsers[i].difficulty  = currentUser.difficulty;
+            listOfUsers[i].skirt  = currentUser.skirt;
+            this.setListOfUsers(listOfUsers);
+            return true;
+        }
+    } return false;
+}
+
+ //storage.clear();
+Storage.prototype.activateUserSettings = function(currentUser){
+    let listOfUsers;
+    if (this['listOfUsers'] == undefined) {
+        listOfUsers =[];
+        listOfUsers.push(currentUser);
+        this.setListOfUsers(listOfUsers);
+    } else {
+        if(!this.getSettingsOfUser(currentUser)){
+            listOfUsers = JSON.parse(this['listOfUsers']);
+            listOfUsers.push(currentUser);
+            this.setListOfUsers(listOfUsers);
+        }
+    }
+    // console.log(this['listOfUsers']);
+}
+
+
+//calc amount of cards depending on game difficulty
+function calcAmountByDifficulty(mode) {
+ switch (mode) {
+     case 'easy':  return 10;
+     case 'medium': return 16;
+     case 'hard':  return 24;
+ }
+}
+
+//change card size dependin on difficulty of the game
+function calcSizeByDifficulty(card, difficulty){
+    switch (difficulty) {
+        case 'easy':
+            setCardSize(card,'13rem','13rem');
+        break;
+        case 'medium':
+            setCardSize(card,'9rem','9rem');
+        break;
+        case 'hard':
+            setCardSize(card,'9rem','9rem');
+        break;
+    }
+}
+
+//set  a certain card size
+function setCardSize(card,w,h){
+ card.style.height = h;
+ card.style.width = w;
+}
+
+// set image of card
+function setCardImage(card, type, difficulty){
+
+    card.children[1].style.backgroundPositionY = 50 +'%';
+
+    if (difficulty == 'easy'){
+
+    card.children[1].style.backgroundPositionX = 45-type*203 +'px';
+    } else {
+        card.children[1].style.backgroundPositionX = 33-type*140 +'px';
+    }
+}
+
+//set skirt
+function setSkirt (card,type,difficulty) {
+    card.children[0].style.backgroundPositionY = '50%';
+    if (difficulty=='easy') {
+        switch (type) {
+            case 'first':
+            card.children[0].style.backgroundPositionX = '50px';
+            break;
+            case 'second':
+            card.children[0].style.backgroundPositionX = '-210px';
+            break;
+            case 'third':
+            card.children[0].style.backgroundPositionX = '-470px';
+            break;
+        }
+    } else {
+        switch (type) {
+            case 'first':
+            card.children[0].style.backgroundPositionX = ' 40px';
+            break;
+            case 'second':
+            card.children[0].style.backgroundPositionX = ' -145px';
+            break;
+            case 'third':
+            card.children[0].style.backgroundPositionX = '-325px';
+            break;
+        }
+    }
+}
+
+// shuffles cards
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+    while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+    return array;
+};
+
+
+//  function to that generate a new play 
+function startGame(){
+    //get user prefs from current game ajastments
+    currentUser.difficulty = gameSettings.difficulty;
+    currentUser.skirt = gameSettings.skirt;
+    //and save it to storage
+    storage.setSettingsOfUser(currentUser);
+
+    openedCards = [];
+    //generage array of cards for the game
+    cards = deckOfCards.slice(0, calcAmountByDifficulty(gameSettings.difficulty));
+    
+    // shuffle deck
+    cards = shuffle(cards);
+    // remove all exisiting classes from each card and add cards to the deck
+        deck.innerHTML = "";
+        [].forEach.call(cards, function(item) {
+            setSkirt(item, gameSettings.skirt,gameSettings.difficulty);
+            calcSizeByDifficulty(item,gameSettings.difficulty);
+            setCardImage(item,item.type, gameSettings.difficulty);
+            deck.appendChild(item);
+        });
+
+    // loop to add event listeners to each card
+    for (let i = 0; i < cards.length; i++){
+        let card = cards[i];
+        card.classList.remove("show", "open", "match", "disabled");
+        card.addEventListener("click", displayCard);
+        card.addEventListener("click", cardOpen);
+    };
+
+    // reset moves
+    moves = 0;
+    counter.innerHTML = moves;
+    // reset rating
+    for (var i= 0; i < stars.length; i++){
+        stars[i].style.color = "#FFD700";
+        stars[i].style.visibility = "visible";
+    }
+    //reset timer
+    timeInSeconds = 0;
+    second = 0;
+    minute = 0; 
+    hour = 0;
+    var timer = document.querySelector(".timer");
+    timer.innerHTML = "0 min 0 sec";
+    clearInterval(interval);
+    startTimer();
+}
+
+
+//  toggles open and show class to display cards
+var displayCard = function (){
+    this.classList.toggle("open");
+    this.classList.toggle("disabled");
+}
+
+//  add opened cards to OpenedCards list and check if cards are match or not
 function cardOpen() {
     openedCards.push(this);
     var len = openedCards.length;
-    
     if(len === 2){
         disable();
         setTimeout(function() {
@@ -337,8 +374,7 @@ function cardOpen() {
     }
 };
 
-
-// @description when cards match
+//  when cards match
 function matched(){
     openedCards[0].classList.add("match");
     openedCards[1].classList.add("match");
@@ -347,19 +383,17 @@ function matched(){
         openedCards[1].classList.add("disabled");
         enable();
         openedCards = [];
-        // if (matchedCard.length==cards.length) {
+         if (matchedCard.length==cards.length) {
             congratulations(); 
-        // }
+         }
     },0 );
 }
 
-
-// description when cards don't match
+//  when cards don't match
 function unmatched(){
     openedCards[0].classList.add("unmatched");
     openedCards[1].classList.add("unmatched");
     openedCards[0].classList.add("close");openedCards[1].classList.add("close");
-    
     setTimeout(function(){
         openedCards[0].classList.remove("open","unmatched");
         openedCards[1].classList.remove("open","unmatched");
@@ -369,16 +403,14 @@ function unmatched(){
     },500  );
 }
 
-
-// @description disable cards temporarily
+// disable cards temporarily
 function disable(){
     Array.prototype.filter.call(cards, function(card){
         card.classList.add('disabled');
     });
 }
 
-
-// @description enable cards and disable matched cards
+//  enable cards and disable matched cards
 function enable(){
     Array.prototype.filter.call(cards, function(card){
         card.classList.remove('disabled');
@@ -388,16 +420,14 @@ function enable(){
     });
 }
 
-
-// @description count player's moves
+//  count player's moves
 function moveCounter(){
     moves++;
     counter.innerHTML = moves;
     //start timer on first click
 }
 
-
-// @description game timer
+//  game timer
 var second = 0, minute = 0; hour = 0, timeInSeconds = 0;
 var timer = document.querySelector(".timer");
 var interval;
@@ -417,8 +447,7 @@ function startTimer(){
     },1000);
 }
 
-
-// @description congratulations when all cards match, show modal and moves, time and rating
+//  congratulations when all cards match, show modal and moves, time and rating
 function congratulations(){
     //disable cards from clicking
     disable();
@@ -448,47 +477,73 @@ function congratulations(){
         curPos.innerHTML = posText;
         document.getElementById('scoreTable').appendChild(curPos);
     }
-    
     //closeicon on modal
     closeModal();
-    
 }
 
-// @description close icon on modal
+//close icon on modal
 function closeModal(){
     closeicon.addEventListener("click", function(e){
         modal.classList.remove("show");
         deck.innerHTML='';
         deck.appendChild(description);
-        // startGame();
     });
 }
 
-
-// @desciption for user to play Again 
+//for user to play Again 
 function playAgain(){
     modal.classList.remove("show");
     startGame();
 }
-
 
 //prevent btns default
 function preventDef(evt) {
     evt.preventDefault();
 }
 
+function showLoginForm() {
+    loginModal.classList.add('show');
+    deck.innerHTML='';
+    deck.appendChild(description);
+    document.addEventListener('keyup', (e) => { keyIsUp(e.key); });
+}
+
+function closeLoginForm(){
+    if (loginModal.classList.contains('show')) {
+        loginModal.classList.remove('show');
+    }
+}
+
+function keyIsUp(key) {
+    if (key == 'Escape'){
+         closeLoginForm();
+    } else if (key == 'Enter'){
+        if (loginModal.classList.contains('show')) {
+            loginForm.dispatchEvent(enterSubmitEvent);
+        }
+    }
+}
+
+//event listeners and different actions
+storage.createScoreTable(numberOfPositions);
+
+showLoginForm();
+
+changeUserBtn.addEventListener('click', showLoginForm);
 
 startBtn.addEventListener("click", startGame);
 
+//prevent link event on 'a' tags
 refs.forEach(function (item) {item.addEventListener("click", preventDef);});
 
-
+// dropdown buttons actions
 ddBtns.forEach(function (item) {
     let ddContent = item.nextElementSibling;
     item.addEventListener("click", function () {
         ddContent.classList.toggle('active');
     });
-    ddContent.addEventListener('click', (e) => { 
+    //actions on dropdown menu
+    ddContent.addEventListener('click', (e) => {
         Array.prototype.forEach.call(e.currentTarget.children, i => {i.setAttribute('state', 'none');});
         e.target.setAttribute('state', 'selected');
         if (e.currentTarget.classList.contains('skirt')){
@@ -500,7 +555,7 @@ ddBtns.forEach(function (item) {
     });
 });
 
-
+// action to close dropdown menu as we ckick somewhere on the window
 document.body.addEventListener('click', function (e) {
     if (e.target!=ddBtns[0] && e.target!=ddBtns[1]) {
         ddBtns.forEach(function (item) {
@@ -513,65 +568,30 @@ document.body.addEventListener('click', function (e) {
 
 
 
+//actions after sublit button clicked
 loginForm.addEventListener('submit', function (e) {
     e.preventDefault();
+    //whrite temp current user
     currentUser.setUser(loginForm.elements['firstName'].value,
                         loginForm.elements['lastName'].value,
                         loginForm.elements['email'].value);
 
+    //load settings fromm user, if he already exist
     storage.activateUserSettings(currentUser);
+    //set game setting depending on loaded user settings
     if(storage.getSettingsOfUser(currentUser)){
         gameSettings.difficulty = currentUser.difficulty;
         gameSettings.skirt = currentUser.skirt;
+        //as we've load out data to gameSettings, implement it to html elements
+        Array.prototype.forEach.call(document.querySelector('.skirt').children, i => {i.setAttribute('state', 'none');});
+        document.querySelector('.skirt').querySelector('.'+gameSettings.skirt).setAttribute('state', 'selected');
+        //the same
+        Array.prototype.forEach.call(document.querySelector('.difficulty').children, i => {i.setAttribute('state', 'none');});
+        document.querySelector('.difficulty').querySelector('.'+gameSettings.difficulty).setAttribute('state', 'selected');
     }
     loginModal.classList.remove('show');
 })
 
-storage.constructor.prototype.getListOfUsers = function(){
-    return JSON.parse(this['listOfUsers']);
- }
 
-storage.constructor.prototype.setListOfUsers = function(listOfUsers){
-    this['listOfUsers'] = JSON.stringify(listOfUsers);
- }
 
-storage.constructor.prototype.getSettingsOfUser = function(currentUser){
-    let listOfUsers = JSON.parse(this['listOfUsers']);
-    for(let i = 0; i < listOfUsers.length; i++){
-        if(listOfUsers[i].firstName == currentUser.firstName && listOfUsers[i].lastName == currentUser.lastName && listOfUsers[i].email == currentUser.email){
-            currentUser.difficulty = listOfUsers[i].difficulty;
-            currentUser.skirt = listOfUsers[i].skirt;
-            return true;
-        }
-    }
-    return false;
-}
 
-storage.constructor.prototype.setSettingsOfUser = function(currentUser){
-    let listOfUsers = this.getListOfUsers();
-    for(let i = 0; i < listOfUsers.length; i++){
-        if(listOfUsers[i].firstName == currentUser.firstName && listOfUsers[i].lastName == currentUser.lastName && listOfUsers[i].email == currentUser.email){
-            listOfUsers[i].difficulty  = currentUser.difficulty;
-            listOfUsers[i].skirt  = currentUser.skirt;
-            this.setListOfUsers(listOfUsers);
-            return true;
-        }
-    }
-    return false;
-}
-
-// storage.clear();
-storage.constructor.prototype.activateUserSettings = function(currentUser){
-    let listOfUsers =[];
-    if (this['listOfUsers'] == undefined) {
-        listOfUsers.push(currentUser);
-        this.setListOfUsers(listOfUsers);
-    } else {
-        if(!this.getSettingsOfUser(currentUser)){
-            listOfUsers = JSON.parse(this['listOfUsers']);
-            listOfUsers.push(currentUser);
-            this.setListOfUsers(listOfUsers);
-        }
-    }
-    console.log(listOfUsers );  
-}

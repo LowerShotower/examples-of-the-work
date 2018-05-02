@@ -33,17 +33,16 @@ body {
 h1 {
 	font-family: Tahoma, Arial, sans-serif;
 }
+
 .main-menu {
 	display: flex;
 	justify-content: space-around;
-	width: 400px;
+	width: 600px;
 }
 
-/*
- * Styles for the deck of cards
- */
+/* Styles for the deck of cards */
 .deck {
-	width: 1500px;
+	width: 1300px;
 	min-height: 450px;
 	background: #716F71;
 	padding: 1rem;
@@ -64,8 +63,6 @@ h1 {
 .deck .card {
 	transform-style: preserve-3d;
 	position: relative;
-	height: 15rem;
-	width: 15rem;
 	margin: 1rem 0.2rem;
 	cursor: pointer;
 	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
@@ -121,9 +118,7 @@ h1 {
 	pointer-events: none;
 }
 
-/*
- * Styles for the Score Panel
- */
+  /* Styles for the Score Panel */
 .score-panel {
 	text-align: left;
 	margin-bottom: 10px;
@@ -146,18 +141,12 @@ h1 {
 	cursor: pointer;
 }
 
-.fa-star {
-	color: #FFD700;
-}
-
 .timer {
 	display: inline-block;
 	margin: 0 1rem;
 }
 
-/*
- * Styles for congratulations modal
- */
+/* Styles for congratulations modal */
 .overlay {
 	position: fixed;
 	top: 0;
@@ -208,6 +197,7 @@ h1 {
 	overflow: auto;
 	text-align: center;
 }
+
 .content-3 {
 	text-align: center;
 }
@@ -232,6 +222,7 @@ h1 {
 .score-table li div:first-of-type{
 	float: left;
 }
+
 .score-table li div:last-of-type{
 	float: right;
 }
@@ -257,42 +248,49 @@ form {
 	overflow: hidden;
 	width: 260px;
 	margin: 100px auto;
-   }
-   fieldset {
+}
+
+fieldset {
 	border: 0;
 	margin: 0;
 	padding: 0;
-   }
-   input {
+}
+
+input {
 	border-radius: 5px;
 	font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0;
-   }
-   .account-info {
+}
+
+.account-info {
 	padding: 20px 20px 0 20px;
-   }
-   .account-info label {
+}
+
+.account-info label {
 	color: #395870;
 	display: block;
 	font-weight: bold;
 	margin-bottom: 10px;
-   }
-   .account-info input {
+}
+
+.account-info input {
 	background: #fff;
 	border: 1px solid #c6c7cc;
-	 box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
 	color: #636466;
 	padding: 6px;
 	margin-top: 6px;
 	width: 100%;
-   }
-   .account-action {
+}
+
+.account-action {
 	background: #f0f0f2;
 	border-top: 1px solid #c6c7cc;
 	padding: 20px;
-   }
-   .account-action .btn {
-	   display: block;
+}
+
+.account-action .btn {
+	display: block;
 	margin: 0 auto;
 	background: linear-gradient(#49708f, #293f50);
 	border: 0;
@@ -300,14 +298,14 @@ form {
 	cursor: pointer;
 	font-weight: bold;
 	padding: 8px 16px;
-   }
-   .account-action label {
+}
+
+.account-action label {
 	color: #7c7c80;
 	font-size: 12px;
 	float: left;
 	margin: 10px 0 0 10px;
-   }
-
+}
 
 /* animations */
 @keyframes opacity {
@@ -345,8 +343,7 @@ form {
 	}
 }
 
-/****** Media queries
-***************************/
+/* Media queries */
 @media (max-width: 450px) {
 	.deck {
 		width: 350px;
@@ -368,7 +365,6 @@ form {
 
 	.main-menu .dropdown {
 		width: 100%;
-		
 	}
 
 	.dropdown-content {
@@ -383,8 +379,7 @@ form {
 	}
 }
 
-/* For Tablets and larger screens
-****************/
+/* For Tablets and larger screens */
 @media (min-width: 768px) {
 	.container {
 		font-size: 22px;
@@ -443,20 +438,23 @@ form {
 	 display: block;
 	 width: 100%;
 	 height: 120px;
- }
+}
+
  .skirt a.first {
 	 background-position: 30px 50%;
- }
+}
+
  .skirt a.second {
 	background-position: -125px 50%;
 }
+
 .skirt a.third {
 	background-position: -275px 50%;
 }
 
- .dropdown-content a[state='selected'] {background-color: #CECECE}
+.dropdown-content a[state='selected'] {background-color: #CECECE}
 
  /* Change the background color of the dropdown button when the dropdown content is shown */
- .dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {
 	background-color: #3e8e41;
- }
+}

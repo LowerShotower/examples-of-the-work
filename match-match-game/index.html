@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Memory Game</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker" >
@@ -15,7 +14,7 @@
     <div class="container">
         <header class="main-menu">
             
-                    <div class="dropdown">
+                    <div class="dropdown show">
                          <button class="btn  dropdown-btn">Skirt</button>
                          <div class="dropdown-content skirt">
                               <a class="first" state="selected"></a>
@@ -23,36 +22,24 @@
                               <a class="third"></a>
                          </div>
                     </div>
-                    <div class="dropdown">
+                    <div class="dropdown show">
                               <button class="btn dropdown-btn">Difficulty</button>
                               <div class="dropdown-content difficulty">
-                                   <a  state="selected">easy</a>
-                                   <a>medium</a>
-                                   <a>hard</a>
+                                   <a class="easy" state="selected">easy</a>
+                                   <a class="medium">medium</a>
+                                   <a class="hard">hard</a>
                               </div>
                     </div>
+                    <button class="btn change-user-btn">Change user</button>
                     <button class="btn start-btn">Start game</button>
-            
         </header>
 
         <section class="score-panel">
-        	<!-- <ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        	</ul> -->
-
         	<span class="moves">0</span> Move(s)
-
             <div class="timer">
             </div>
-
-            <!-- <div class="restart" onclick=startGame()>
-        		<i class="fa fa-repeat"></i>
-        	</div> -->
         </section>
 
-        
         <div class="deck" id="card-deck">
               <div class="description">
                     <h2>Правила игры:</h2>
@@ -61,6 +48,7 @@
                     <p>Также перед началом игры в меню сверху Вы можете выбрать рубашку колоды и настроить сложность игры </p>
                     <h2>Дополнительно:</h2>
                     <p>В игре ведется рейтийг, первые десять мест отображаются после открытия всех карт</p>
+                    <p>Настройки рубашек и сложности сохраняются для каждого пользователя</p>
               </div>
           </div>
 
@@ -86,27 +74,27 @@
             </div>
         </div>
 
-        <div id="popup2" class="overlay show">
+        <div id="popup2" class="overlay">
                <form id="loginForm" >
-                         <fieldset class="account-info">
-                           <label>
-                             First Name
-                             <input type="text" autocomplete='given-name' name="firstName">
-                           </label>
-                           <label>
-                              Last Name
-                              <input type="text" autocomplete='given-name' name="lastName">
-                              </label>
-                           <label>
-                             Email
-                             <input type="email" autocomplete='email'  name="email">
-                           </label>
-                         </fieldset>
-                         <fieldset class="account-action">
-                           <input class="btn" type="submit" name="submit" value="Login">
-                         
-                         </fieldset>
-                    </form>
+                    <fieldset class="account-info">
+                    <label>
+                        First Name
+                        <input type="text" autocomplete='given-name' name="firstName">
+                    </label>
+                    <label>
+                        Last Name
+                        <input type="text" autocomplete='given-name' name="lastName">
+                        </label>
+                    <label>
+                        Email
+                        <input type="email" autocomplete='email'  name="email">
+                    </label>
+                    </fieldset>
+                    <fieldset class="account-action">
+                    <input class="btn" type="submit" name="submit" value="Login">
+                    
+                    </fieldset>
+                </form>
         </div>
 
     </div>
