@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Jam4 Scorboard</title>
+    <link href="css/main.css" rel="stylesheet">
+    <script defer src="js/jsonload.js"></script>
+    <script src="js/lodash.js"></script>
+    <script src="js/Chart.bundle.js"></script>
+</head>
+<body>
+    <div class="session-selection-block">
+        <p>Select session:</p>
+        <label>
+            <input type="radio" name="session" value="rsschool" checked> rsschool
+        </label>
+        <label>
+            <input type="radio" name="session" value="rsschool-demo"> rsschool-demo
+        </label>
+    </div>
+    
+    <table class="scoreboard">
+    </table>
+    <canvas id="chartjs-0" class="chartjs" width="770px" height="385px" style="display: block; width: 770px; height: 385px;"></canvas>    
+    
+</body>
+</html>
