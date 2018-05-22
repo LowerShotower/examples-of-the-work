@@ -1,3 +1,6 @@
+import {}  from "./lodash.js";
+import {}  from "./Chart.bundle.js";
+const {map} = _;
 (function () {//
     
     let users,
@@ -30,15 +33,24 @@
 
     function fillTHeader (thead, session) {
         let headerNamesArr = [];
+
         for (let i = 0; i < session["puzzles"].length; i++) {
             headerNamesArr.push(session["puzzles"][i]["name"]);
         }
-
-        thead.firstChild.firstChild.innerHTML = "DisplayName Участника";
-        for (let i = 1; i < thead.firstChild.children.length; i++) {
-            thead.firstChild.children[i].innerHTML = headerNamesArr[i-1];
-        }
-        thead.firstChild.lastChild.innerHTML = "Общее время";
+        let counter = 0;
+        _.map(thead.firstChild.children,(n,i)=>{
+            switch (i) {
+                case 0:
+                    n.innerHTML = "DisplayName Участника";
+                    break;
+                case headerNamesArr.length+1: n.innerHTML = "Общее время";
+                    break;
+                case headerNamesArr.length+2: n.innerHTML = "Comparison";
+                    break;
+                default: n.innerHTML = headerNamesArr[counter++];
+                    break;
+            }
+        });
     }
 
     function composeRow(session, users, index) {
@@ -75,25 +87,34 @@
             tbody.appendChild(document.createElement("tr"));
             let currRow = composeRow(session, users, j);
             for (let i = 0; i < cols; i++) {
-                let th = document.createElement("td");
-                th.innerHTML = currRow[i][0];
-                let span = document.createElement("span");
-                if ( currRow[i][1] != undefined ) { 
-                    span.textContent = currRow[i][1]; 
+                let td = document.createElement("td");
+                if ( currRow[i] != undefined ) { 
+                    td.innerHTML = currRow[i][0];
+                    let span = document.createElement("span");
+                    if ( currRow[i][1] != undefined ) { 
+                        span.textContent = currRow[i][1]; 
+                    }
+                    else { span.textContent = "no solution"; }
+                    if ( i!=0 && i!=cols-1 ) { 
+                        span.classList.add("tooltiptext");
+                        td.appendChild(span);
+                    } 
+                } else if(currRow[i] == undefined) {
+                    let  input = document.createElement('input');
+                    input.type = 'checkbox';
+                    input.name = 'user';
+                    input.value = currRow[0][0];
+                    td.appendChild(input);
                 }
-                else { span.textContent = "no solution"; }
-                if ( i!=0 && i!=cols-1 ) { 
-                    span.classList.add("tooltiptext");
-                    th.appendChild(span);
-                 }
-                tbody.children[j].appendChild(th);
+
+                tbody.children[j].appendChild(td);
             }
         }
         table.appendChild(tbody);
     }
 
     function loadSession (session, users){
-        let colsNumber = 1 + session["puzzles"].length + 1,
+        let colsNumber = 1 + session["puzzles"].length + 2,
         rowsNumber = users.length;
         createTHeader(scoreboard, colsNumber, session);
         createTBody(scoreboard,colsNumber, rowsNumber, session, users);
@@ -124,33 +145,51 @@
         loadSession(sessions[currSession], users);
 
         let tenUsers = [];
-        for (let k = 0; k < 10; k++) {
-            tenUsers.push(composeRow(sessions[currSession],users,k))
-            
-        }
+        
+        scoreboard.addEventListener('click', e => {
+            if (e.target.name == 'user') {
+                if(tenUsers.length < 10) {
+                tenUsers.length = 0;
+                for (let k = 0; k < users.length; k++) {
+                    if (scoreboard.querySelectorAll('input[name="user"]')[k].checked == true) {
+                        tenUsers.push(composeRow(sessions[currSession],users,k));
+                    }
+                }
+                
+                } else { 
+                    if(e.target.checked == true) {
+                        e.target.checked = false;
+                    } else if(e.target.checked == false) {
+                        tenUsers.length = tenUsers.length-1;
+                    }
+                }
+            }
 
-        let datasets = [];
+            let datasets = _.map(tenUsers,setLineObj);
+        
+            var ctx = document.getElementById("chartjs-0");
+            var myLineChart = new Chart(ctx, {
+                "type":"line",
+                "data":{
+                    "labels": map(sessions[currSession]["puzzles"], "name"),
+                    "datasets":datasets
+                },
+                "options":{}
+            });
+
+        });
+
 
         function setLineObj (user) {
             return {
                 "label":user[0][0],
-                "data":[user[1][0],user[2][0],user[3][0],user[4][0],user[5][0],user[6][0],user[7][0],user[8][0],user[9][0],user[10][0]],
+                "data":_(user).slice(1,10).map(n=>n[0]).value(),
                 "fill":false,
                 "borderColor":"rgb(" + _.random(0,244)+"," + _.random(0,244)+"," + _.random(0,244)+")",
                 "lineTension":0.1
             };
         };
-        datasets = _.map(tenUsers,setLineObj);
         
-        var ctx = document.getElementById("chartjs-0");
-        var myLineChart = new Chart(ctx, {
-            "type":"line",
-            "data":{
-                "labels": _.map(sessions[currSession]["puzzles"], "name"),
-                "datasets":datasets
-            },
-            "options":{}
-        });
 
     });///
 })();//
