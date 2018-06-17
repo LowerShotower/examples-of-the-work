@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #c4d4e6; }
+
+.description {
+  margin: 0 auto; }
+
+.game-wrapper {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: 640px;
+  height: 480px; }
+
+.gameCanvas {
+  background: #eee;
+  position: absolute;
+  display: block;
+  margin: 0 auto; }
+
+.in-game-ui-wrapper {
+  width: 640px;
+  z-index: 1;
+  margin: 0 auto;
+  position: absolute; }
+  .in-game-ui-wrapper .player-health-bar[value]::-webkit-progress-bar, .in-game-ui-wrapper .enemy-health[value]::-webkit-progress-bar {
+    background-color: #FF0000; }
+  .in-game-ui-wrapper .player-health-bar[value]::-webkit-progress-bar, .in-game-ui-wrapper .enemy-health[value]::-webkit-progress-bar {
+    background-color: green; }
+  .in-game-ui-wrapper .player-health-bar {
+    position: absolute;
+    top: 10px;
+    left: 10px; }
+  .in-game-ui-wrapper .enemy-health-bar {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+  .in-game-ui-wrapper progress[value] {
+    -webkit-appearance: none;
+    width: 300px; }
+
+.score {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  color: white;
+  font-size: 2em; }
+
+.key {
+  color: #aaffdd; }
+
+.game-menu-btn-block, .game-over-menu-overlay, .game-menu-overlay {
+  margin: auto;
+  width: 640px;
+  height: 480px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block; }
+
+.game-over-menu-overlay, .game-menu-overlay {
+  background-color: black;
+  opacity: .5; }
+  .game-over-menu-overlay .game-menu-btn-block, .game-menu-overlay .game-menu-btn-block {
+    height: 200px;
+    text-align: center;
+    color: white;
+    color: white; }
+    .game-over-menu-overlay .game-menu-btn-block h1, .game-menu-overlay .game-menu-btn-block h1 {
+      font-size: 3em;
+      font-family: sans-serif; }
+    .game-over-menu-overlay .game-menu-btn-block button, .game-menu-overlay .game-menu-btn-block button {
+      font-size: 1.5em; }
+
+/*# sourceMappingURL=style.css.map*/
