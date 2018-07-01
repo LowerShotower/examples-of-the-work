@@ -26,6 +26,11 @@ const config  = {
         rules: [
             { test: /\.hbs|\.handlebars$/, loader: "handlebars-loader" },
             {
+                test: /\.html$/,
+                exclude: /node_modules/,
+                use: {loader: 'html-loader'}
+            },
+            {
                 test: /\.js$/,
                 use: [
                     {
@@ -56,7 +61,20 @@ const config  = {
                     options: {
                     name: '[name].[ext]',
                     outputPath: 'img/',
-                    publicPath: 'img/'}
+                    publicPath: '../img/'},
+                    
+                }
+                ],
+                
+            },
+              {
+                test: /\.(ogg|wav|mp3)$/,
+                use: [
+                    {loader: 'file-loader',
+                    options: {
+                    name: '[name].[ext]',
+                    outputPath: 'audio/',
+                    publicPath: '../audio/'}
                 }
                 ]
                 
@@ -66,7 +84,9 @@ const config  = {
                 loader: 'url-loader',
                 options: {
                     limit: 1000,
-                    name: 'fonts/[name].[hash:7].[ext]'
+                    name: '[name].[ext]',
+                    outputPath: 'fonts',
+                    publicPath: '../fonts/',
                 }
             },
             {
@@ -80,6 +100,7 @@ const config  = {
     },
 
     plugins: [
+    
         new HtmlWebpackPlugin({
            title: 'Game',
             template: path.resolve(__dirname, 'src', 'html', 'index.hbs'),
@@ -89,8 +110,10 @@ const config  = {
             //  disable: !isProd,
         }),
         new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery'
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery'",
+            "window.$": "jquery"
           }),
    ],
 
