@@ -1,0 +1,23 @@
+svg {
+  width: 60%; }
+  svg .train1 {
+    animation: bounceY 0.9s  infinite linear; }
+  svg .mountains1 {
+    animation: moveRight 4s  infinite linear; }
+
+body {
+  background: black; }
+
+@keyframes bounceY {
+  0%, 100% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(2px); } }
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-200px); }
+  100% {
+    transform: translateX(600px); } }
+
+/*# sourceMappingURL=style.css.map*/

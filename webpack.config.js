@@ -9,8 +9,8 @@ const config  = {
 
     devtool: isProd ? false : 'source-map',
     devServer: {
-             contentBase: './dist',
-            //  hot: true,
+             contentBase: './hacktrain',
+             hot: true,
            },
     entry: {
         app: './src/app.js',

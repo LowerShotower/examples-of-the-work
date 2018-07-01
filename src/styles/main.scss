@@ -1,0 +1,93 @@
+body {
+    text-align: center;
+}
+
+svg {
+
+    .train1 {
+        animation: bounceY 0.9s  infinite linear;
+    }
+    .mountains1 {
+        animation: moveRight  30s linear, moveRightLoop 40s 30s  infinite linear;
+    }
+
+    $map: (1:40s, 2:25s, 3:70s, 4:45s);
+    @each $el, $s  in $map  {
+        .cloud#{$el} {
+            animation: moveRight $s linear, moveRightLoop $s  infinite linear;
+            animation-fill-mode: forwards;
+        }
+        .cloud#{$el} {
+            animation-delay: 0s , $s  ;
+        }
+    }
+
+    .backTree1{
+        animation: moveRight 2.5s linear, moveRightLoop 5s 2.5s  infinite linear;
+    }
+    .middleTree1{
+        animation: moveRight 2.4s linear, moveRightLoop 4.8s 2.4s  infinite linear;
+    }
+    .frontTree1{
+        animation: moveRight 0.5s linear, frontMoveRightLoop 1.8s 0.5s infinite linear;
+    }
+    .frontTree2{
+        animation: moveRight 0.5s linear, frontMoveRightLoop 1.8s 0.6s  infinite linear;
+        animation-fill-mode: forwards;
+    }
+    $p: (1:4s, 2:5s, 3:6.4s, 4:3.6s, 5:3.5s ,6:5.2s, 7:6s);
+    @each $el, $ss  in $p  {
+        .gr#{$el} {
+            animation: moveRight $ss linear, moveRightLoop $ss  infinite linear;
+            animation-fill-mode: forwards;
+        }
+        .gr#{$el} {
+            animation-delay: 0s , $ss  ;
+        }
+    }
+}
+
+
+body{
+    background: black;
+}
+
+
+
+@keyframes bounceY {
+  0% , 100%{
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+} 
+
+
+@keyframes moveRightLoop {
+  100% {
+    transform: translateX(100%);
+  }
+  
+  0% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes moveRight {
+  100% {
+    transform: translateX(100%);
+  }
+  
+}
+
+
+@keyframes frontMoveRightLoop {
+  100%  {
+    transform: translateX(90%);
+  }
+  
+  0% {
+    transform: translateX(-90%);
+  }
+}
