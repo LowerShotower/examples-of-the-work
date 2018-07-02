@@ -1,0 +1,315 @@
+@import url(https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:300,400,600,700,800|Raleway:400,400i,700,700i,900);@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (max-width: 1199px) {
+  .container {
+    width: 970px; } }
+
+@media (max-width: 991px) {
+  .container {
+    width: 750px; } }
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%; } }
+
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+h1, h2 {
+  text-align: center;
+  padding-bottom: 20px; }
+  h1.alt, h2.alt {
+    color: whitesmoke; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 20px; }
+
+li, p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 21px; }
+
+p {
+  text-align: justify;
+  margin-bottom: 10px; }
+
+img {
+  display: inline-block; }
+
+body,
+html {
+  min-height: 100vh;
+  font-size: 16px;
+  background: #fff;
+  color: #03152c;
+  font-family: 'Raleway', sans-serif; }
+
+.btn {
+  background-color: #3a4ff4;
+  color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  border: none;
+  padding: 20px;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: #e0314b; }
+
+.alt-btn {
+  border: 3px solid whitesmoke;
+  border-radius: 3px;
+  background-color: transparent; }
+  .alt-btn:hover {
+    background-color: whitesmoke;
+    color: #b3caf5; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh; }
+  .wrapper .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 80px;
+    z-index: 100;
+    background: whitesmoke; }
+    .wrapper .header nav {
+      font-size: 0px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center; }
+      .wrapper .header nav a {
+        padding: 20px;
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #03152c; }
+        .wrapper .header nav a:hover {
+          font-size: 24px;
+          color: #3a4ff4; }
+  .wrapper .main {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    padding-top: 80px; }
+    .wrapper .main section {
+      padding-bottom: 30px;
+      padding-top: 30px; }
+      .wrapper .main section:first-of-type {
+        padding-top: 0px; }
+    .wrapper .main .animation-block {
+      background: #b3caf5;
+      position: relative; }
+      .wrapper .main .animation-block .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 70%; }
+        .wrapper .main .animation-block .container .rulers {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: center;
+          min-height: 30px; }
+      .wrapper .main .animation-block img {
+        width: 25%; }
+    .wrapper .main .description {
+      background: whitesmoke; }
+    .wrapper .main .agenda .container {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center; }
+      .wrapper .main .agenda .container .shadule {
+        width: 49%;
+        display: inline-block; }
+      .wrapper .main .agenda .container .map {
+        width: 49%;
+        margin: 0 auto;
+        border: 10px solid #dddddd;
+        border-radius: 50%; }
+    .wrapper .main .mentors {
+      background: whitesmoke; }
+      .wrapper .main .mentors .speaker-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center; }
+        .wrapper .main .mentors .speaker-list figure {
+          display: inline-block;
+          width: 25%;
+          margin: 5px; }
+          .wrapper .main .mentors .speaker-list figure h3 {
+            text-align: center; }
+            .wrapper .main .mentors .speaker-list figure h3 a {
+              text-decoration: none;
+              color: black; }
+          .wrapper .main .mentors .speaker-list figure p {
+            text-align: center; }
+    .wrapper .main .events .gallery {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-content: space-between; }
+      .wrapper .main .events .gallery li {
+        display: inline-block;
+        margin: 10px 0 10px 0;
+        line-height: 0; }
+    .wrapper .main .faq h1 {
+      text-align: center;
+      background: whitesmoke; }
+  .wrapper .footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    background-color: #293772;
+    padding: 40px 0 40px 0; }
+    .wrapper .footer section {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center; }
+      .wrapper .footer section img {
+        display: inline-block;
+        width: 25%; }
+
+svg .train1 {
+  animation: bounceY 0.9s  infinite linear; }
+
+svg .mountains1 {
+  animation: moveRight  30s linear, moveRightLoop 40s 30s  infinite linear; }
+
+svg .cloud1 {
+  animation: moveRight 40s linear, moveRightLoop 40s infinite linear;
+  animation-fill-mode: forwards; }
+
+svg .cloud1 {
+  animation-delay: 0s, 40s; }
+
+svg .cloud2 {
+  animation: moveRight 25s linear, moveRightLoop 25s infinite linear;
+  animation-fill-mode: forwards; }
+
+svg .cloud2 {
+  animation-delay: 0s, 25s; }
+
+svg .cloud3 {
+  animation: moveRight 70s linear, moveRightLoop 70s infinite linear;
+  animation-fill-mode: forwards; }
+
+svg .cloud3 {
+  animation-delay: 0s, 70s; }
+
+svg .cloud4 {
+  animation: moveRight 45s linear, moveRightLoop 45s infinite linear;
+  animation-fill-mode: forwards; }
+
+svg .cloud4 {
+  animation-delay: 0s, 45s; }
+
+svg .backTree1 {
+  animation: moveRight 2.5s linear, moveRightLoop 5s 2.5s  infinite linear; }
+
+svg .middleTree1 {
+  animation: moveRight 2.4s linear, moveRightLoop 4.8s 2.4s  infinite linear; }
+
+svg .frontTree1 {
+  animation: moveRight 0.5s linear, frontMoveRightLoop 1.8s 0.5s infinite linear; }
+
+svg .frontTree2 {
+  animation: moveRight 0.5s linear, frontMoveRightLoop 1.8s 0.6s  infinite linear;
+  animation-fill-mode: forwards; }
+
+svg .gr1 {
+  animation: moveRight 4s linear, moveRightLoop 4s infinite linear;
+  animation-fill-mode: forwards; }
+
+svg .gr1 {
+  animation-delay: 0s, 4s; }
+
+svg .gr2 {
+  animation: moveRight 5s linear, moveRightLoop 5s infinite linear;
+  animation-fill-mode: forwards; }
+
+svg .gr2 {
+  animation-delay: 0s, 5s; }
+
+svg .gr3 {
+  animation: moveRight 6.4s linear, moveRightLoop 6.4s infinite linear;
+  animation-fill-mode: forwards; }
+
+svg .gr3 {
+  animation-delay: 0s, 6.4s; }
+
+svg .gr4 {
+  animation: moveRight 3.6s linear, moveRightLoop 3.6s infinite linear;
+  animation-fill-mode: forwards; }
+
+svg .gr4 {
+  animation-delay: 0s, 3.6s; }
+
+svg .gr5 {
+  animation: moveRight 3.5s linear, moveRightLoop 3.5s infinite linear;
+  animation-fill-mode: forwards; }
+
+svg .gr5 {
+  animation-delay: 0s, 3.5s; }
+
+svg .gr6 {
+  animation: moveRight 5.2s linear, moveRightLoop 5.2s infinite linear;
+  animation-fill-mode: forwards; }
+
+svg .gr6 {
+  animation-delay: 0s, 5.2s; }
+
+svg .gr7 {
+  animation: moveRight 6s linear, moveRightLoop 6s infinite linear;
+  animation-fill-mode: forwards; }
+
+svg .gr7 {
+  animation-delay: 0s, 6s; }
+
+@keyframes bounceY {
+  0%, 100% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(2px); } }
+
+@keyframes moveRightLoop {
+  100% {
+    transform: translateX(100%); }
+  0% {
+    transform: translateX(-100%); } }
+
+@keyframes moveRight {
+  100% {
+    transform: translateX(100%); } }
+
+@keyframes frontMoveRightLoop {
+  100% {
+    transform: translateX(90%); }
+  0% {
+    transform: translateX(-90%); } }
+
+/*# sourceMappingURL=style.css.map*/

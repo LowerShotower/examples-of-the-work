@@ -4,7 +4,6 @@ build
 
 webpack-stats.json
 npm-debug.log
-hacktrain
 /node_modules
 /test/js
 /test/browsertest/js
