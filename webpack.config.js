@@ -47,13 +47,13 @@ const config  = {
                     use: 'css-loader',
                 }),
             },
-            {
-                test: /\.sass|\.scss$/,
-                use: ExtractTextPlugin.extract({
-                  fallback: 'style-loader',
-                  use: ['css-loader', 'sass-loader']
-                })
-              },
+                {
+                    test: /\.sass|\.scss$/,
+                    use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: ['css-loader', 'sass-loader']
+                    })
+                },
               {
                 test: /\.(png|jpeg|jpg)$/,
                 use: [

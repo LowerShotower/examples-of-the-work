@@ -64433,7 +64433,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_game_scss__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_styles_game_scss__WEBPACK_IMPORTED_MODULE_21__);
 
 
-//images
 
 
 
@@ -64443,7 +64442,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//sound
 
 
 
@@ -64452,10 +64450,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//fonts
 
 
-//styles
+
+// import './fonts/Rakkas-Regular.ttf';
+
+
+
 
 
 
@@ -64490,7 +64491,7 @@ module.exports = "../fonts/Lalezar-Regular.ttf";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n            <section class=\"play-game-section\">\r\n                <div id=\"game\" class = \"game-wrapper\">\r\n                    <div id=\"gameOverMenu\" class=\"game-over-menu-overlay\">\r\n                        <div class=\"menu-btn-block\">\r\n                            <h2>GAME OVER</h2>\r\n                            <table id=\"scoreTable\" class=\"score-table\">\r\n                            <tbody>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                </tbody>\r\n                            </table>\r\n                            <button id=\"playAgainBtn\" class=\"btn game-btn\">Play Again</button>\r\n                        </div>\r\n                    </div>\r\n                    <!-- Start Menu -->\r\n                    <div id=\"startMenu\" class=\"start-menu-overlay\">\r\n                        <div class=\"menu-btn-block\">\r\n                            <h2>Enter your name:</h2>\r\n                            <input type=\"text\" id=\"startMenuInput\" name=\"userName\" placeholder=\"Tommy zzZ\">\r\n                            <button id=\"startMenuStartBtn\" class=\"btn game-btn\">Start</button>\r\n                            <button id=\"startMenuSoundBtn\" class=\"btn game-btn\">Sound:on</button>\r\n                        </div>\r\n                    </div>\r\n                    <!-- inGame UI -->\r\n                    <div id=\"inGameUI\" class=\"in-game-ui-wrapper\">\r\n                        <div class=\"player-block\">\r\n                            <span id=\"playerName\" class=\"name\">Player</span>\r\n                            <div id=\"playerHealthBar\" class=\"player-health-bar\"  ><div id=\"playerH\" class=\"hb-fl\"></div></div>\r\n                        </div>\r\n                        <div id = \"score\" class=\"score\">score</div>\r\n                        <div class=\"enemy-block\">\r\n                            <p id=\"enemyName\" class=\"name\"></p>\r\n                            <div id=\"enemyHealthBar\" class=\"enemy-health-bar\" ><div id=\"enemyH\" class=\"hb-fl\"></div></div>\r\n                            <p id=\"enemyNick\" class=\"nick\"></p>\r\n                        </div>\r\n                        <div class=\"down-btn-ui-block\">\r\n                            <button id=\"turnMainBtn\" class=\"game-btn\">Your Turn </button>\r\n                        </div>\r\n                    </div>\r\n\r\n\r\n                    <!-- Modal Menu -->\r\n                    <div id=\"modalMenu\" class=\"modal-menu\">\r\n                        <button id=\"closeModalBtn\" class = \"close-element\">x</button>\r\n                    </div>\r\n\r\n\r\n                    <!-- Small Modal Menu -->\r\n                    <div id=\"smallModalMenu\" class=\"modal-menu small-modal-menu\">\r\n                        <div id=\"earthBtn\"class=\"spell-wrapper earth\">\r\n                            <p>Earth</p>\r\n                        </div>\r\n                        <div id=\"waterBtn\"class=\"spell-wrapper water\">\r\n                            <p>Water</p>\r\n                        </div>\r\n                        <div id=\"fireBtn\"class=\"spell-wrapper fire\">\r\n                            <p>Fire</p>\r\n                        </div>\r\n                        <div id=\"poisonBtn\"class=\"spell-wrapper poison\">\r\n                            <p>Poison</p>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </section>';";
+module.exports = "\r\n            <section class=\"play-game-section\">\r\n                <div id=\"game\" class = \"game-wrapper\">\r\n                    <div id=\"gameOverMenu\" class=\"game-over-menu-overlay\" tab>\r\n                        <div class=\"menu-btn-block\">\r\n                            <h2>GAME OVER</h2>\r\n                            <table id=\"scoreTable\" class=\"score-table\">\r\n                            <tbody>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                </tbody>\r\n                            </table>\r\n                            <button id=\"playAgainBtn\" class=\"btn game-btn\">Play Again</button>\r\n                        </div>\r\n                    </div>\r\n                    <!-- Start Menu -->\r\n                    <div id=\"startMenu\" class=\"start-menu-overlay\">\r\n                        <div class=\"menu-btn-block\">\r\n                            <h2>Enter your name:</h2>\r\n                            <input type=\"text\" id=\"startMenuInput\" name=\"userName\" placeholder=\"Tommy zzZ\">\r\n                            <button id=\"startMenuStartBtn\" class=\"btn game-btn\">Start</button>\r\n                            <button id=\"startMenuSoundBtn\" class=\"btn game-btn\">Sound:on</button>\r\n                        </div>\r\n                    </div>\r\n                    <!-- inGame UI -->\r\n                    <div id=\"inGameUI\" class=\"in-game-ui-wrapper\">\r\n                        <div class=\"player-block\">\r\n                            <span id=\"playerName\" class=\"name\">Player</span>\r\n                            <div id=\"playerHealthBar\" class=\"player-health-bar\"  ><div id=\"playerH\" class=\"hb-fl\"></div></div>\r\n                        </div>\r\n                        <div id = \"score\" class=\"score\">score</div>\r\n                        <div class=\"enemy-block\">\r\n                            <p id=\"enemyName\" class=\"name\"></p>\r\n                            <div id=\"enemyHealthBar\" class=\"enemy-health-bar\" ><div id=\"enemyH\" class=\"hb-fl\"></div></div>\r\n                            <p id=\"enemyNick\" class=\"nick\"></p>\r\n                        </div>\r\n                        <div class=\"down-btn-ui-block\">\r\n                            <button id=\"turnMainBtn\" class=\"game-btn\" disabled>Your Turn </button>\r\n                        </div>\r\n                    </div>\r\n\r\n\r\n                    <!-- Modal Menu -->\r\n                    <div id=\"modalMenu\" class=\"modal-menu\">\r\n                        <button id=\"closeModalBtn\" class = \"close-element\">x</button>\r\n                    </div>\r\n\r\n\r\n                    <!-- Small Modal Menu -->\r\n                    <div id=\"smallModalMenu\" class=\"modal-menu small-modal-menu\">\r\n                        <div id=\"earthBtn\"class=\"spell-wrapper menu-el earth\">\r\n                            <p>Earth</p>\r\n                        </div>\r\n                        <div id=\"waterBtn\"class=\"spell-wrapper menu-el water\">\r\n                            <p>Water</p>\r\n                        </div>\r\n                        <div id=\"fireBtn\"class=\"spell-wrapper menu-el fire\">\r\n                            <p>Fire</p>\r\n                        </div>\r\n                        <div id=\"poisonBtn\"class=\"spell-wrapper menu-el poison\">\r\n                            <p>Poison</p>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </section>';";
 
 /***/ }),
 
@@ -64913,47 +64914,123 @@ window.Collision = {
 /*!************************************!*\
   !*** ./src/js/components/input.js ***!
   \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: bindKeyboardNavTo, ksortable, keysSimple */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-(function () {
-    var pressedKeys = {};
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bindKeyboardNavTo", function() { return bindKeyboardNavTo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ksortable", function() { return ksortable; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "keysSimple", function() { return keysSimple; });
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_0__);
 
-    function setKey(event, status) {
-        var code = event.keyCode;
-        var key;
 
-        switch (code) {
-            case 13:
-                key = 'ENTER';break;
 
-            default:
-                // Convert ASCII codes to letters
-                key = String.fromCharCode(code);
-        }
+var pressedKeys = {};
 
-        pressedKeys[key] = status;
+function setKey(event, status) {
+    var key;
+    var code = event.key;
+    switch (code) {
+        case 'Enter':
+            key = 'ENTER';break;
+
+        case 'ArrowUp':
+        case 'w':
+            key = 'UP';break;
+
+        case 'ArrowDown':
+        case 's':
+            key = 'DOWN';break;
+
+        case 'ArrowLeft':
+        case 'a':
+            key = 'LEFT';break;
+
+        case 'ArrowRight':
+        case 'd':
+            key = 'RIGHT';break;
+
+        default:
+            // Convert ASCII codes to letters
+            key = code.toUpperCase();
     }
 
-    document.addEventListener('keydown', function (e) {
-        // e.preventDefault();
-        setKey(e, true);
-    });
+    pressedKeys[key] = status;
+}
 
-    document.addEventListener('keyup', function (e) {
-        setKey(e, false);
-    });
+document.addEventListener('keydown', function (e) {
 
-    window.addEventListener('blur', function () {
-        pressedKeys = {};
-    });
+    setKey(e, true);
+});
 
-    window.input = {
-        isDown: function (key) {
-            return pressedKeys[key.toUpperCase()];
+document.addEventListener('keyup', function (e) {
+    event.preventDefault();
+    setKey(e, false);
+});
+
+window.addEventListener('blur', function () {
+    event.preventDefault();
+    pressedKeys = {};
+});
+
+window.input = {
+    isDown: function (key) {
+        return pressedKeys[key.toUpperCase()];
+    }
+};
+
+function bindKeyboardNavTo(parent) {}
+
+let spaceWasPressed = false;
+
+function ksortable(target, options) {
+    $(target).sortable(options);
+    $(target).disableSelection(options);
+    $('.answer').first().focus();
+    $('.answer').attr('tabindex', 0).on('keydown', function (event) {
+        if (event.key == ' ') {
+            console.log(event.key);
+            event.preventDefault();
+            if (spaceWasPressed == false) spaceWasPressed = true;else spaceWasPressed = false;
         }
-    };
-})();
+        if (event.key == 'ArrowLeft' || event.key == 'ArrowUp') {
+            // left or up
+            if (spaceWasPressed) {
+                event.preventDefault();
+                $(this).insertBefore($(this).prev());
+                $(this).focus();
+            } else {
+                $(this).prev().focus();
+            }
+        }
+        if (event.key == 'ArrowRight' || event.key == 'ArrowDown') {
+            // right or down
+            if (spaceWasPressed) {
+                $(this).insertAfter($(this).next());
+                event.preventDefault();
+                $(this).focus();
+            } else {
+                $(this).next().focus();
+            }
+        }
+        if (event.key == 'Tab') {
+            event.preventDefault();
+            if (event.shiftKey) {
+                $(this).next().focus();
+            } else {
+                $(this).prev().focus();
+            }
+        }
+    });
+}
+
+function keysSimple(parent, choosenAnswer) {
+
+    // parent.children('.answer').first().focus();
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -65237,7 +65314,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_sprite_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_sprite_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_animator_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/animator.js */ "./src/js/components/animator.js");
 /* harmony import */ var _components_input_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/input.js */ "./src/js/components/input.js");
-/* harmony import */ var _components_input_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_input_js__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _components_renderer_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/renderer.js */ "./src/js/components/renderer.js");
 /* harmony import */ var _components_renderer_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_renderer_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _components_collision_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/collision.js */ "./src/js/components/collision.js");
@@ -65459,12 +65535,24 @@ function initGame(canvas) {
     // Update game objects
     function update(e, dt, entities) {
         gameTime += dt;
-        if (window.input.isDown('enter') && _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["checkEnterButton"]) {
-            _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["onAnswerSubmit"]();
-            _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["setCheckEnterButton"](false);
-        }
+        // if(window.input.isDown('enter') && uiM.checkEnterButton){
+        //     uiM.onAnswerSubmit();
+        //     uiM.setCheckEnterButton(false);
+        // }
     };
     //************************************************************* */
+    $('#startMenu').find('#startMenuInput').first().focus();
+    console.log($('#startMenu').css("display"));
+    $(document).on("keydown", event => {
+        if (event.key == 'Enter') {
+            if ($('#startMenu').css("display") != 'none' && $('#startMenu').css("display") != undefined) {
+                console.log('eeee');
+                console.log($('#startMenu').css("display"));
+                $('#startMenuStartBtn').click();
+            }
+        }
+    });
+
     $('#startMenuStartBtn').click(function () {
         if (resources.isReady()) {
             initPlayField();
@@ -65492,7 +65580,7 @@ function initGame(canvas) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
 /* harmony import */ var _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../managers/uiM.js */ "./src/js/managers/uiM.js");
 /* harmony import */ var _managers_monsterNameM_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../managers/monsterNameM.js */ "./src/js/managers/monsterNameM.js");
 
@@ -65509,16 +65597,22 @@ function init() {
     _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["turnMainBtn"].click(e => {
         _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["openSmallModalMenu"]();
     });
-    //Module Menu
-    _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["closeModalBtn"].click(e => {
-        _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["closeModalMenu"]();
+
+    $(document).on("keydown", () => {
+        if ($('#inGameUI').css("display") != 'none' && $('#startMenu').css("display") != undefined && !_managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["turnMainBtn"].prop("disabled")) {
+            console.log('hahaha');
+            console.log(_managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["turnMainBtn"].prop("disabled"));
+            if (event.key == 'Enter') {
+                _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["turnMainBtn"].click();
+            }
+        }
     });
+    //Module Menu
+
 
     //Small Module Menu
-    _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["smallModalMenu"].click(e => {
-        _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["onSpellSubmit"](e);
-    });
 }
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -66159,7 +66253,7 @@ let LevelManager = {
     // Game over
     onGameOver: function () {
         console.log("we are on gameover");
-        $('#gameOverMenu').css('z-index', '2');
+        $('#gameOverMenu').css('display', 'block');
         s.isGameOver = true;
 
         let currentUser = ["" + this.getUserName(), +this.getScore()];
@@ -66168,15 +66262,20 @@ let LevelManager = {
         _uiM_js__WEBPACK_IMPORTED_MODULE_1__["fillTable"](_components_storage__WEBPACK_IMPORTED_MODULE_2__["storage"].setUserToStorage(currentUser));
     },
     startGame: function () {
-        $('#startMenu').css('z-index', '0');
+        $('#startMenu').css('display', 'none');
+        $('#inGameUI').css('display', 'block');
+
         s.isGameOver = false;
         s.gameTime = 0;
         s.score = 0;
+        _uiM_js__WEBPACK_IMPORTED_MODULE_1__["enableTurnMainBtn"]();
     },
 
     goToMainMenu: function () {
-        $('#gameOverMenu').css('z-index', '0');
-        $('#startMenu').css('z-index', '2');
+        $('#gameOverMenu').css('display', 'none');
+        $('#startMenu').css('display', '');
+        $('#startMenu').find('#startMenuInput').first().focus();
+        $('#inGameUI').css('display', 'none');
         // find(entities,{'name':'player'}).pos = [50, Renderer.settings.canvas.height / 2];
     },
     displayScore() {
@@ -66412,25 +66511,36 @@ async function waitFor(msec) {
 
 function openModalMenu() {
     _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["loadTo"]('#modalMenu');
+    _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["tasksMenu"].find('button').first().focus();
     _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["tasksMenu"].on('tasksMenuSubmitted', () => {
         _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["clear"]();
         instantiateTask(_tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["selectedTask"]);
     });
     disableTurnMainBtn();
-    modalMenu.css("z-index", "1");
+    modalMenu.css("display", "block");
+
+    closeModalBtn.click(e => {
+        closeModalMenu();
+    });
+    $(document).on('keydown', event => {
+        if (event.key == 'Escape') {
+            closeModalBtn.click();
+        }
+    });
 }
 
 function instantiateTask(name) {
     currTask = _tasks_taskManager__WEBPACK_IMPORTED_MODULE_0__["generateTask"](name);
     currTask.instantiateHtmlAndJsTo('#modalMenu');
+
     currTask.taskBlock.on('answerSubmitted', () => {
         _managers_LevelM__WEBPACK_IMPORTED_MODULE_2__["default"].setTaskSolved(currTask.answerState);
         if (currTask.answerState) {
-            waitFor(900).then(() => {
+            waitFor(2000).then(() => {
                 closeModalMenu();events.trigger('playerTurn');
             });
         } else {
-            waitFor(900).then(() => {
+            waitFor(2000).then(() => {
                 closeModalMenu();events.trigger('enemyTurn');
             });
         }
@@ -66438,7 +66548,7 @@ function instantiateTask(name) {
 }
 
 function closeModalMenu() {
-    modalMenu.css("z-index", "0");
+    modalMenu.css("display", "none");
     if (currTask != null) {
         currTask.clear();
     };
@@ -66467,16 +66577,39 @@ function enableCloseModalBtn() {
 // *************************** Small modal Menu ********************************
 
 function closeSmallModalMenu() {
-    smallModalMenu.css("z-index", "0");
+    smallModalMenu.css("display", "none");
+    smallModalMenu.children('.menu-el').attr('tabindex', 0).off('keydown');
+    smallModalMenu.off('click');
 }
 
 function openSmallModalMenu() {
-    smallModalMenu.css("z-index", "1");
+    smallModalMenu.css("display", "block");
+    disableTurnMainBtn();
+
+    smallModalMenu.click(e => {
+        onSpellSubmit(e.target);
+    });
+
+    smallModalMenu.children('.menu-el').attr('tabindex', 0).first().focus();
+    smallModalMenu.children('.menu-el').attr('tabindex', 0).on('keydown', event => {
+        let ct = event.currentTarget;
+        if (event.key == 'ArrowLeft' || event.key == 'ArrowUp') {
+            // left or up
+            $(ct).prev().focus();
+        }
+        if (event.key == 'ArrowRight' || event.key == 'ArrowDown') {
+            // right or down
+            $(ct).next().focus();
+        }
+        if (event.key == 'Enter') {
+            // right or down
+            onSpellSubmit(ct);
+        }
+    });
 }
 
-function onSpellSubmit(e) {
-    console.log($(e.target).html());
-    _managers_LevelM__WEBPACK_IMPORTED_MODULE_2__["default"].setUserSpell($(e.target).html().toLocaleLowerCase());
+function onSpellSubmit(elem) {
+    _managers_LevelM__WEBPACK_IMPORTED_MODULE_2__["default"].setUserSpell($(elem).html().toLocaleLowerCase());
     closeSmallModalMenu();
     openModalMenu();
 }
@@ -66529,13 +66662,19 @@ function createCanvas() {
     $('#game').append(canvas);
     return canvas;
 }
-
-$('.play-btn').on('click', function () {
+$(document).on("keydown", event => {
+    if (event.key == 'Enter') {
+        $('#playStartBtn').click();
+    }
+});
+$('#playStartBtn').on('click', function () {
+    console.log('ufff');
     initPage('game', '.main-content-wrapper');
     $('.main-content-wrapper').addClass('alt');
     resources.load(['img/entities.png', 'img/attacks.png', 'img/explosions.png', 'img/terrain.jpg', 'img/terrain2.jpg']);
     events.on("resourcesWasLoaded", () => {
         Object(_controllers_GameC__WEBPACK_IMPORTED_MODULE_1__["default"])(createCanvas());
+        // $('#playStartBtn').off("keydown");
     });
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
@@ -66553,7 +66692,7 @@ $('.play-btn').on('click', function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
 let taskData = {
-    description: "Insert latter:",
+    description: "Insert char:",
     words: ['cold', 'premium', 'monitor', 'keyboard', 'skate', 'kingdom', 'deadland', 'shift', 'light'],
     symbols: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'o', 'p', 'w', 'x', 'y', 'z']
 };
@@ -66569,7 +66708,7 @@ let taskData = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n    <div id=\"engToRusTask\" class = \"task eng-to-rus-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            <button class=\"game-btn variant-btn\">1</button>\r\n            <button class=\"game-btn variant-btn\">2</button>\r\n            <button class=\"game-btn variant-btn\">3</button>\r\n            <button class=\"game-btn variant-btn\">4</button>\r\n        </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n        <div class=\"submit-block\"></div>\r\n    </div>\r\n\r\n";
+module.exports = "\r\n    <div id=\"insertCharTask\" class = \"task insert-char-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            <button class=\"game-btn variant-btn answer\">1</button>\r\n            <button class=\"game-btn variant-btn answer\">2</button>\r\n            <button class=\"game-btn variant-btn answer\">3</button>\r\n            <button class=\"game-btn variant-btn answer\">4</button>\r\n        </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n        <div class=\"submit-block\"></div>\r\n    </div>\r\n\r\n";
 
 /***/ }),
 
@@ -66627,7 +66766,7 @@ class InsertCharTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] 
     instantiateHtmlAndJsTo(parent) {
         this.parent = parent;
         $(parent).append(_index_html__WEBPACK_IMPORTED_MODULE_0___default.a);
-        this.taskBlock = $(parent).children('#engToRusTask');
+        this.taskBlock = $(parent).children('#insertCharTask');
         this.answerBlock = this.taskBlock.find("#answerBlock");
         this.verdictBlock = this.taskBlock.find("#verdictBlock");
 
@@ -66638,6 +66777,22 @@ class InsertCharTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] 
         this.answerBlock.children('button').each((i, e) => {
             $(e).html(this.answerVariants[i]);
         });
+        this.clickedBtn = this.answerBlock.children('button').first();
+        this.answerBlock.children('.answer').first().focus();
+        this.answerBlock.children('.answer').attr('tabindex', 0).on('keydown', event => {
+            let ct = event.currentTarget;
+            if (event.key == 'ArrowLeft') {
+                // left or up
+                $(ct).prev().focus();
+                this.clickedBtn = $(ct).prev();
+            }
+            if (event.key == 'ArrowRight') {
+                // right or down
+                $(ct).next().focus();
+                this.clickedBtn = $(ct).next();
+            }
+        });
+
         this.answerBlock.children('button').click(e => {
             this.clickedBtn = $(e.currentTarget);
             console.log(e.currentTarget);
@@ -66648,10 +66803,8 @@ class InsertCharTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] 
     checkAnswer(userAnswer) {
         console.log(typeof this.answer + "  " + typeof userAnswer);
         if (this.answer === userAnswer) {
-            console.log('Hey!True');
             return true;
         } else {
-            console.log('Hey!False');
             return false;
         }
     }
@@ -66665,12 +66818,13 @@ class InsertCharTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] 
     onAnswerSubmit() {
         this.disablevariantBtns();
         if (this.checkAnswer(this.clickedBtn.html())) {
+            // this.answerBlock.children('.answer').addClass("correct");
             this.clickedBtn.addClass("correct");
-            this.clickedBtn.html("Correct!");
+            // this.clickedBtn.html("Correct!");
             this.answerState = true;
         } else {
+            // this.answerBlock.children('.answer').addClass("wrong");
             this.clickedBtn.addClass("wrong");
-            this.clickedBtn.html("Wrong!");
             this.verdictBlock.find("#verdict").html(this.answer);
             this.answerState = false;
         }
@@ -66690,6 +66844,626 @@ class InsertCharTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] 
 /*!********************************************!*\
   !*** ./src/js/tasks/InsertChar/index.scss ***!
   \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/js/tasks/capital/data.js":
+/*!**************************************!*\
+  !*** ./src/js/tasks/capital/data.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
+let taskData = {
+        description: "Enter Capital of: ",
+        pairs: [['Latvia', 'Riga'], ['Lithuania', 'Vilnius'], ['Ireland', 'Dublin'], ['Italy', 'Rome'], ['Japan', 'Tokyo']]
+};
+
+
+
+/***/ }),
+
+/***/ "./src/js/tasks/capital/index.html":
+/*!*****************************************!*\
+  !*** ./src/js/tasks/capital/index.html ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n    <div id=\"capitalTask\" class = \"task capital-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            <input id=\"answerInput\" type=\"text\" >\r\n        </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n\r\n        <div id=\"submitBlock\" class=\"block submit-block\">\r\n            <button id=\"readyBtn\" class=\"game-btn\">Ready</button>\r\n        </div>\r\n    </div>\r\n\r\n";
+
+/***/ }),
+
+/***/ "./src/js/tasks/capital/index.js":
+/*!***************************************!*\
+  !*** ./src/js/tasks/capital/index.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CapitalTask; });
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/capital/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/capital/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/capital/data.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+
+
+
+
+
+
+class CapitalTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
+    constructor() {
+        super("capital", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
+        this.taskBlock;
+        this.answerInput;
+        this.readyBtn;
+        this.verdictBlock;
+        self = this;
+    }
+
+    getQuestion() {
+        let question;
+        let pair = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(_data__WEBPACK_IMPORTED_MODULE_3__["default"].pairs);
+        question = pair[0];
+        //     question      devquestion
+        return [pair[0], pair];
+    }
+
+    getAnswer(q) {
+        return q[1];
+    }
+
+    instantiateHtmlAndJsTo(parent) {
+        this.parent = parent;
+        $(parent).append(_index_html__WEBPACK_IMPORTED_MODULE_0___default.a);
+        this.taskBlock = $(parent).children('#capitalTask');
+        this.answerInput = this.taskBlock.find("#answerInput");
+        this.readyBtn = this.taskBlock.find("#readyBtn");
+        this.verdictBlock = this.taskBlock.find("#verdictBlock");
+        console.log('hoo');
+        this.taskBlock.find('#description').html(this.description);
+        this.taskBlock.find('#question').html(this.question);
+
+        this.readyBtn.click(() => {
+            this.onAnswerSubmit();
+        });
+    }
+
+    checkAnswer(userAnswer) {
+
+        if (this.answer == userAnswer) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    onAnswerSubmit() {
+        this.disableAnswerInput();
+        this.disableReadyBtn();
+        if (this.checkAnswer(this.answerInput.val())) {
+            this.readyBtn.addClass("correct");
+            this.readyBtn.html("Correct!");
+            this.answerState = true;
+        } else {
+            this.readyBtn.addClass("wrong");
+            this.readyBtn.html("Wrong!");
+            this.verdictBlock.find("#verdict").html(this.answer);
+            this.answerState = false;
+        }
+        let e = $.Event("answerSubmitted");
+        this.taskBlock.trigger(e);
+    }
+
+    clear() {
+        this.taskBlock.remove();
+    }
+
+    disableAnswerInput() {
+        this.answerInput.prop("disabled", true);
+    }
+
+    enableAnswerInput() {
+        this.answerInput.prop('disabled', false);
+    }
+
+    disableReadyBtn() {
+        this.readyBtn.prop('disabled', true);
+    }
+
+    enableReadyBtn() {
+        this.readyBtn.prop('disabled', false);
+    }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/js/tasks/capital/index.scss":
+/*!*****************************************!*\
+  !*** ./src/js/tasks/capital/index.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/js/tasks/commonWord/data.js":
+/*!*****************************************!*\
+  !*** ./src/js/tasks/commonWord/data.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
+let taskData = {
+        description: "The common word for: ",
+        words: [[['apple', 'banana', "ananas", 'orangeg', 'bilberry', 'currat', 'grape'], "fruits"], [['dog', 'cat', 'rabbit', 'crocodile', 'monkey', 'jackal', 'duck'], "animals"], [['spider', 'ant', 'bee', 'wasp', 'horntail', 'butterfly', 'moth'], "insects"]],
+        numberOfWords: 3
+};
+
+
+
+/***/ }),
+
+/***/ "./src/js/tasks/commonWord/index.html":
+/*!********************************************!*\
+  !*** ./src/js/tasks/commonWord/index.html ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n    <div id=\"commonWordTask\" class = \"task common-word-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            <input id=\"answerInput\" type=\"text\" >\r\n        </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n\r\n        <div id=\"submitBlock\" class=\"block submit-block\">\r\n            <button id=\"readyBtn\" class=\"game-btn\">Ready</button>\r\n        </div>\r\n    </div>\r\n\r\n";
+
+/***/ }),
+
+/***/ "./src/js/tasks/commonWord/index.js":
+/*!******************************************!*\
+  !*** ./src/js/tasks/commonWord/index.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CommonWordTask; });
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/commonWord/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/commonWord/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/commonWord/data.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+
+
+
+
+
+
+class CommonWordTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
+    constructor() {
+        super("commonWord", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
+        this.taskBlock;
+        this.answerInput;
+        this.readyBtn;
+        this.verdictBlock;
+        self = this;
+    }
+
+    getQuestion() {
+        let question;
+        let words = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(_data__WEBPACK_IMPORTED_MODULE_3__["default"].words);
+        question = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["join"])(Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sampleSize"])(words[0], _data__WEBPACK_IMPORTED_MODULE_3__["default"].numberOfWords), ', ') + " are ";
+        //     question      devquestion
+        return [question, words];
+    }
+
+    getAnswer(q) {
+        return q[1];
+    }
+
+    instantiateHtmlAndJsTo(parent) {
+        this.parent = parent;
+        $(parent).append(_index_html__WEBPACK_IMPORTED_MODULE_0___default.a);
+        this.taskBlock = $(parent).children('#commonWordTask');
+        this.answerInput = this.taskBlock.find("#answerInput");
+        this.readyBtn = this.taskBlock.find("#readyBtn");
+        this.verdictBlock = this.taskBlock.find("#verdictBlock");
+
+        this.taskBlock.find('#description').html(this.desctiption);
+        this.taskBlock.find('#question').html(this.question);
+
+        this.readyBtn.click(() => {
+            this.onAnswerSubmit();
+        });
+    }
+
+    checkAnswer(userAnswer) {
+
+        if (this.answer.toLowerCase() == userAnswer.toLowerCase()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    onAnswerSubmit() {
+        this.disableAnswerInput();
+        this.disableReadyBtn();
+        if (this.checkAnswer(this.answerInput.val())) {
+            this.readyBtn.addClass("correct");
+            this.readyBtn.html("Correct!");
+            this.answerState = true;
+        } else {
+            this.readyBtn.addClass("wrong");
+            this.readyBtn.html("Wrong!");
+            this.verdictBlock.find("#verdict").html(this.answer);
+            this.answerState = false;
+        }
+        let e = $.Event("answerSubmitted");
+        this.taskBlock.trigger(e);
+    }
+
+    clear() {
+        this.taskBlock.remove();
+    }
+
+    disableAnswerInput() {
+        this.answerInput.prop("disabled", true);
+    }
+
+    enableAnswerInput() {
+        this.answerInput.prop('disabled', false);
+    }
+
+    disableReadyBtn() {
+        this.readyBtn.prop('disabled', true);
+    }
+
+    enableReadyBtn() {
+        this.readyBtn.prop('disabled', false);
+    }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/js/tasks/commonWord/index.scss":
+/*!********************************************!*\
+  !*** ./src/js/tasks/commonWord/index.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/js/tasks/days/data.js":
+/*!***********************************!*\
+  !*** ./src/js/tasks/days/data.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
+let taskData = {
+        description: "What day comes after: ",
+        days: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+};
+
+
+
+/***/ }),
+
+/***/ "./src/js/tasks/days/index.html":
+/*!**************************************!*\
+  !*** ./src/js/tasks/days/index.html ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n    <div id=\"daysTask\" class = \"task days-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            <input id=\"answerInput\" type=\"text\" >\r\n        </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n\r\n        <div id=\"submitBlock\" class=\"block submit-block\">\r\n            <button id=\"readyBtn\" class=\"game-btn\">Ready</button>\r\n        </div>\r\n    </div>\r\n\r\n";
+
+/***/ }),
+
+/***/ "./src/js/tasks/days/index.js":
+/*!************************************!*\
+  !*** ./src/js/tasks/days/index.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DaysTask; });
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/days/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/days/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/days/data.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+
+
+
+
+
+
+class DaysTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
+    constructor() {
+        super("days", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
+        this.taskBlock;
+        this.answerInput;
+        this.readyBtn;
+        this.verdictBlock;
+        self = this;
+    }
+
+    getQuestion() {
+        let question;
+        let i = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["random"])(0, _data__WEBPACK_IMPORTED_MODULE_3__["default"].days.length - 1);
+        let days = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["slice"])(_data__WEBPACK_IMPORTED_MODULE_3__["default"].days, i, i + 2);
+        if (days[1] == undefined) {
+            days[1] = _data__WEBPACK_IMPORTED_MODULE_3__["default"].days[0];
+        }
+        question = "What day comes after " + days[0] + "?";
+        //     question      devquestion
+        return [question, days];
+    }
+
+    getAnswer(q) {
+        return q[1];
+    }
+
+    instantiateHtmlAndJsTo(parent) {
+        this.parent = parent;
+        $(parent).append(_index_html__WEBPACK_IMPORTED_MODULE_0___default.a);
+        this.taskBlock = $(parent).children('#daysTask');
+        this.answerInput = this.taskBlock.find("#answerInput");
+        this.readyBtn = this.taskBlock.find("#readyBtn");
+        this.verdictBlock = this.taskBlock.find("#verdictBlock");
+
+        //  this.taskBlock.find('#description').html(this.question);
+        this.taskBlock.find('#question').html(this.question);
+
+        this.readyBtn.click(() => {
+            this.onAnswerSubmit();
+        });
+    }
+
+    checkAnswer(userAnswer) {
+
+        if (this.answer.toLowerCase() == userAnswer.toLowerCase()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    onAnswerSubmit() {
+        this.disableAnswerInput();
+        this.disableReadyBtn();
+        if (this.checkAnswer(this.answerInput.val())) {
+            this.readyBtn.addClass("correct");
+            this.readyBtn.html("Correct!");
+            this.answerState = true;
+        } else {
+            this.readyBtn.addClass("wrong");
+            this.readyBtn.html("Wrong!");
+            this.verdictBlock.find("#verdict").html(this.answer);
+            this.answerState = false;
+        }
+        let e = $.Event("answerSubmitted");
+        this.taskBlock.trigger(e);
+    }
+
+    clear() {
+        this.taskBlock.remove();
+    }
+
+    disableAnswerInput() {
+        this.answerInput.prop("disabled", true);
+    }
+
+    enableAnswerInput() {
+        this.answerInput.prop('disabled', false);
+    }
+
+    disableReadyBtn() {
+        this.readyBtn.prop('disabled', true);
+    }
+
+    enableReadyBtn() {
+        this.readyBtn.prop('disabled', false);
+    }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/js/tasks/days/index.scss":
+/*!**************************************!*\
+  !*** ./src/js/tasks/days/index.scss ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/js/tasks/diapason/data.js":
+/*!***************************************!*\
+  !*** ./src/js/tasks/diapason/data.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
+let taskData = {
+        description: "Enten any namber between: ",
+        maxAvaliableNumber: "100",
+        minAvaliableNumber: "0"
+};
+
+
+
+/***/ }),
+
+/***/ "./src/js/tasks/diapason/index.html":
+/*!******************************************!*\
+  !*** ./src/js/tasks/diapason/index.html ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n    <div id=\"diapasonTask\" class = \"task diapason-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            <input id=\"answerInput\" type=\"text\" >\r\n        </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n\r\n        <div id=\"submitBlock\" class=\"block submit-block\">\r\n            <button id=\"readyBtn\" class=\"game-btn\">Ready</button>\r\n        </div>\r\n    </div>\r\n\r\n";
+
+/***/ }),
+
+/***/ "./src/js/tasks/diapason/index.js":
+/*!****************************************!*\
+  !*** ./src/js/tasks/diapason/index.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DiapasonTask; });
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/diapason/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/diapason/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/diapason/data.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+
+
+
+
+
+
+class DiapasonTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
+    constructor() {
+        super("diapason", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
+        this.taskBlock;
+        this.answerInput;
+        this.readyBtn;
+        this.verdictBlock;
+        self = this;
+    }
+
+    getQuestion() {
+        let question;
+        let max, min, sign, copacity;
+        max = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["random"])(_data__WEBPACK_IMPORTED_MODULE_3__["default"].minAvaliableNumber + 2, _data__WEBPACK_IMPORTED_MODULE_3__["default"].maxAvaliableNumber);
+        min = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["random"])(_data__WEBPACK_IMPORTED_MODULE_3__["default"].minAvaliableNumber, max - 2);
+        question = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["join"])([min, "and", max], ' ');
+        //     question      devquestion
+        return [question, [min, max]];
+    }
+
+    getAnswer(q) {
+        return q;
+    }
+
+    instantiateHtmlAndJsTo(parent) {
+        this.parent = parent;
+        $(parent).append(_index_html__WEBPACK_IMPORTED_MODULE_0___default.a);
+        this.taskBlock = $(parent).children('#diapasonTask');
+        this.answerInput = this.taskBlock.find("#answerInput");
+        this.readyBtn = this.taskBlock.find("#readyBtn");
+        this.verdictBlock = this.taskBlock.find("#verdictBlock");
+
+        this.taskBlock.find('#description').html(this.description);
+        this.taskBlock.find('#question').html(this.question);
+
+        this.readyBtn.click(() => {
+            this.onAnswerSubmit();
+        });
+    }
+
+    checkAnswer(userA) {
+        let userAnswer = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["toInteger"])(userA);
+        console.log(userAnswer);
+        console.log(this.answer[0]);
+        console.log(this.answer[1]);
+
+        if (this.answer[0] < userAnswer && this.answer[1] > userAnswer) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    onAnswerSubmit() {
+        this.disableAnswerInput();
+        this.disableReadyBtn();
+        if (this.checkAnswer(this.answerInput.val())) {
+            this.readyBtn.addClass("correct");
+            this.readyBtn.html("Correct!");
+            this.answerState = true;
+        } else {
+            this.readyBtn.addClass("wrong");
+            this.readyBtn.html("Wrong!");
+            this.verdictBlock.find("#verdict").html("must be between " + this.answer[0] + ' and ' + this.answer[1]);
+            this.answerState = false;
+        }
+        let e = $.Event("answerSubmitted");
+        this.taskBlock.trigger(e);
+    }
+
+    clear() {
+        this.taskBlock.remove();
+    }
+
+    disableAnswerInput() {
+        this.answerInput.prop("disabled", true);
+    }
+
+    enableAnswerInput() {
+        this.answerInput.prop('disabled', false);
+    }
+
+    disableReadyBtn() {
+        this.readyBtn.prop('disabled', true);
+    }
+
+    enableReadyBtn() {
+        this.readyBtn.prop('disabled', false);
+    }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/js/tasks/diapason/index.scss":
+/*!******************************************!*\
+  !*** ./src/js/tasks/diapason/index.scss ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -66724,7 +67498,7 @@ let taskData = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n    <div id=\"engToRusTask\" class = \"task eng-to-rus-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            <button class=\"game-btn variant-btn\">1</button>\r\n            <button class=\"game-btn variant-btn\">2</button>\r\n            <button class=\"game-btn variant-btn\">3</button>\r\n            <button class=\"game-btn variant-btn\">4</button>\r\n        </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n        <div class=\"submit-block\"></div>\r\n    </div>\r\n\r\n";
+module.exports = "\r\n    <div id=\"engToRusTask\" class = \"task eng-to-rus-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            <button class=\"game-btn variant-btn answer\">1</button>\r\n            <button class=\"game-btn variant-btn answer\">2</button>\r\n            <button class=\"game-btn variant-btn answer\">3</button>\r\n            <button class=\"game-btn variant-btn answer\">4</button>\r\n        </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n        <div class=\"submit-block\"></div>\r\n    </div>\r\n\r\n";
 
 /***/ }),
 
@@ -66744,7 +67518,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
 /* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/engToRus/data.js");
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+/* harmony import */ var _components_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../components/input */ "./src/js/components/input.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+
+
+
 
 
 
@@ -66754,6 +67532,7 @@ __webpack_require__.r(__webpack_exports__);
 class EngToRusTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
     constructor() {
         super("engToRus", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
+        var self = this;
         this.taskBlock;
         this.description;
         this.question;
@@ -66764,13 +67543,13 @@ class EngToRusTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
     }
 
     getQuestion() {
-        let pair = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(this.data.pairs);
+        let pair = Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["sample"])(this.data.pairs);
         return [pair[0], pair];
     }
 
     getAnswerVariantsArr(answer, feiks) {
-        let tempArr = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["concat"])([Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(feiks), Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(feiks), Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(feiks)], answer);
-        return Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["shuffle"])(tempArr);
+        let tempArr = Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["concat"])([Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["sample"])(feiks), Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["sample"])(feiks), Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["sample"])(feiks)], answer);
+        return Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["shuffle"])(tempArr);
     }
 
     getAnswer(q) {
@@ -66790,7 +67569,25 @@ class EngToRusTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
         this.answerVariants = this.getAnswerVariantsArr(this.answer, this.data.feiks);
         this.answerBlock.children('button').each((i, e) => {
             $(e).html(this.answerVariants[i]);
+            this.clickedBtn = $(e);
         });
+        this.clickedBtn = this.answerBlock.children('button').first();
+
+        this.answerBlock.children('.answer').first().focus();
+        this.answerBlock.children('.answer').attr('tabindex', 0).on('keydown', event => {
+            let ct = event.currentTarget;
+            if (event.key == 'ArrowLeft') {
+                // left or up
+                $(ct).prev().focus();
+                this.clickedBtn = $(ct).prev();
+            }
+            if (event.key == 'ArrowRight') {
+                // right or down
+                $(ct).next().focus();
+                this.clickedBtn = $(ct).next();
+            }
+        });
+
         this.answerBlock.children('button').click(e => {
             this.clickedBtn = $(e.currentTarget);
             console.log(e.currentTarget);
@@ -66817,11 +67614,13 @@ class EngToRusTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
         this.disablevariantBtns();
         if (this.checkAnswer(this.clickedBtn.html())) {
             this.clickedBtn.addClass("correct");
-            this.clickedBtn.html("Correct!");
+            // this.clickedBtn.html("Correct!");
+            this.answerBlock.children('.answer').addClass("correct");
             this.answerState = true;
         } else {
             this.clickedBtn.addClass("wrong");
-            this.clickedBtn.html("Wrong!");
+            // this.clickedBtn.html("Wrong!");
+            this.answerBlock.children('.answer').addClass("wrong");
             this.verdictBlock.find("#verdict").html(this.answer);
             this.answerState = false;
         }
@@ -66841,6 +67640,520 @@ class EngToRusTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 /*!******************************************!*\
   !*** ./src/js/tasks/engToRus/index.scss ***!
   \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/js/tasks/history/data.js":
+/*!**************************************!*\
+  !*** ./src/js/tasks/history/data.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
+let taskData = {
+    description: "Read the question and choose the right answer: ",
+    qa: [['Who had his head chopped off in 1649?', 'Charles I', ['James I', 'James II', 'Charles I', 'Charles II']], ['When was William Shakespeare born?', '1564', ['1554', '1564', '1574', '1584']], ['Approximately how long ago was Stonehenge built?', '5,000 years', ['10,000 years', '7,000 years', '5,000 years', '3,000 years']], ['When did the French revolution begin?', '1789', ['1739', '1564', '1769', '1789']]]
+
+};
+
+
+
+/***/ }),
+
+/***/ "./src/js/tasks/history/index.html":
+/*!*****************************************!*\
+  !*** ./src/js/tasks/history/index.html ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n    <div id=\"historyTask\" class = \"task history-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            \r\n                <div class=\"answer\"><input type=\"radio\" name=\"answer\" id=\"answer1\" value=\"answer1\"><label for=\"answer1\"><span></span></label></div>\r\n                <div class=\"answer\"><input type=\"radio\" name=\"answer\" id=\"answer2\" value=\"answer2\"><label for=\"answer2\"><span></span></label></div>\r\n                <div class=\"answer\"><input type=\"radio\" name=\"answer\" id=\"answer3\" value=\"answer3\"><label for=\"answer3\"><span></span></label></div>\r\n                <div class=\"answer\"><input type=\"radio\" name=\"answer\" id=\"answer4\" value=\"answer4\"><label for=\"answer4\"><span></span></label></div>\r\n           \r\n            </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n        <div class=\"submit-block\">\r\n            <button id=\"readyBtn\" class=\"game-btn\">Ready</button>\r\n        </div>\r\n    </div>\r\n\r\n";
+
+/***/ }),
+
+/***/ "./src/js/tasks/history/index.js":
+/*!***************************************!*\
+  !*** ./src/js/tasks/history/index.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return HistoryTask; });
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/history/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/history/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/history/data.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+
+
+
+
+
+
+class HistoryTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
+    constructor() {
+        super("history", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
+        this.taskBlock;
+        this.description;
+        this.question;
+        this.answerBlock;
+        this.verdictBlock;
+        this.variantBtns;
+        this.answerVariants;
+        this.clickedAnswer;
+        this.readyBtn;
+    }
+
+    getQuestion() {
+        let qa = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(this.data.qa);
+        return [qa[0], qa];
+    }
+
+    getAnswerVariantsArr(answers) {
+        let tempArr = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["concat"])();
+        return Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["shuffle"])(answers);
+    }
+
+    getAnswer(q) {
+        return q[1];
+    }
+
+    instantiateHtmlAndJsTo(parent) {
+        this.parent = parent;
+        $(parent).append(_index_html__WEBPACK_IMPORTED_MODULE_0___default.a);
+        this.taskBlock = $(parent).children('#historyTask');
+        this.answerBlock = this.taskBlock.find("#answerBlock");
+        this.verdictBlock = this.taskBlock.find("#verdictBlock");
+        this.variantBtns = this.answerBlock.children('.answer');
+        this.readyBtn = this.taskBlock.find("#readyBtn");
+
+        this.taskBlock.find('#description').html(this.description);
+        this.taskBlock.find('#question').html(this.question);
+
+        this.answerVariants = this.getAnswerVariantsArr(this.devQuestion[2]);
+        this.variantBtns.each((i, e) => {
+            $(e).find("label").html(this.answerVariants[i]);
+        });
+
+        this.answerBlock.children('.answer').attr('tabindex', 0).first().focus();
+        this.answerBlock.children('.answer').attr('tabindex', 0).on('keydown', event => {
+            event.preventDefault();
+            let ct = event.currentTarget;
+
+            if (event.key == 'ArrowDown') {
+                // left or up
+                $(ct).next().focus();
+                $(ct).next().find("input").prop("checked", true);
+                console.log(event.currentTarget);
+            }
+            if (event.key == 'ArrowUp') {
+                // right or down
+                $(ct).prev().focus();
+                $(ct).prev().find("input").prop("checked", true);
+            }
+        });
+
+        this.readyBtn.click(() => {
+            this.onAnswerSubmit();
+        });
+    }
+
+    checkAnswer(userAnswer) {
+        console.log(this.answer + "  " + userAnswer);
+        if (this.answer === userAnswer) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    disableVariantBtns() {
+        this.variantBtns.find('input').each((i, e) => {
+            $(e).prop("disabled", true);
+        });
+    }
+
+    disableReadyBtn() {
+        this.readyBtn.prop('disabled', true);
+    }
+
+    setClickedAnswer() {
+        this.variantBtns.each((i, e) => {
+            if ($(e).find("input").prop("checked")) {
+                this.clickedAnswer = $(e);
+            }
+        });
+    }
+
+    onAnswerSubmit() {
+        this.setClickedAnswer();
+        if (typeof this.clickedAnswer == 'undefined') {
+            return;
+        }
+        console.log(this.clickedAnswer);
+        this.disableVariantBtns();
+        this.disableReadyBtn();
+        if (this.checkAnswer(this.clickedAnswer.find("label").html())) {
+            this.clickedAnswer.addClass("correct");
+            this.readyBtn.html("Correct!");
+            this.answerState = true;
+        } else {
+            this.clickedAnswer.addClass("wrong");
+            this.readyBtn.html("Wrong!");
+            this.verdictBlock.find("#verdict").html(this.answer);
+            this.answerState = false;
+        }
+        let e = $.Event("answerSubmitted");
+        this.taskBlock.trigger(e);
+    }
+
+    clear() {
+        this.taskBlock.remove();
+    }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/js/tasks/history/index.scss":
+/*!*****************************************!*\
+  !*** ./src/js/tasks/history/index.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/js/tasks/jsQuiz/data.js":
+/*!*************************************!*\
+  !*** ./src/js/tasks/jsQuiz/data.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
+let taskData = {
+    description: "Read the question and choose the right answer: ",
+    qa: [['Inside which HTML element do we put the JavaScript?', '&lt;script&gt;', ['&lt;javascript&gt;', '&lt;scripting&gt;', '&lt;script&gt;', '&lt;js&gt;']], ['How to write an IF statement in JavaScript?', 'if (i == 5)', ['if (i == 5)', 'if i == 5 then', 'if i = 5 then', 'if i = 5']], ['Where is the correct place to insert a JavaScript?', 'The &lt;body&gt; section', ['The &lt;body&gt; section', 'The &lt;head&gt; section', 'All variants', 'The &lt;header&gt; section']], ['How do you write "Hello World" in an alert box?', 'alert("Hello World");', ['msg("Hello World");', 'alert("Hello World");', 'alertBox("Hello World");', 'msgBox("Hello World");']]]
+
+};
+
+
+
+/***/ }),
+
+/***/ "./src/js/tasks/jsQuiz/index.html":
+/*!****************************************!*\
+  !*** ./src/js/tasks/jsQuiz/index.html ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n    <div id=\"jsQuizTask\" class = \"task js-quiz-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            \r\n                <div class=\"answer\"><input type=\"radio\" name=\"answer\" id=\"answer1\" value=\"answer1\"><label for=\"answer1\"><span></span></label></div>\r\n                <div class=\"answer\"><input type=\"radio\" name=\"answer\" id=\"answer2\" value=\"answer2\"><label for=\"answer2\"><span></span></label></div>\r\n                <div class=\"answer\"><input type=\"radio\" name=\"answer\" id=\"answer3\" value=\"answer3\"><label for=\"answer3\"><span></span></label></div>\r\n                <div class=\"answer\"><input type=\"radio\" name=\"answer\" id=\"answer4\" value=\"answer4\"><label for=\"answer4\"><span></span></label></div>\r\n           \r\n            </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n        <div class=\"submit-block\">\r\n            <button id=\"readyBtn\" class=\"game-btn\">Ready</button>\r\n        </div>\r\n    </div>\r\n\r\n";
+
+/***/ }),
+
+/***/ "./src/js/tasks/jsQuiz/index.js":
+/*!**************************************!*\
+  !*** ./src/js/tasks/jsQuiz/index.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return JsQuizTask; });
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/jsQuiz/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/jsQuiz/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/jsQuiz/data.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+
+
+
+
+
+
+class JsQuizTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
+    constructor() {
+        super("jsQuiz", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
+        this.taskBlock;
+        this.description;
+        this.question;
+        this.answerBlock;
+        this.verdictBlock;
+        this.variantBtns;
+        this.answerVariants;
+        this.clickedAnswer;
+        this.readyBtn;
+    }
+
+    getQuestion() {
+        let qa = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(this.data.qa);
+        return [qa[0], qa];
+    }
+
+    getAnswerVariantsArr(answers) {
+        let tempArr = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["concat"])();
+        return Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["shuffle"])(answers);
+    }
+
+    getAnswer(q) {
+        return q[1];
+    }
+
+    instantiateHtmlAndJsTo(parent) {
+        this.parent = parent;
+        $(parent).append(_index_html__WEBPACK_IMPORTED_MODULE_0___default.a);
+        this.taskBlock = $(parent).children('#jsQuizTask');
+        this.answerBlock = this.taskBlock.find("#answerBlock");
+        this.verdictBlock = this.taskBlock.find("#verdictBlock");
+        this.variantBtns = this.answerBlock.children('.answer');
+        this.readyBtn = this.taskBlock.find("#readyBtn");
+
+        this.taskBlock.find('#description').html(this.description);
+        this.taskBlock.find('#question').html(this.question);
+
+        this.answerVariants = this.getAnswerVariantsArr(this.devQuestion[2]);
+        this.variantBtns.each((i, e) => {
+            $(e).find("label").html(this.answerVariants[i]);
+        });
+
+        this.readyBtn.click(() => {
+            this.onAnswerSubmit();
+        });
+    }
+
+    checkAnswer(userAnswer) {
+        console.log(this.answer + "  " + userAnswer);
+        if (this.answer === userAnswer) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    disableVariantBtns() {
+        this.variantBtns.find('input').each((i, e) => {
+            $(e).prop("disabled", true);
+        });
+    }
+
+    disableReadyBtn() {
+        this.readyBtn.prop('disabled', true);
+    }
+
+    setClickedAnswer() {
+        this.variantBtns.each((i, e) => {
+            if ($(e).find("input").prop("checked")) {
+                this.clickedAnswer = $(e);
+            }
+        });
+    }
+
+    onAnswerSubmit() {
+        this.setClickedAnswer();
+        if (typeof this.clickedAnswer == 'undefined') {
+            return;
+        }
+        console.log(this.clickedAnswer);
+        this.disableVariantBtns();
+        this.disableReadyBtn();
+        if (this.checkAnswer(this.clickedAnswer.find("label").html())) {
+            this.clickedAnswer.addClass("correct");
+            this.readyBtn.html("Correct!");
+            this.answerState = true;
+        } else {
+            this.clickedAnswer.addClass("wrong");
+            this.readyBtn.html("Wrong!");
+            this.verdictBlock.find("#verdict").html(this.answer);
+            this.answerState = false;
+        }
+        let e = $.Event("answerSubmitted");
+        this.taskBlock.trigger(e);
+    }
+
+    clear() {
+        this.taskBlock.remove();
+    }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/js/tasks/jsQuiz/index.scss":
+/*!****************************************!*\
+  !*** ./src/js/tasks/jsQuiz/index.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/js/tasks/legs/data.js":
+/*!***********************************!*\
+  !*** ./src/js/tasks/legs/data.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
+let taskData = {
+        description: "What is the colour of: ",
+        pairs: [['chicken', 'two'], ['dog', 'four'], ['skalapendra', 'fourteen'], ['elephant', 'four'], ['human', 'two'], ['ant', 'six'], ['spider', 'eight']]
+};
+
+
+
+/***/ }),
+
+/***/ "./src/js/tasks/legs/index.html":
+/*!**************************************!*\
+  !*** ./src/js/tasks/legs/index.html ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n    <div id=\"rainbowTask\" class = \"task rainbow-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            <input id=\"answerInput\" type=\"text\" >\r\n        </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n\r\n        <div id=\"submitBlock\" class=\"block submit-block\">\r\n            <button id=\"readyBtn\" class=\"game-btn\">Ready</button>\r\n        </div>\r\n    </div>\r\n\r\n";
+
+/***/ }),
+
+/***/ "./src/js/tasks/legs/index.js":
+/*!************************************!*\
+  !*** ./src/js/tasks/legs/index.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return LegsTask; });
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/legs/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/legs/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/legs/data.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+
+
+
+
+
+
+class LegsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
+    constructor() {
+        super("legs", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
+        this.taskBlock;
+        this.answerInput;
+        this.readyBtn;
+        this.verdictBlock;
+        self = this;
+    }
+
+    getQuestion() {
+        let question;
+        let pair = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(_data__WEBPACK_IMPORTED_MODULE_3__["default"].pairs);
+        question = "How many legs does " + pair[0] + " have?";
+        //     question      devquestion
+        return [question, pair];
+    }
+
+    getAnswer(q) {
+        return q[1];
+    }
+
+    instantiateHtmlAndJsTo(parent) {
+        this.parent = parent;
+        $(parent).append(_index_html__WEBPACK_IMPORTED_MODULE_0___default.a);
+        this.taskBlock = $(parent).children('#rainbowTask');
+        this.answerInput = this.taskBlock.find("#answerInput");
+        this.readyBtn = this.taskBlock.find("#readyBtn");
+        this.verdictBlock = this.taskBlock.find("#verdictBlock");
+
+        //  this.taskBlock.find('#description').html(this.question);
+        this.taskBlock.find('#question').html(this.question);
+
+        this.readyBtn.click(() => {
+            this.onAnswerSubmit();
+        });
+    }
+
+    checkAnswer(userAnswer) {
+
+        if (this.answer.toLowerCase() == userAnswer.toLowerCase()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    onAnswerSubmit() {
+        this.disableAnswerInput();
+        this.disableReadyBtn();
+        if (this.checkAnswer(this.answerInput.val())) {
+            this.readyBtn.addClass("correct");
+            this.readyBtn.html("Correct!");
+            this.answerState = true;
+        } else {
+            this.readyBtn.addClass("wrong");
+            this.readyBtn.html("Wrong!");
+            this.verdictBlock.find("#verdict").html(this.answer);
+            this.answerState = false;
+        }
+        let e = $.Event("answerSubmitted");
+        this.taskBlock.trigger(e);
+    }
+
+    clear() {
+        this.taskBlock.remove();
+    }
+
+    disableAnswerInput() {
+        this.answerInput.prop("disabled", true);
+    }
+
+    enableAnswerInput() {
+        this.answerInput.prop('disabled', false);
+    }
+
+    disableReadyBtn() {
+        this.readyBtn.prop('disabled', true);
+    }
+
+    enableReadyBtn() {
+        this.readyBtn.prop('disabled', false);
+    }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/js/tasks/legs/index.scss":
+/*!**************************************!*\
+  !*** ./src/js/tasks/legs/index.scss ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -66996,6 +68309,501 @@ class MathsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 /*!***************************************!*\
   !*** ./src/js/tasks/maths/index.scss ***!
   \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/js/tasks/order/data.js":
+/*!************************************!*\
+  !*** ./src/js/tasks/order/data.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
+let taskData = {
+        description: "Set in ascended order: ",
+        min: "0",
+        max: "100"
+};
+
+
+
+/***/ }),
+
+/***/ "./src/js/tasks/order/index.html":
+/*!***************************************!*\
+  !*** ./src/js/tasks/order/index.html ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n    <div id=\"orderTask\" class = \"task order-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <ul  id=\"answerBlock\" class=\"block answer-block sortable\">\r\n            <li class=\"ui-state-default game-btn variant-btn answer\">1</li>\r\n            <li class=\"ui-state-default game-btn variant-btn answer\">2</li>\r\n            <li class=\"ui-state-default game-btn variant-btn answer\">3</li>\r\n            <li class=\"ui-state-default game-btn variant-btn answer\">4</li>\r\n            \r\n        </ul>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n        <div class=\"submit-block\">\r\n                <button id=\"readyBtn\" class=\"game-btn\">Ready</button>\r\n        </div>\r\n    </div>\r\n\r\n";
+
+/***/ }),
+
+/***/ "./src/js/tasks/order/index.js":
+/*!*************************************!*\
+  !*** ./src/js/tasks/order/index.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return OrderTask; });
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/order/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/order/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/order/data.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+
+
+class OrderTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
+    constructor() {
+        super("order", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
+        this.taskBlock;
+        this.description;
+        this.question;
+        this.answerBlock;
+        this.verdictBlock;
+        this.answerVariants;
+        this.clickedBtn;
+        this.readyBtn;
+        self = this;
+    }
+
+    getQuestion() {
+        let numbers = Array.from({ length: 4 }, () => Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["random"])(_data__WEBPACK_IMPORTED_MODULE_3__["default"].min, _data__WEBPACK_IMPORTED_MODULE_3__["default"].max));
+        return [numbers, numbers];
+    }
+
+    getVariantsArr(numbers) {
+        return numbers;
+    }
+
+    getAnswer(q) {
+        q = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["join"])(Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sortBy"])(q), ' ');
+        return q;
+    }
+
+    checkAnswer() {
+        let userAnswer = [];
+        this.answerBlock.children('li').each((i, e) => {
+            userAnswer.push($(e).html());
+        });
+        console.log(this.answer + ' ' + userAnswer);
+        userAnswer = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["join"])(userAnswer, ' ');
+        console.log(this.answer + ' ' + userAnswer);
+        if (this.answer == userAnswer) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    disablevariantBtns() {
+        this.answerBlock.children('li').each((i, e) => {
+            $(e).prop("disabled", true);
+        });
+    }
+
+    onAnswerSubmit() {
+        this.disablevariantBtns();
+        if (this.checkAnswer()) {
+            this.answerBlock.children('li').addClass("correct");
+            this.readyBtn.addClass("correct");
+            this.readyBtn.html("Correct!");
+            this.answerState = true;
+        } else {
+            this.answerBlock.children('li').addClass("wrong");
+            this.verdictBlock.find("#verdict").html(this.answer);
+            this.readyBtn.addClass("wrong");
+            this.readyBtn.html("Wrong!");
+            this.answerState = false;
+        }
+        let e = $.Event("answerSubmitted");
+        this.taskBlock.trigger(e);
+    }
+
+    clear() {
+        this.taskBlock.remove();
+    }
+
+    instantiateHtmlAndJsTo(parent) {
+        this.parent = parent;
+        $(parent).append(_index_html__WEBPACK_IMPORTED_MODULE_0___default.a);
+        this.taskBlock = $(parent).children('#orderTask');
+        this.answerBlock = this.taskBlock.find("#answerBlock");
+        this.verdictBlock = this.taskBlock.find("#verdictBlock");
+        this.readyBtn = this.taskBlock.find("#readyBtn");
+
+        this.taskBlock.find('#description').html(this.description);
+        // this.taskBlock.find('#question').html(this.question);
+
+        this.answerVariants = this.getVariantsArr(this.devQuestion);
+        this.answerBlock.children('li').each((i, e) => {
+            $(e).html(this.answerVariants[i]);
+        });
+
+        this.readyBtn.click(() => {
+            this.onAnswerSubmit();
+        });
+
+        $(function () {
+            $(".sortable").sortable();
+            $(".sortable").disableSelection();
+        });
+    }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/js/tasks/order/index.scss":
+/*!***************************************!*\
+  !*** ./src/js/tasks/order/index.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/js/tasks/rainbow/data.js":
+/*!**************************************!*\
+  !*** ./src/js/tasks/rainbow/data.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
+let taskData = {
+        description: "What is the colour of: ",
+        pairs: [['first', 'Red'], ['second', 'Orange'], ['third', 'Yellow'], ['fourth', 'Green'], ['fifth', 'Blue'], ['sixth', 'Indigo'], ['seventh', 'Violet']]
+};
+
+
+
+/***/ }),
+
+/***/ "./src/js/tasks/rainbow/index.html":
+/*!*****************************************!*\
+  !*** ./src/js/tasks/rainbow/index.html ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n    <div id=\"rainbowTask\" class = \"task rainbow-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            <input id=\"answerInput\" type=\"text\" >\r\n        </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n\r\n        <div id=\"submitBlock\" class=\"block submit-block\">\r\n            <button id=\"readyBtn\" class=\"game-btn\">Ready</button>\r\n        </div>\r\n    </div>\r\n\r\n";
+
+/***/ }),
+
+/***/ "./src/js/tasks/rainbow/index.js":
+/*!***************************************!*\
+  !*** ./src/js/tasks/rainbow/index.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RainbowTask; });
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/rainbow/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/rainbow/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/rainbow/data.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+
+
+
+
+
+
+class RainbowTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
+    constructor() {
+        super("rainbow", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
+        this.taskBlock;
+        this.answerInput;
+        this.readyBtn;
+        this.verdictBlock;
+        self = this;
+    }
+
+    getQuestion() {
+        let question;
+        let pair = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(_data__WEBPACK_IMPORTED_MODULE_3__["default"].pairs);
+        question = "What is the " + pair[0] + " color of rainbow?";
+        //     question      devquestion
+        return [question, pair];
+    }
+
+    getAnswer(q) {
+        return q[1];
+    }
+
+    instantiateHtmlAndJsTo(parent) {
+        this.parent = parent;
+        $(parent).append(_index_html__WEBPACK_IMPORTED_MODULE_0___default.a);
+        this.taskBlock = $(parent).children('#rainbowTask');
+        this.answerInput = this.taskBlock.find("#answerInput");
+        this.readyBtn = this.taskBlock.find("#readyBtn");
+        this.verdictBlock = this.taskBlock.find("#verdictBlock");
+
+        //  this.taskBlock.find('#description').html(this.question);
+        this.taskBlock.find('#question').html(this.question);
+
+        this.readyBtn.click(() => {
+            this.onAnswerSubmit();
+        });
+    }
+
+    checkAnswer(userAnswer) {
+
+        if (this.answer.toLowerCase() == userAnswer.toLowerCase()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    onAnswerSubmit() {
+        this.disableAnswerInput();
+        this.disableReadyBtn();
+        if (this.checkAnswer(this.answerInput.val())) {
+            this.readyBtn.addClass("correct");
+            this.readyBtn.html("Correct!");
+            this.answerState = true;
+        } else {
+            this.readyBtn.addClass("wrong");
+            this.readyBtn.html("Wrong!");
+            this.verdictBlock.find("#verdict").html(this.answer);
+            this.answerState = false;
+        }
+        let e = $.Event("answerSubmitted");
+        this.taskBlock.trigger(e);
+    }
+
+    clear() {
+        this.taskBlock.remove();
+    }
+
+    disableAnswerInput() {
+        this.answerInput.prop("disabled", true);
+    }
+
+    enableAnswerInput() {
+        this.answerInput.prop('disabled', false);
+    }
+
+    disableReadyBtn() {
+        this.readyBtn.prop('disabled', true);
+    }
+
+    enableReadyBtn() {
+        this.readyBtn.prop('disabled', false);
+    }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/js/tasks/rainbow/index.scss":
+/*!*****************************************!*\
+  !*** ./src/js/tasks/rainbow/index.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/js/tasks/sentence/data.js":
+/*!***************************************!*\
+  !*** ./src/js/tasks/sentence/data.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
+let taskData = {
+        description: "Compose sentence: ",
+        sentences: ['I love you', 'He is a doctor', 'Kate is eating an apple', 'The universe is endless', 'Let\'splay tennis']
+};
+
+
+
+/***/ }),
+
+/***/ "./src/js/tasks/sentence/index.html":
+/*!******************************************!*\
+  !*** ./src/js/tasks/sentence/index.html ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n    <div id=\"sentenceTask\" class = \"task sentence-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <ul  id=\"answerBlock\" class=\"block answer-block sortable\">\r\n\r\n        </ul>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n        <div class=\"submit-block\">\r\n                <button id=\"readyBtn\" class=\"game-btn\">Ready</button>\r\n        </div>\r\n    </div>\r\n\r\n";
+
+/***/ }),
+
+/***/ "./src/js/tasks/sentence/index.js":
+/*!****************************************!*\
+  !*** ./src/js/tasks/sentence/index.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SentenceTask; });
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/sentence/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/sentence/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/sentence/data.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+
+
+class SentenceTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
+    constructor() {
+        super("order", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
+        this.taskBlock;
+        this.description;
+        this.question;
+        this.answerBlock;
+        this.verdictBlock;
+        this.answerVariants;
+        this.clickedBtn;
+        this.readyBtn;
+        self = this;
+    }
+
+    getQuestion() {
+        let sentence = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(_data__WEBPACK_IMPORTED_MODULE_3__["default"].sentences);
+        let devSentence = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["split"])(sentence, ' ');
+        return [sentence, devSentence];
+    }
+
+    getVariantsArr(sentenceArr) {
+        return Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["shuffle"])(sentenceArr);
+    }
+
+    getAnswer(q) {
+        q = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["join"])(q, ' ');
+        return q;
+    }
+
+    checkAnswer() {
+        let userAnswer = [];
+        this.answerBlock.children('li').each((i, e) => {
+            userAnswer.push($(e).html());
+        });
+        console.log(this.answer + ' ' + userAnswer);
+        userAnswer = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["join"])(userAnswer, ' ');
+        console.log(this.answer + ' ' + userAnswer);
+        if (this.answer == userAnswer) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    disablevariantBtns() {
+        this.answerBlock.children('li').each((i, e) => {
+            $(e).prop("disabled", true);
+        });
+    }
+
+    onAnswerSubmit() {
+        this.disablevariantBtns();
+        if (this.checkAnswer()) {
+            this.answerBlock.children('li').addClass("correct");
+            this.readyBtn.addClass("correct");
+            this.readyBtn.html("Correct!");
+            this.answerState = true;
+        } else {
+            this.answerBlock.children('li').addClass("wrong");
+            this.verdictBlock.find("#verdict").html(this.answer);
+            this.readyBtn.addClass("wrong");
+            this.readyBtn.html("Wrong!");
+            this.answerState = false;
+        }
+        let e = $.Event("answerSubmitted");
+        this.taskBlock.trigger(e);
+    }
+
+    clear() {
+        this.taskBlock.remove();
+    }
+
+    instantiateHtmlAndJsTo(parent) {
+        this.parent = parent;
+        $(parent).append(_index_html__WEBPACK_IMPORTED_MODULE_0___default.a);
+        this.taskBlock = $(parent).children('#sentenceTask');
+        this.answerBlock = this.taskBlock.find("#answerBlock");
+        this.verdictBlock = this.taskBlock.find("#verdictBlock");
+        this.readyBtn = this.taskBlock.find("#readyBtn");
+
+        this.taskBlock.find('#description').html(this.description);
+        // this.taskBlock.find('#question').html(this.question);
+
+        this.answerVariants = this.getVariantsArr(this.devQuestion);
+        for (let i = 0; i < this.devQuestion.length; i++) {
+            this.answerBlock.append('<li class="ui-state-default game-btn variant-btn">' + i + '</li>');
+        }
+        this.answerBlock.children('li').each((i, e) => {
+            $(e).html(this.answerVariants[i]);
+        });
+
+        this.readyBtn.click(() => {
+            this.onAnswerSubmit();
+        });
+
+        $(function () {
+            $(".sortable").sortable();
+            $(".sortable").disableSelection();
+        });
+    }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/js/tasks/sentence/index.scss":
+/*!******************************************!*\
+  !*** ./src/js/tasks/sentence/index.scss ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -67168,7 +68976,7 @@ class SynthesisTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Task; });
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Task; });
 class Task {
     constructor(type, data) {
         this.type = type;
@@ -67180,12 +68988,28 @@ class Task {
         this.devQuestion = diffImplementationOfQuestionArr[1];
         this.answer = this.getAnswer(this.devQuestion);
         this.answerState = null;
+        this.setKeyboardReadyBtn();
     }
 
     getDescription() {
         return this.data.description;
     }
+
+    setKeyboardReadyBtn() {
+        $(document).on('keydown', event => {
+            if (event.key == 'Enter') {
+                if (this.answerState === null) {
+                    if (this.readyBtn != undefined) {
+                        this.readyBtn.click();
+                    } else {
+                        this.onAnswerSubmit();
+                    }
+                } else {}
+            }
+        });
+    }
 }
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -67205,7 +69029,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _words_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./words/index */ "./src/js/tasks/words/index.js");
 /* harmony import */ var _synthesis_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./synthesis/index */ "./src/js/tasks/synthesis/index.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-/* harmony import */ var _InsertChar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./InsertChar */ "./src/js/tasks/InsertChar/index.js");
+/* harmony import */ var _InsertChar_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./InsertChar/index */ "./src/js/tasks/InsertChar/index.js");
+/* harmony import */ var _history_index__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./history/index */ "./src/js/tasks/history/index.js");
+/* harmony import */ var _diapason_index__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./diapason/index */ "./src/js/tasks/diapason/index.js");
+/* harmony import */ var _capital_index__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./capital/index */ "./src/js/tasks/capital/index.js");
+/* harmony import */ var _rainbow_index__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./rainbow/index */ "./src/js/tasks/rainbow/index.js");
+/* harmony import */ var _legs_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./legs/index */ "./src/js/tasks/legs/index.js");
+/* harmony import */ var _order_index__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./order/index */ "./src/js/tasks/order/index.js");
+/* harmony import */ var _commonWord_index__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./commonWord/index */ "./src/js/tasks/commonWord/index.js");
+/* harmony import */ var _sentence_index__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./sentence/index */ "./src/js/tasks/sentence/index.js");
+/* harmony import */ var _jsQuiz_index__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./jsQuiz/index */ "./src/js/tasks/jsQuiz/index.js");
+/* harmony import */ var _days_index__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./days/index */ "./src/js/tasks/days/index.js");
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -67217,11 +69061,21 @@ __webpack_require__.r(__webpack_exports__);
 function generateTask(type) {
     let task;
     let taskList = {
-        "maths": new _maths_index__WEBPACK_IMPORTED_MODULE_0__["default"](),
-        "engToRus": new _engToRus_index__WEBPACK_IMPORTED_MODULE_1__["default"](),
-        "words": new _words_index__WEBPACK_IMPORTED_MODULE_2__["default"](),
-        "synthesis": new _synthesis_index__WEBPACK_IMPORTED_MODULE_3__["default"](),
-        "insertChar": new _InsertChar__WEBPACK_IMPORTED_MODULE_5__["default"]()
+        "maths": _maths_index__WEBPACK_IMPORTED_MODULE_0__["default"],
+        "engToRus": _engToRus_index__WEBPACK_IMPORTED_MODULE_1__["default"],
+        "words": _words_index__WEBPACK_IMPORTED_MODULE_2__["default"],
+        "synthesis": _synthesis_index__WEBPACK_IMPORTED_MODULE_3__["default"],
+        "insertChar": _InsertChar_index__WEBPACK_IMPORTED_MODULE_5__["default"],
+        "history": _history_index__WEBPACK_IMPORTED_MODULE_6__["default"],
+        "diapason": _diapason_index__WEBPACK_IMPORTED_MODULE_7__["default"],
+        "capital": _capital_index__WEBPACK_IMPORTED_MODULE_8__["default"],
+        "rainbow": _rainbow_index__WEBPACK_IMPORTED_MODULE_9__["default"],
+        "legs": _legs_index__WEBPACK_IMPORTED_MODULE_10__["default"],
+        "order": _order_index__WEBPACK_IMPORTED_MODULE_11__["default"],
+        "commonWord": _commonWord_index__WEBPACK_IMPORTED_MODULE_12__["default"],
+        "sentence": _sentence_index__WEBPACK_IMPORTED_MODULE_13__["default"],
+        "jsQuiz": _jsQuiz_index__WEBPACK_IMPORTED_MODULE_14__["default"],
+        "days": _days_index__WEBPACK_IMPORTED_MODULE_15__["default"]
     };
     if (type) {
         task = taskList[type];
@@ -67229,7 +69083,7 @@ function generateTask(type) {
         task = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(taskList);
     }
 
-    return task;
+    return new task();
 }
 
 function getAvaliableTasksNames() {
@@ -67245,7 +69099,7 @@ function getAvaliableTasksNames() {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"tasksMenu\" class = \"tasks-menu-block\">\r\n        <div  id=\"tasks\" class=\"block tasks-block\">\r\n            <button class=\"game-btn tasks-btn\">maths</button>\r\n            <button class=\"game-btn tasks-btn\">engToRus</button>\r\n            <button class=\"game-btn tasks-btn\">words</button>\r\n            <button class=\"game-btn tasks-btn\">synthesis</button>\r\n            <button class=\"game-btn tasks-btn\">insertChar</button>\r\n        </div>\r\n    </div>";
+module.exports = "<div id=\"tasksMenu\" class = \"tasks-menu-block\">\r\n        <div  id=\"tasks\" class=\"block tasks-block\">\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"maths\">maths</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"engToRus\">engToRus</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"words\">words</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"synthesis\">synthesis</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"insertChar\">insertChar</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"history\">history</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"diapason\">diapason</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"capital\">capital</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"rainbow\">rainbow</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"legs\">legs</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"order\">order</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"commonWord\">commonWord</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"sentence\">sentence</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"jsQuiz\">jsQuiz</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"days\">days</button>\r\n        </div>\r\n    </div>";
 
 /***/ }),
 
@@ -67269,8 +69123,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/tasksMenu/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-
 
 
 
@@ -67285,11 +69137,26 @@ function loadTo(parent) {
             onTasksMenuSubmit(e.currentTarget);
         }
     });
+    tasksMenu.children('#tasks').children('button').first().focus();
+    tasksMenu.children('#tasks').children('.menu-el').attr('tabindex', 0).on('keydown', event => {
+        console.log('why');
+        let ct = event.currentTarget;
+        if (event.key == 'ArrowLeft') {
+            // left or up
+            $(ct).prev().focus();
+        }
+        if (event.key == 'ArrowRight') {
+            // right or down
+            $(ct).next().focus();
+        }
+        if (event.key == 'Enter') {
+            onTasksMenuSubmit(ct);
+        }
+    });
 }
 
 function onTasksMenuSubmit(e) {
-    selectedTask = $(e).html();
-    console.log("selectedT HTML " + selectedTask);
+    selectedTask = $(e).data("taskName");
     let ev = $.Event("tasksMenuSubmitted");
     tasksMenu.trigger(ev);
 }
@@ -67330,7 +69197,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
 let taskData = {
     description: "Compose the word: ",
-    words: ['door', 'flow', 'milk', 'silk', 'hall', 'ceil']
+    words: ['door', 'flow', 'milk', 'silk', 'hall', 'ceil', 'bell', 'kort', 'show']
 
 };
 
@@ -67345,7 +69212,7 @@ let taskData = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n    <div id=\"engToRusTask\" class = \"task eng-to-rus-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <ul  id=\"answerBlock\" class=\"block answer-block sortable\">\r\n            <li class=\"ui-state-default game-btn variant-btn\">1</li>\r\n            <li class=\"ui-state-default game-btn variant-btn\">2</li>\r\n            <li class=\"ui-state-default game-btn variant-btn\">3</li>\r\n            <li class=\"ui-state-default game-btn variant-btn\">4</li>\r\n            \r\n        </ul>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n        <div class=\"submit-block\">\r\n        </div>\r\n    </div>\r\n\r\n";
+module.exports = "\r\n    <div id=\"wordsTask\" class = \"task words-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <ul  id=\"answerBlock\" class=\"block answer-block sortable\">\r\n            <li tabindex=\"-1\" class=\"ui-state-default game-btn variant-btn answer\">1</li>\r\n            <li tabindex=\"-1\" class=\"ui-state-default game-btn variant-btn answer\">2</li>\r\n            <li tabindex=\"-1\" class=\"ui-state-default game-btn variant-btn answer\">3</li>\r\n            <li tabindex=\"-1\" class=\"ui-state-default game-btn variant-btn answer\">4</li>\r\n            \r\n        </ul>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n        <div class=\"submit-block\">\r\n                <button id=\"readyBtn\" class=\"game-btn\">Ready</button>\r\n        </div>\r\n    </div>\r\n\r\n";
 
 /***/ }),
 
@@ -67365,9 +69232,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
 /* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/words/data.js");
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
-/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../components/input */ "./src/js/components/input.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
 
 
 
@@ -67378,7 +69249,7 @@ __webpack_require__.r(__webpack_exports__);
 
 class WordsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
     constructor() {
-        super("engToRus", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
+        super("Words", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
         this.taskBlock;
         this.description;
         this.question;
@@ -67390,13 +69261,13 @@ class WordsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
     }
 
     getQuestion() {
-        let word = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(this.data.words);
+        let word = Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["sample"])(this.data.words);
         return [word, word];
     }
 
     getAnswerVariantsArr(word) {
-        let tempArr = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["split"])(word, '');
-        let tempChar = tempArr.splice(Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["random"])(0, tempArr.length - 2), 1);
+        let tempArr = Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["split"])(word, '');
+        let tempChar = tempArr.splice(Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["random"])(0, tempArr.length - 2), 1);
         tempArr.push(tempChar);
         return tempArr;
     }
@@ -67411,7 +69282,7 @@ class WordsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
             userAnswer.push($(e).html());
         });
         console.log(this.answer + ' ' + userAnswer[0]);
-        userAnswer = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["join"])(userAnswer, '');
+        userAnswer = Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["join"])(userAnswer, '');
         console.log(this.answer + ' ' + userAnswer);
         if (this.answer == userAnswer) {
             return true;
@@ -67430,10 +69301,14 @@ class WordsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
         this.disablevariantBtns();
         if (this.checkAnswer()) {
             this.answerBlock.children('li').addClass("correct");
+            this.readyBtn.addClass("correct");
+            this.readyBtn.html("Correct!");
             this.answerState = true;
         } else {
             this.answerBlock.children('li').addClass("wrong");
             this.verdictBlock.find("#verdict").html(this.answer);
+            this.readyBtn.addClass("wrong");
+            this.readyBtn.html("Wrong!");
             this.answerState = false;
         }
         let e = $.Event("answerSubmitted");
@@ -67447,9 +69322,10 @@ class WordsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
     instantiateHtmlAndJsTo(parent) {
         this.parent = parent;
         $(parent).append(_index_html__WEBPACK_IMPORTED_MODULE_0___default.a);
-        this.taskBlock = $(parent).children('#engToRusTask');
+        this.taskBlock = $(parent).children('#wordsTask');
         this.answerBlock = this.taskBlock.find("#answerBlock");
         this.verdictBlock = this.taskBlock.find("#verdictBlock");
+        this.readyBtn = this.taskBlock.find("#readyBtn");
 
         this.taskBlock.find('#description').html(this.description);
         // this.taskBlock.find('#question').html(this.question);
@@ -67458,15 +69334,12 @@ class WordsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
         this.answerBlock.children('li').each((i, e) => {
             $(e).html(this.answerVariants[i]);
         });
-        $(function () {
-            $(".sortable").sortable();
-            $(".sortable").disableSelection();
-            $(".sortable").on("sortupdate", { self: 1 }, () => {
-                self.onAnswerSubmit();
-            });
+
+        _components_input__WEBPACK_IMPORTED_MODULE_4__["ksortable"]('.sortable');
+        this.readyBtn.click(() => {
+            this.onAnswerSubmit();
         });
     }
-
 }
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 

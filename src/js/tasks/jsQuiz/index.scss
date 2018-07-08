@@ -1,0 +1,85 @@
+
+$border-alt-color: #8cbef8;
+$hb:rgba(255, 160, 131, 0.56);
+$hb-b: black;
+$choosen-answer-color: #ff9b0b;
+$hover-answer-color: #dcdcdc;;
+$wrong-answer-color:#c3021b;
+$right-answer-color:rgba(61,181,64,0.6);
+
+.wrong{
+    background-color: $wrong-answer-color;
+}
+.correct{
+    background-color: $right-answer-color;
+}
+
+.js-quiz-block {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    & > div {
+        text-align: center;
+    }
+
+    & p {
+        text-align:center;
+        font-size: 26px;
+        line-height: 28px;
+    }
+    & label {
+        font: 24px/25px "Comic", Helvetica, sans-serif;
+        text-align: left;
+    }
+
+    & .question-block {
+        
+        margin-bottom: 10px;
+    }
+
+    & .answer-block {
+        height: 40%;
+
+        & .answer{
+            font-size: 25px;
+            line-height: 26px;
+            & label {
+                display: block;
+                padding: 5px;
+            }
+            & input{
+                display: none;
+            }
+            &{
+                & input:not(:disabled){
+                    &:checked + label{
+                        background-color: $choosen-answer-color;
+                    }
+                    &:hover:not(:checked) + label{
+                        background-color: $hover-answer-color;
+                    }
+                }
+            }
+
+            &.wrong{
+                background-color: $wrong-answer-color;
+            }
+            &.correct{
+                background-color: $right-answer-color;
+            }
+        }
+    }
+    & .verdict-block {
+        min-height: 10%;
+        height: auto;
+        & p {
+            color: $right-answer-color;
+        }
+    }
+    & .submit-block {
+        height: auto;
+    }
+}
+

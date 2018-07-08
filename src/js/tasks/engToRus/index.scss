@@ -1,0 +1,58 @@
+
+$border-alt-color: #8cbef8;
+$hb:rgba(255, 160, 131, 0.56);
+$hb-b: black;
+$wrong-answer-color:rgba(252, 51, 45, 0.911);
+$right-answer-color:#72ce0f;
+
+
+
+.eng-to-rus-task-block {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    & > div {
+        text-align: center;
+    }
+
+    & p {
+        text-align:center;
+        font-size: 28px;
+        line-height: 38px;
+    }
+    & .question-block {
+        
+        margin-bottom: 10px;
+    }
+
+    & .answer-block {
+        height: 40%;
+
+        & .game-btn{
+            display: inline-block;
+            font-size: 25px;
+            line-height: 40px;
+            min-width: initial;
+            min-height: initial;
+
+            &.wrong{
+                background-color: $wrong-answer-color;
+            }
+            &.correct{
+                background-color: $right-answer-color;
+            }
+        }
+    }
+    & .verdict-block {
+        height: 10%;
+        & p {
+            color: greenyellow;
+        }
+    }
+    & .submit-block {
+        height: 10%;
+    }
+}
+

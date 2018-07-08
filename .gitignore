@@ -1,7 +1,6 @@
 # Misc related to npm and webpack
 node_modules
-build
-src
+
 webpack-stats.json
 npm-debug.log
 

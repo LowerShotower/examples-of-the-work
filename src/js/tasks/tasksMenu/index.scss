@@ -1,0 +1,37 @@
+
+$border-alt-color: #8cbef8;
+$hb:rgba(255, 160, 131, 0.56);
+$hb-b: black;
+$wrong-answer-color:rgba(252, 51, 45, 0.911);
+$right-answer-color:#72ce0f;
+
+.tasks-menu-block {
+    height: 100%;
+   
+    & .tasks-block {
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        & > div {
+            text-align: center;
+        }
+    
+        & p {
+            padding: 3px 10px 3px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font: 25px/26px "Comic", Helvetica, sans-serif;
+            &:hover{
+                background-color: $border-alt-color;
+            }
+        }
+        & .game-btn{
+            font-size: 25px;
+            line-height: 26px;
+        }
+    }
+}
+
