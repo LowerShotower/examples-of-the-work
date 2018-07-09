@@ -102,8 +102,6 @@ export default class WordsTask extends Task  {
 
         input.ksortable('.sortable');
         this.readyBtn.click( ()=>{this.onAnswerSubmit()} );
-        
-
     }
 }
 

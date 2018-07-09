@@ -23,15 +23,15 @@ let LevelManager  = {
 
     // Game over
     onGameOver: function() {
-        console.log("we are on gameover")
         $('#gameOverMenu').css('display','block');
+        
         s.isGameOver = true;
         
         let currentUser = [""+this.getUserName(),+this.getScore()]; 
-        console.log(currentUser);
         storage.getAllUsersFromStorage();
          uiM.fillTable(storage.setUserToStorage(currentUser));
     },
+
     startGame: function () {
         $('#startMenu').css('display','none');
         $('#inGameUI').css('display','block');
@@ -50,6 +50,11 @@ let LevelManager  = {
         $('#inGameUI').css('display','none');
         // find(entities,{'name':'player'}).pos = [50, Renderer.settings.canvas.height / 2];
     },
+
+    hideInGameMenu() {
+        $('#inGameUI').css('display','none');
+    },
+
     displayScore(){
         s.scoreEl.innerHTML = s.score;
     },

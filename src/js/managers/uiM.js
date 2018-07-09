@@ -101,13 +101,13 @@ async function waitFor(msec) {
 
 export function openModalMenu(){
     tMenu.loadTo('#modalMenu');
-    tMenu.tasksMenu.find('button').first().focus();
+    modalMenu.css("display","block");
+    $("#modalMenu").find('#tasks').children('.menu-el').first().focus();
     tMenu.tasksMenu.on('tasksMenuSubmitted', ()=>{
         tMenu.clear();
         instantiateTask(tMenu.selectedTask);
     } );
-    disableTurnMainBtn();
-    modalMenu.css("display","block");
+    // disableTurnMainBtn();
 
     closeModalBtn.click( (e)=>{closeModalMenu();} );
     $(document).on('keydown', (event) => {
@@ -121,11 +121,13 @@ export function openModalMenu(){
 export function instantiateTask(name){
     currTask = taskM.generateTask(name);
     currTask.instantiateHtmlAndJsTo('#modalMenu');
+    waitFor(400).then( () => {currTask.setKeyboardReadyBtn();} );
 
 
     currTask.taskBlock.on('answerSubmitted', ()=>{
         lM.setTaskSolved(currTask.answerState);
         if(currTask.answerState){
+            waitFor(2000).then(()=>{closeModalMenu(); events.trigger('playerTurn');});
             waitFor(2000).then(()=>{closeModalMenu(); events.trigger('playerTurn');});
         }else{
             waitFor(2000).then(()=>{closeModalMenu(); events.trigger('enemyTurn');});
@@ -183,12 +185,13 @@ export function openSmallModalMenu(){
             $(ct).next().focus();
         }
         if(event.key == 'Enter') { // right or down
-            onSpellSubmit(ct);
+            onSpellSubmit($(ct).children('p'));
         }
     });
 }
 
 export function onSpellSubmit(elem){
+    console.log($(elem).html().toLocaleLowerCase());
     lM.setUserSpell($(elem).html().toLocaleLowerCase());
     closeSmallModalMenu();
     openModalMenu();

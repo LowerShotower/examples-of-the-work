@@ -14,6 +14,7 @@ import * as uiM from './../managers/uiM.js';
 import * as mNM from './../managers/monsterNameM.js';
 import * as uiC from './uiC.js';
 import { setTimeout } from 'timers';
+import LevelM from '../managers/LevelM';
 
 //********************************************************************************
 function initGame(canvas){
@@ -157,6 +158,8 @@ events.on("animEnded", (e,objName,animName) => {
                             if (player.health<=0){console.log("You loose!");
                             audio.stopAllAudio();
                             setTimeout(()=>{
+                                uiM.disableTurnMainBtn();
+                                lM.hideInGameMenu();
                                 
                                 lM.onGameOver(); isGameOver=true;
                                 audio.musicSound.stopCurrent();},1000
@@ -179,6 +182,19 @@ events.on("playerTurn",(e) => {
     player.castSpell(lM.getUserSpell());
 });
 //****************************************************************** */
+async function waitFor(msec) {
+    await new Promise((resolve, reject) => setTimeout(resolve, msec));
+}
+
+$(document).on("keydown",(event) => {
+    if(event.key == 'Enter') {
+        if($('#gameOverMenu').css("display") != 'none' && $('#gameOverMenu').css("display") != undefined ) {
+           
+            waitFor(100).then( () => {$('#playAgainBtn').click();});
+        }
+    }
+});
+
 $('#playAgainBtn').click( function() {
     lM.goToMainMenu();
     lM.setScore(0);
@@ -190,20 +206,14 @@ $('#playAgainBtn').click( function() {
 // Update game objects
 function update(e, dt, entities) {
     gameTime += dt;
-    // if(window.input.isDown('enter') && uiM.checkEnterButton){
-    //     uiM.onAnswerSubmit();
-    //     uiM.setCheckEnterButton(false);
-    // }
 };
 //************************************************************* */
 $('#startMenu').find('#startMenuInput').first().focus();
-console.log($('#startMenu').css("display"));
 $(document).on("keydown",(event) => {
     if(event.key == 'Enter') {
         if($('#startMenu').css("display") != 'none' && $('#startMenu').css("display") != undefined ) {
-            console.log('eeee');
-            console.log($('#startMenu').css("display"));
-            $('#startMenuStartBtn').click();
+            waitFor(100).then( () => {$('#startMenuStartBtn').click();});
+            
         }
     }
 });

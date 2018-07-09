@@ -13,8 +13,6 @@ export function init() {
 
     $(document).on("keydown", () => {
         if($('#inGameUI').css("display") != 'none' && $('#startMenu').css("display") != undefined  && !uiM.turnMainBtn.prop("disabled")) {
-            console.log('hahaha')
-            console.log(uiM.turnMainBtn.prop("disabled"))
             if(event.key == 'Enter'){
                 uiM.turnMainBtn.click();
            }

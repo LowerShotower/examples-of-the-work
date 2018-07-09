@@ -4,6 +4,8 @@ import Task from './../taskClass';
 import data from './data';
 import {join,random,sortBy} from 'lodash-es';
 
+import * as input from './../../components/input';
+
 import 'webpack-jquery-ui';
 
 
@@ -96,12 +98,8 @@ export default class OrderTask extends Task  {
             $(e).html(this.answerVariants[i]);
         } );
 
-        this.readyBtn.click(()=>{this.onAnswerSubmit()});
-
-        $( function() {
-            $( ".sortable" ).sortable();
-            $( ".sortable" ).disableSelection();
-          } );
+        input.ksortable('.sortable');
+        this.readyBtn.click( ()=>{this.onAnswerSubmit()} );
     }
 }
 

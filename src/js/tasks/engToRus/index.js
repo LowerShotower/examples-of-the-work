@@ -5,7 +5,7 @@ import data from './data';
 
 import * as input from './../../components/input';
 
-import {sample, sampleSize, concat, shuffle} from 'lodash-es';
+import {sample,  concat, shuffle} from 'lodash-es';
 
 export default class EngToRusTask extends Task  {
     constructor(){
@@ -46,13 +46,13 @@ export default class EngToRusTask extends Task  {
         this.taskBlock.find('#question').html(this.question);
 
         this.answerVariants = this.getAnswerVariantsArr(this.answer,this.data.feiks);
-        this.answerBlock.children('button').each( (i,e)=>{ 
+        this.answerBlock.children('.answer').each( (i,e)=>{ 
             $(e).html(this.answerVariants[i]);
             this.clickedBtn = $(e);
         } );
-        this.clickedBtn = this.answerBlock.children('button').first();
+        this.clickedBtn = this.answerBlock.children('.answer').first();
 
-        this.answerBlock.children('.answer').first().focus();
+        this.answerBlock.children('.answer').attr('tabindex', 0).first().focus();
         this.answerBlock.children('.answer').attr('tabindex', 0).on('keydown', (event)=> {
             let ct = event.currentTarget;
             if(event.key == 'ArrowLeft') { // left or up
@@ -66,7 +66,7 @@ export default class EngToRusTask extends Task  {
         });
 
 
-        this.answerBlock.children('button').click( (e)=>{
+        this.answerBlock.children('.answer').click( (e)=>{
             this.clickedBtn = $(e.currentTarget);
             console.log(e.currentTarget);
             this.onAnswerSubmit();
@@ -93,13 +93,13 @@ export default class EngToRusTask extends Task  {
             this.disablevariantBtns();
         if (this.checkAnswer(this.clickedBtn.html())){
             this.clickedBtn.addClass("correct");
-            // this.clickedBtn.html("Correct!");
-            this.answerBlock.children('.answer').addClass("correct");
+            this.clickedBtn.html("Correct!");
+            // this.answerBlock.children('.answer').addClass("correct");
             this.answerState = true;
         } else {
             this.clickedBtn.addClass("wrong");
-            // this.clickedBtn.html("Wrong!");
-            this.answerBlock.children('.answer').addClass("wrong");
+            this.clickedBtn.html("Wrong!");
+            // this.answerBlock.children('.answer').addClass("wrong");
             this.verdictBlock.find("#verdict").html(this.answer);
             this.answerState = false;
         }

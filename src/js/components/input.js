@@ -65,7 +65,7 @@ import 'webpack-jquery-ui';
     export function ksortable(target, options) {
           $(target).sortable(options);
           $(target).disableSelection(options);
-          $('.answer').first().focus();
+          $('.answer').attr('tabindex', 0).first().focus();
             $('.answer').attr('tabindex', 0).on('keydown' ,function(event) {
                 if(event.key == ' ') {
                     console.log(event.key);

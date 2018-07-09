@@ -49,6 +49,21 @@ export default class JsQuizTask extends Task  {
             $(e).find("label").html(this.answerVariants[i]);
         } );
 
+        this.answerBlock.children('.answer').attr('tabindex', 0).first().focus();
+        this.answerBlock.children('.answer').attr('tabindex', 0).on('keydown', (event)=> {
+            event.preventDefault();
+            let ct = event.currentTarget;
+            
+            if(event.key == 'ArrowDown') { // left or up
+                  $(ct).next().focus();
+                  $(ct).next().find("input").prop("checked", true);
+            }
+            if(event.key == 'ArrowUp') { // right or down
+                $(ct).prev().focus();
+                $(ct).prev().find("input").prop("checked", true);
+            }
+        }); 
+
         this.readyBtn.click(()=>{this.onAnswerSubmit()});
 
     }

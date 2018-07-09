@@ -43,11 +43,11 @@ export default class InsertCharTask extends Task  {
         this.taskBlock.find('#question').html(this.question);
 
         this.answerVariants = this.getAnswerVariantsArr(this.answer,this.data.symbols);
-        this.answerBlock.children('button').each( (i,e)=>{ 
+        this.answerBlock.children('.answer').each( (i,e)=>{ 
             $(e).html(this.answerVariants[i]);
         } );
-        this.clickedBtn = this.answerBlock.children('button').first();
-        this.answerBlock.children('.answer').first().focus();
+        this.clickedBtn = this.answerBlock.children('.answer').first();
+        this.answerBlock.children('.answer').attr('tabindex', 0).first().focus();
         this.answerBlock.children('.answer').attr('tabindex', 0).on('keydown', (event)=> {
             let ct = event.currentTarget;
             if(event.key == 'ArrowLeft') { // left or up
@@ -60,9 +60,8 @@ export default class InsertCharTask extends Task  {
             }
         });
         
-        this.answerBlock.children('button').click( (e)=>{
+        this.answerBlock.children('.answer').click( (e)=>{
             this.clickedBtn = $(e.currentTarget);
-            console.log(e.currentTarget);
             this.onAnswerSubmit();
         } );
 

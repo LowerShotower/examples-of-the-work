@@ -57,7 +57,7 @@ export default class HistoryTask extends Task  {
             if(event.key == 'ArrowDown') { // left or up
                   $(ct).next().focus();
                   $(ct).next().find("input").prop("checked", true);
-                  console.log(event.currentTarget);
+                  
             }
             if(event.key == 'ArrowUp') { // right or down
                 $(ct).prev().focus();

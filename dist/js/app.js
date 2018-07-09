@@ -64988,7 +64988,7 @@ let spaceWasPressed = false;
 function ksortable(target, options) {
     $(target).sortable(options);
     $(target).disableSelection(options);
-    $('.answer').first().focus();
+    $('.answer').attr('tabindex', 0).first().focus();
     $('.answer').attr('tabindex', 0).on('keydown', function (event) {
         if (event.key == ' ') {
             console.log(event.key);
@@ -65344,6 +65344,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 //********************************************************************************
 function initGame(canvas) {
     Renderer.settings.canvas = canvas;
@@ -65502,6 +65503,8 @@ function initGame(canvas) {
                             console.log("You loose!");
                             _components_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].stopAllAudio();
                             Object(timers__WEBPACK_IMPORTED_MODULE_14__["setTimeout"])(() => {
+                                _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["disableTurnMainBtn"]();
+                                _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].hideInGameMenu();
 
                                 _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].onGameOver();isGameOver = true;
                                 _components_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].musicSound.stopCurrent();
@@ -65525,6 +65528,21 @@ function initGame(canvas) {
         player.castSpell(_managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].getUserSpell());
     });
     //****************************************************************** */
+    async function waitFor(msec) {
+        await new Promise((resolve, reject) => Object(timers__WEBPACK_IMPORTED_MODULE_14__["setTimeout"])(resolve, msec));
+    }
+
+    $(document).on("keydown", event => {
+        if (event.key == 'Enter') {
+            if ($('#gameOverMenu').css("display") != 'none' && $('#gameOverMenu').css("display") != undefined) {
+
+                waitFor(100).then(() => {
+                    $('#playAgainBtn').click();
+                });
+            }
+        }
+    });
+
     $('#playAgainBtn').click(function () {
         _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].goToMainMenu();
         _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].setScore(0);
@@ -65535,20 +65553,15 @@ function initGame(canvas) {
     // Update game objects
     function update(e, dt, entities) {
         gameTime += dt;
-        // if(window.input.isDown('enter') && uiM.checkEnterButton){
-        //     uiM.onAnswerSubmit();
-        //     uiM.setCheckEnterButton(false);
-        // }
     };
     //************************************************************* */
     $('#startMenu').find('#startMenuInput').first().focus();
-    console.log($('#startMenu').css("display"));
     $(document).on("keydown", event => {
         if (event.key == 'Enter') {
             if ($('#startMenu').css("display") != 'none' && $('#startMenu').css("display") != undefined) {
-                console.log('eeee');
-                console.log($('#startMenu').css("display"));
-                $('#startMenuStartBtn').click();
+                waitFor(100).then(() => {
+                    $('#startMenuStartBtn').click();
+                });
             }
         }
     });
@@ -65600,8 +65613,6 @@ function init() {
 
     $(document).on("keydown", () => {
         if ($('#inGameUI').css("display") != 'none' && $('#startMenu').css("display") != undefined && !_managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["turnMainBtn"].prop("disabled")) {
-            console.log('hahaha');
-            console.log(_managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["turnMainBtn"].prop("disabled"));
             if (event.key == 'Enter') {
                 _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["turnMainBtn"].click();
             }
@@ -66252,15 +66263,15 @@ let LevelManager = {
 
     // Game over
     onGameOver: function () {
-        console.log("we are on gameover");
         $('#gameOverMenu').css('display', 'block');
+
         s.isGameOver = true;
 
         let currentUser = ["" + this.getUserName(), +this.getScore()];
-        console.log(currentUser);
         _components_storage__WEBPACK_IMPORTED_MODULE_2__["storage"].getAllUsersFromStorage();
         _uiM_js__WEBPACK_IMPORTED_MODULE_1__["fillTable"](_components_storage__WEBPACK_IMPORTED_MODULE_2__["storage"].setUserToStorage(currentUser));
     },
+
     startGame: function () {
         $('#startMenu').css('display', 'none');
         $('#inGameUI').css('display', 'block');
@@ -66278,6 +66289,11 @@ let LevelManager = {
         $('#inGameUI').css('display', 'none');
         // find(entities,{'name':'player'}).pos = [50, Renderer.settings.canvas.height / 2];
     },
+
+    hideInGameMenu() {
+        $('#inGameUI').css('display', 'none');
+    },
+
     displayScore() {
         s.scoreEl.innerHTML = s.score;
     },
@@ -66511,13 +66527,13 @@ async function waitFor(msec) {
 
 function openModalMenu() {
     _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["loadTo"]('#modalMenu');
-    _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["tasksMenu"].find('button').first().focus();
+    modalMenu.css("display", "block");
+    $("#modalMenu").find('#tasks').children('.menu-el').first().focus();
     _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["tasksMenu"].on('tasksMenuSubmitted', () => {
         _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["clear"]();
         instantiateTask(_tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["selectedTask"]);
     });
-    disableTurnMainBtn();
-    modalMenu.css("display", "block");
+    // disableTurnMainBtn();
 
     closeModalBtn.click(e => {
         closeModalMenu();
@@ -66532,10 +66548,16 @@ function openModalMenu() {
 function instantiateTask(name) {
     currTask = _tasks_taskManager__WEBPACK_IMPORTED_MODULE_0__["generateTask"](name);
     currTask.instantiateHtmlAndJsTo('#modalMenu');
+    waitFor(400).then(() => {
+        currTask.setKeyboardReadyBtn();
+    });
 
     currTask.taskBlock.on('answerSubmitted', () => {
         _managers_LevelM__WEBPACK_IMPORTED_MODULE_2__["default"].setTaskSolved(currTask.answerState);
         if (currTask.answerState) {
+            waitFor(2000).then(() => {
+                closeModalMenu();events.trigger('playerTurn');
+            });
             waitFor(2000).then(() => {
                 closeModalMenu();events.trigger('playerTurn');
             });
@@ -66603,12 +66625,13 @@ function openSmallModalMenu() {
         }
         if (event.key == 'Enter') {
             // right or down
-            onSpellSubmit(ct);
+            onSpellSubmit($(ct).children('p'));
         }
     });
 }
 
 function onSpellSubmit(elem) {
+    console.log($(elem).html().toLocaleLowerCase());
     _managers_LevelM__WEBPACK_IMPORTED_MODULE_2__["default"].setUserSpell($(elem).html().toLocaleLowerCase());
     closeSmallModalMenu();
     openModalMenu();
@@ -66708,7 +66731,7 @@ let taskData = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n    <div id=\"insertCharTask\" class = \"task insert-char-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            <button class=\"game-btn variant-btn answer\">1</button>\r\n            <button class=\"game-btn variant-btn answer\">2</button>\r\n            <button class=\"game-btn variant-btn answer\">3</button>\r\n            <button class=\"game-btn variant-btn answer\">4</button>\r\n        </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n        <div class=\"submit-block\"></div>\r\n    </div>\r\n\r\n";
+module.exports = "\r\n    <div id=\"insertCharTask\" class = \"task insert-char-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            <div class=\"game-btn variant-btn answer\">1</div>\r\n            <div class=\"game-btn variant-btn answer\">2</div>\r\n            <div class=\"game-btn variant-btn answer\">3</div>\r\n            <div class=\"game-btn variant-btn answer\">4</div>\r\n        </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n        <div class=\"submit-block\"></div>\r\n    </div>\r\n\r\n";
 
 /***/ }),
 
@@ -66774,11 +66797,11 @@ class InsertCharTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] 
         this.taskBlock.find('#question').html(this.question);
 
         this.answerVariants = this.getAnswerVariantsArr(this.answer, this.data.symbols);
-        this.answerBlock.children('button').each((i, e) => {
+        this.answerBlock.children('.answer').each((i, e) => {
             $(e).html(this.answerVariants[i]);
         });
-        this.clickedBtn = this.answerBlock.children('button').first();
-        this.answerBlock.children('.answer').first().focus();
+        this.clickedBtn = this.answerBlock.children('.answer').first();
+        this.answerBlock.children('.answer').attr('tabindex', 0).first().focus();
         this.answerBlock.children('.answer').attr('tabindex', 0).on('keydown', event => {
             let ct = event.currentTarget;
             if (event.key == 'ArrowLeft') {
@@ -66793,9 +66816,8 @@ class InsertCharTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] 
             }
         });
 
-        this.answerBlock.children('button').click(e => {
+        this.answerBlock.children('.answer').click(e => {
             this.clickedBtn = $(e.currentTarget);
-            console.log(e.currentTarget);
             this.onAnswerSubmit();
         });
     }
@@ -67498,7 +67520,7 @@ let taskData = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n    <div id=\"engToRusTask\" class = \"task eng-to-rus-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            <button class=\"game-btn variant-btn answer\">1</button>\r\n            <button class=\"game-btn variant-btn answer\">2</button>\r\n            <button class=\"game-btn variant-btn answer\">3</button>\r\n            <button class=\"game-btn variant-btn answer\">4</button>\r\n        </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n        <div class=\"submit-block\"></div>\r\n    </div>\r\n\r\n";
+module.exports = "\r\n    <div id=\"engToRusTask\" class = \"task eng-to-rus-task-block\">\r\n        <div class=\"block description-block\">\r\n            <p id=\"description\" class = \"description\" > </p>\r\n        </div>\r\n\r\n        <div class=\"block question-block\">\r\n            <p id=\"question\" class = \"question\" > </p>\r\n        </div>\r\n\r\n        <div  id=\"answerBlock\" class=\"block answer-block\">\r\n            <div class=\"game-btn variant-btn answer\">1</div>\r\n            <div class=\"game-btn variant-btn answer\">2</div>\r\n            <div class=\"game-btn variant-btn answer\">3</div>\r\n            <div class=\"game-btn variant-btn answer\">4</div>\r\n        </div>\r\n\r\n        <div  id=\"verdictBlock\" class=\"block verdict-block\">\r\n            <p id=\"verdict\"></p>\r\n        </div>\r\n        <div class=\"submit-block\"></div>\r\n    </div>\r\n\r\n";
 
 /***/ }),
 
@@ -67567,13 +67589,13 @@ class EngToRusTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
         this.taskBlock.find('#question').html(this.question);
 
         this.answerVariants = this.getAnswerVariantsArr(this.answer, this.data.feiks);
-        this.answerBlock.children('button').each((i, e) => {
+        this.answerBlock.children('.answer').each((i, e) => {
             $(e).html(this.answerVariants[i]);
             this.clickedBtn = $(e);
         });
-        this.clickedBtn = this.answerBlock.children('button').first();
+        this.clickedBtn = this.answerBlock.children('.answer').first();
 
-        this.answerBlock.children('.answer').first().focus();
+        this.answerBlock.children('.answer').attr('tabindex', 0).first().focus();
         this.answerBlock.children('.answer').attr('tabindex', 0).on('keydown', event => {
             let ct = event.currentTarget;
             if (event.key == 'ArrowLeft') {
@@ -67588,7 +67610,7 @@ class EngToRusTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
             }
         });
 
-        this.answerBlock.children('button').click(e => {
+        this.answerBlock.children('.answer').click(e => {
             this.clickedBtn = $(e.currentTarget);
             console.log(e.currentTarget);
             this.onAnswerSubmit();
@@ -67614,13 +67636,13 @@ class EngToRusTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
         this.disablevariantBtns();
         if (this.checkAnswer(this.clickedBtn.html())) {
             this.clickedBtn.addClass("correct");
-            // this.clickedBtn.html("Correct!");
-            this.answerBlock.children('.answer').addClass("correct");
+            this.clickedBtn.html("Correct!");
+            // this.answerBlock.children('.answer').addClass("correct");
             this.answerState = true;
         } else {
             this.clickedBtn.addClass("wrong");
-            // this.clickedBtn.html("Wrong!");
-            this.answerBlock.children('.answer').addClass("wrong");
+            this.clickedBtn.html("Wrong!");
+            // this.answerBlock.children('.answer').addClass("wrong");
             this.verdictBlock.find("#verdict").html(this.answer);
             this.answerState = false;
         }
@@ -67755,7 +67777,6 @@ class HistoryTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
                 // left or up
                 $(ct).next().focus();
                 $(ct).next().find("input").prop("checked", true);
-                console.log(event.currentTarget);
             }
             if (event.key == 'ArrowUp') {
                 // right or down
@@ -67934,6 +67955,23 @@ class JsQuizTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
         this.answerVariants = this.getAnswerVariantsArr(this.devQuestion[2]);
         this.variantBtns.each((i, e) => {
             $(e).find("label").html(this.answerVariants[i]);
+        });
+
+        this.answerBlock.children('.answer').attr('tabindex', 0).first().focus();
+        this.answerBlock.children('.answer').attr('tabindex', 0).on('keydown', event => {
+            event.preventDefault();
+            let ct = event.currentTarget;
+
+            if (event.key == 'ArrowDown') {
+                // left or up
+                $(ct).next().focus();
+                $(ct).next().find("input").prop("checked", true);
+            }
+            if (event.key == 'ArrowUp') {
+                // right or down
+                $(ct).prev().focus();
+                $(ct).prev().find("input").prop("checked", true);
+            }
         });
 
         this.readyBtn.click(() => {
@@ -68364,8 +68402,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
 /* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/order/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
-/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../components/input */ "./src/js/components/input.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6__);
+
+
 
 
 
@@ -68461,13 +68502,9 @@ class OrderTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
             $(e).html(this.answerVariants[i]);
         });
 
+        _components_input__WEBPACK_IMPORTED_MODULE_5__["ksortable"]('.sortable');
         this.readyBtn.click(() => {
             this.onAnswerSubmit();
-        });
-
-        $(function () {
-            $(".sortable").sortable();
-            $(".sortable").disableSelection();
         });
     }
 }
@@ -68685,8 +68722,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
 /* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/sentence/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
-/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../components/input */ "./src/js/components/input.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6__);
+
+
 
 
 
@@ -68697,7 +68737,7 @@ __webpack_require__.r(__webpack_exports__);
 
 class SentenceTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
     constructor() {
-        super("order", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
+        super("sentence", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
         this.taskBlock;
         this.description;
         this.question;
@@ -68780,19 +68820,15 @@ class SentenceTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
         this.answerVariants = this.getVariantsArr(this.devQuestion);
         for (let i = 0; i < this.devQuestion.length; i++) {
-            this.answerBlock.append('<li class="ui-state-default game-btn variant-btn">' + i + '</li>');
+            this.answerBlock.append('<li class="ui-state-default game-btn variant-btn answer">' + i + '</li>');
         }
         this.answerBlock.children('li').each((i, e) => {
             $(e).html(this.answerVariants[i]);
         });
 
+        _components_input__WEBPACK_IMPORTED_MODULE_5__["ksortable"]('.sortable');
         this.readyBtn.click(() => {
             this.onAnswerSubmit();
-        });
-
-        $(function () {
-            $(".sortable").sortable();
-            $(".sortable").disableSelection();
         });
     }
 }
@@ -68988,7 +69024,7 @@ class Task {
         this.devQuestion = diffImplementationOfQuestionArr[1];
         this.answer = this.getAnswer(this.devQuestion);
         this.answerState = null;
-        this.setKeyboardReadyBtn();
+        // this.setKeyboardReadyBtn();
     }
 
     getDescription() {
@@ -68998,13 +69034,16 @@ class Task {
     setKeyboardReadyBtn() {
         $(document).on('keydown', event => {
             if (event.key == 'Enter') {
-                if (this.answerState === null) {
-                    if (this.readyBtn != undefined) {
-                        this.readyBtn.click();
-                    } else {
-                        this.onAnswerSubmit();
+                if ($('.task').css("display") != 'none' && $('.task').css("display") != undefined) {
+
+                    if (this.answerState === null) {
+                        if (this.readyBtn != undefined) {
+                            this.readyBtn.click();
+                        } else {
+                            this.onAnswerSubmit();
+                        }
                     }
-                } else {}
+                }
             }
         });
     }
@@ -69099,7 +69138,7 @@ function getAvaliableTasksNames() {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"tasksMenu\" class = \"tasks-menu-block\">\r\n        <div  id=\"tasks\" class=\"block tasks-block\">\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"maths\">maths</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"engToRus\">engToRus</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"words\">words</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"synthesis\">synthesis</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"insertChar\">insertChar</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"history\">history</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"diapason\">diapason</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"capital\">capital</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"rainbow\">rainbow</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"legs\">legs</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"order\">order</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"commonWord\">commonWord</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"sentence\">sentence</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"jsQuiz\">jsQuiz</button>\r\n            <button class=\"game-btn tasks-btn menu-el\" data-task-name=\"days\">days</button>\r\n        </div>\r\n    </div>";
+module.exports = "<div id=\"tasksMenu\" class = \"tasks-menu-block\">\r\n        <div  id=\"tasks\" class=\"block tasks-block\" tabindex=\"0\">\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"maths\">maths</div>\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"engToRus\">engToRus</div>\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"words\">words</div>\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"synthesis\">synthesis</div>\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"insertChar\">insertChar</div>\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"history\">history</div>\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"diapason\">diapason</div>\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"capital\">capital</div>\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"rainbow\">rainbow</div>\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"legs\">legs</div>\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"order\">order</div>\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"commonWord\">commonWord</div>\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"sentence\">sentence</div>\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"jsQuiz\">jsQuiz</div>\r\n            <div class=\"game-btn tasks-btn menu-el\" data-task-name=\"days\">days</div>\r\n        </div>\r\n    </div>";
 
 /***/ }),
 
@@ -69132,14 +69171,15 @@ function loadTo(parent) {
     $(parent).append(_index_html__WEBPACK_IMPORTED_MODULE_0___default.a);
     tasksMenu = $(parent).children('#tasksMenu');
 
-    tasksMenu.children('#tasks').children("button").click(e => {
-        if ($(e.currentTarget).is('button')) {
-            onTasksMenuSubmit(e.currentTarget);
-        }
+    tasksMenu.find('#tasks').on('click', e => {
+        //  if($(e.target).is('.menu-el')){
+        //     console.log('woops');
+        onTasksMenuSubmit(e.target);
+        // }
     });
-    tasksMenu.children('#tasks').children('button').first().focus();
-    tasksMenu.children('#tasks').children('.menu-el').attr('tabindex', 0).on('keydown', event => {
-        console.log('why');
+
+    tasksMenu.find('#tasks').children('.menu-el').attr('tabindex', 0).first().focus();
+    tasksMenu.find('#tasks').children('.menu-el').attr('tabindex', 0).on('keydown', event => {
         let ct = event.currentTarget;
         if (event.key == 'ArrowLeft') {
             // left or up
@@ -69149,8 +69189,10 @@ function loadTo(parent) {
             // right or down
             $(ct).next().focus();
         }
-        if (event.key == 'Enter') {
-            onTasksMenuSubmit(ct);
+        if ($("#modalMenu").css("display") != 'none' && $("#modalMenu").css("display") != undefined) {
+            if (event.key == 'Enter') {
+                onTasksMenuSubmit(ct);
+            }
         }
     });
 }

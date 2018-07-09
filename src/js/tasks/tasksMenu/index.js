@@ -8,15 +8,16 @@ export let  parent,
 export function loadTo(parent) {
     $(parent).append(tasksHtml);
     tasksMenu = $(parent).children('#tasksMenu');
-    
-    tasksMenu.children('#tasks').children("button").click((e)=>{
-        if($(e.currentTarget).is('button')){
-            onTasksMenuSubmit(e.currentTarget);
-        }
-    } );
-    tasksMenu.children('#tasks').children('button').first().focus();
-    tasksMenu.children('#tasks').children('.menu-el').attr('tabindex', 0).on('keydown', (event)=> {
-        console.log('why');
+
+     tasksMenu.find('#tasks').on( 'click', (e)=>{
+        //  if($(e.target).is('.menu-el')){
+        //     console.log('woops');
+            onTasksMenuSubmit(e.target);
+        // }
+     } );
+
+    tasksMenu.find('#tasks').children('.menu-el').attr('tabindex', 0).first().focus();
+    tasksMenu.find('#tasks').children('.menu-el').attr('tabindex', 0).on('keydown', (event)=> {
         let ct = event.currentTarget;
         if(event.key == 'ArrowLeft' ) { // left or up
                 $(ct).prev().focus();
@@ -24,9 +25,12 @@ export function loadTo(parent) {
         if(event.key == 'ArrowRight' ) { // right or down
             $(ct).next().focus();
         }
-        if(event.key == 'Enter') { 
-            onTasksMenuSubmit(ct);
+        if($("#modalMenu").css("display") != 'none' && $("#modalMenu").css("display") != undefined ){
+            if(event.key == 'Enter') { 
+                onTasksMenuSubmit(ct);
+            }
         }
+        
     });
 }
 

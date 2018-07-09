@@ -9,7 +9,7 @@ export default class Task  {
         this.devQuestion = diffImplementationOfQuestionArr[1];
         this.answer= this.getAnswer(this.devQuestion);
         this.answerState = null;
-        this.setKeyboardReadyBtn();
+        // this.setKeyboardReadyBtn();
     }
 
     getDescription(){
@@ -19,12 +19,14 @@ export default class Task  {
     setKeyboardReadyBtn(){
         $(document).on('keydown', (event) => {
             if (event.key == 'Enter') {
-                if (this.answerState === null) {
-                    if(this.readyBtn != undefined){
-                        this.readyBtn.click();
-                    } else {this.onAnswerSubmit()}
-                } else {
+                if($('.task').css("display") != 'none' && $('.task').css("display") != undefined  ){
                     
+                    if (this.answerState === null) {
+                        if(this.readyBtn != undefined){
+                            this.readyBtn.click();
+                        } 
+                        else {this.onAnswerSubmit()}
+                    }
                 }
                 
             }
