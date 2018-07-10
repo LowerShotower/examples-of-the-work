@@ -35,7 +35,6 @@ const config  = {
                 use: [
                     {
                         loader: 'babel-loader',
-                        
                     }
                 ],
                 exclude: /node_modules/
@@ -100,10 +99,9 @@ const config  = {
     },
 
     plugins: [
-    
         new HtmlWebpackPlugin({
            title: 'Game',
-            template: path.resolve(__dirname, 'src', 'html', 'index.hbs'),
+            template: path.resolve(__dirname, 'src', 'components', 'screens', 'home', 'index.hbs'),
         }),
         new ExtractTextPlugin({
             filename: 'style/style.css',

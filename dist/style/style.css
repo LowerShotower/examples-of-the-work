@@ -1,22 +1,36 @@
-/*!
- * jQuery UI Tooltip 1.12.1
- * http://jqueryui.com
- *
- * Copyright jQuery Foundation and other contributors
- * Released under the MIT license.
- * http://jquery.org/license
- *
- * http://api.jqueryui.com/tooltip/#theming
- */
-.ui-tooltip {
-	padding: 8px;
-	position: absolute;
-	z-index: 9999;
-	max-width: 300px;
-}
-body .ui-tooltip {
-	border-width: 2px;
-}
+.words-task-block {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: stretch; }
+  .words-task-block > div {
+    text-align: center; }
+  .words-task-block p {
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px; }
+  .words-task-block .question-block {
+    margin-bottom: 10px; }
+  .words-task-block .answer-block {
+    height: 40%;
+    text-align: center; }
+    .words-task-block .answer-block .game-btn {
+      min-width: initial;
+      min-height: initial;
+      line-height: 45px;
+      font-size: 35px;
+      font-style: "Lalezar", Helvetica, sans-serif; }
+      .words-task-block .answer-block .game-btn.wrong {
+        background-color: rgba(252, 51, 45, 0.911); }
+      .words-task-block .answer-block .game-btn.correct {
+        background-color: #72ce0f; }
+  .words-task-block .verdict-block {
+    height: 10%; }
+    .words-task-block .verdict-block p {
+      color: greenyellow; }
+  .words-task-block .submit-block {
+    height: 20%; }
 /*!
  * jQuery UI CSS Framework 1.12.1
  * http://jqueryui.com
@@ -1048,455 +1062,24 @@ button.ui-button::-moz-focus-inner {
 	background: none;
 }
 /*!
- * jQuery UI Draggable 1.12.1
+ * jQuery UI Tooltip 1.12.1
  * http://jqueryui.com
  *
  * Copyright jQuery Foundation and other contributors
  * Released under the MIT license.
  * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/tooltip/#theming
  */
-.ui-draggable-handle {
-	-ms-touch-action: none;
-	touch-action: none;
+.ui-tooltip {
+	padding: 8px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
 }
-*, *::before, *::after {
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0px; }
-
-@font-face {
-  font-family: 'Rakkas';
-  src: url(../fonts/Rakkas-Regular.ttf);
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Comic';
-  src: url(../fonts/HVD_Comic_Serif_Pro.otf);
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Lalezar';
-  src: url(../fonts/Lalezar-Regular.ttf);
-  font-weight: normal;
-  font-style: normal; }
-
-h1, h2, h3, h4, h5, h6 {
-  font: 12px/18px "Comic", Helvetica, sans-serif;
-  color: #5d676e; }
-
-h1 {
-  font-size: 70px; }
-
-h2 {
-  font-size: 35px;
-  padding-bottom: 15px;
-  line-height: 40px; }
-
-h3 {
-  font-size: 25px;
-  padding-bottom: 10px; }
-
-p, address, time {
-  font: 15px/25px "Lalezar", Helvetica, sans-serif;
-  color: #69747c;
-  text-align: justify;
-  -webkit-user-select: none; }
-
-.page {
-  width: 100%;
-  background: url(../img/clouds1.png);
-  background-repeat: repeat;
-  background-color: #8cbef8;
-  min-height: 100vh;
-  display: grid;
-  grid-gap: 0px 0px;
-  grid-template-areas: ". header ."  "main main main" ". footer .";
-  grid-template-rows: minmax(130px, 220px) auto 70px;
-  grid-template-columns: auto minmax(380px, 600px) auto;
-  justify-content: stretch;
-  justify-items: stretch; }
-
-.main-header {
-  grid-area: header;
-  display: flex;
-  justify-content: center;
-  background: orange;
-  text-align: center; }
-  .main-header .logo {
-    align-self: center;
-    display: inline-block;
-    text-align: center;
-    padding: 30px 0 30px 0;
-    user-select: none;
-    text-decoration: none;
-    color: white; }
-    .main-header .logo span {
-      font: 68px/70px "Comic", Helvetica, sans-serif;
-      display: inline-block;
-      margin: 0 19px;
-      min-width: 250px; }
-
-.main-content {
-  grid-area: main;
-  display: grid;
-  grid-gap: 5px 0px;
-  grid-template-areas: ". content .";
-  grid-template-rows: auto;
-  grid-template-columns: auto minmax(400px, 800px) auto; }
-  .main-content section {
-    padding: 0 0px 40px 0px; }
-  .main-content .main-content-wrapper {
-    border-radius: 5px;
-    grid-area: content;
-    background-color: pink;
-    padding: 40px 0 0 0; }
-    .main-content .main-content-wrapper.alt {
-      background-color: #456c8d; }
-    .main-content .main-content-wrapper .play-game-section {
-      display: flex;
-      justify-content: center; }
-      .main-content .main-content-wrapper .play-game-section .play-btn {
-        width: 170px;
-        vertical-align: middle;
-        height: 65px;
-        background: #456c8d;
-        border: 3px solid;
-        border-radius: 2px;
-        cursor: pointer;
-        border-color: white;
-        font: 300 38px/41px "Comic", Helvetica, sans-serif;
-        color: white; }
-        .main-content .main-content-wrapper .play-game-section .play-btn:hover {
-          background-color: #4d799e;
-          color: dareken(white, 5%);
-          border-color: dareken(white, 50%);
-          font-size: 40px;
-          border-width: 2px; }
-    .main-content .main-content-wrapper .about-author-section article {
-      padding: 0 5px 0 5px;
-      max-width: 650px;
-      margin: 0 auto; }
-      .main-content .main-content-wrapper .about-author-section article h2 {
-        text-align: center; }
-      .main-content .main-content-wrapper .about-author-section article p {
-        text-align: justify;
-        width: 100%;
-        font-size: 17px; }
-      .main-content .main-content-wrapper .about-author-section article p:last-child {
-        margin-top: 10px;
-        text-align: right; }
-    .main-content .main-content-wrapper .about-game-section article {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-content: space-between;
-      max-width: 650px;
-      margin: 0 auto; }
-      .main-content .main-content-wrapper .about-game-section article h2 {
-        width: 100%;
-        text-align: center; }
-      .main-content .main-content-wrapper .about-game-section article p {
-        text-align: center; }
-      .main-content .main-content-wrapper .about-game-section article .img-wrapper {
-        width: 200px;
-        padding: 7px;
-        margin-bottom: 5px;
-        border: solid 2px white;
-        border-radius: 5px;
-        background-color: #456c8d; }
-        .main-content .main-content-wrapper .about-game-section article .img-wrapper .screenshot {
-          max-width: 100%;
-          border: solid 2px white;
-          height: auto;
-          margin-bottom: 3px; }
-        .main-content .main-content-wrapper .about-game-section article .img-wrapper .description {
-          color: white;
-          text-align: center;
-          font-size: 17px;
-          max-height: 90px; }
-
-.main-footer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  grid-area: footer;
-  background: orange;
-  color: white; }
-  .main-footer .copyright {
-    align-self: center;
-    display: inline-block;
-    font: 300 20px/20px "Lalezar", Helvetica, sans-serif; }
-@font-face {
-  font-family: 'Comic';
-  src: url(../fonts/HVD_Comic_Serif_Pro.otf);
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Lalezar';
-  src: url(../fonts/Lalezar-Regular.ttf);
-  font-weight: normal;
-  font-style: normal; }
-
-.game-wrapper {
-  margin: 0 auto;
-  position: relative;
-  display: block;
-  width: 640px;
-  max-width: 650px; }
-  .game-wrapper .gameCanvas {
-    background: #f4fbff;
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    border-radius: 4px; }
-
-.game-btn {
-  display: inline-block;
-  min-width: 140px;
-  min-height: 60px;
-  padding: 2px 12px 2px 12px;
-  vertical-align: middle;
-  background: #456c8d;
-  border: 3px solid;
-  border-radius: 4px;
-  cursor: pointer;
-  border-color: white;
-  font: 35px/40px "Comic", Helvetica, sans-serif;
-  color: white; }
-  .game-btn:disabled {
-    cursor: default; }
-  .game-btn:not([disabled]):hover {
-    background-color: #5886ad;
-    border-color: dareken(white, 50%);
-    transform: scale(1.1, 1.1);
-    border-width: 2px; }
-
-input {
-  padding-left: 6px;
-  padding-right: 6px;
-  border: 3px solid;
-  border-radius: 2px;
-  font: 300 25px/30px "Comic", Helvetica, sans-serif;
-  color: #69747c; }
-
-input::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: lightgrey; }
-
-.in-game-ui-wrapper {
-  width: 640px;
-  height: 100%;
-  display: none;
-  z-index: 1;
-  margin: 0 auto;
-  position: absolute; }
-  .in-game-ui-wrapper .player-block,
-  .in-game-ui-wrapper .enemy-block {
-    position: absolute;
-    display: flex;
-    min-height: 71px;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start; }
-    .in-game-ui-wrapper .player-block .name, .in-game-ui-wrapper .player-block .nick,
-    .in-game-ui-wrapper .enemy-block .name,
-    .in-game-ui-wrapper .enemy-block .nick {
-      padding: 5px 5px 5px 5px;
-      font: 35px/38px "Comic", Helvetica, sans-serif;
-      max-width: 269px;
-      overflow: hidden;
-      -webkit-text-stroke: 2px #000000; }
-  .in-game-ui-wrapper .player-block {
-    top: 30px;
-    left: 40px;
-    align-items: flex-start; }
-    .in-game-ui-wrapper .player-block .name {
-      text-align: center;
-      color: rgba(126, 207, 245, 0.76); }
-  .in-game-ui-wrapper .enemy-block {
-    top: 30px;
-    right: 40px;
-    align-items: flex-end; }
-    .in-game-ui-wrapper .enemy-block .name, .in-game-ui-wrapper .enemy-block .nick {
-      color: #ff8b67; }
-    .in-game-ui-wrapper .enemy-block .name {
-      text-align: center; }
-    .in-game-ui-wrapper .enemy-block .nick {
-      text-align: right; }
-  .in-game-ui-wrapper .player-health-bar,
-  .in-game-ui-wrapper .enemy-health-bar {
-    position: relative;
-    width: 270px;
-    height: 26px;
-    background-color: rgba(255, 160, 131, 0.56);
-    border: 2px solid black;
-    box-shadow: inset 0 0 0 2px rgba(255, 160, 131, 0.56);
-    overflow: hidden; }
-    .in-game-ui-wrapper .player-health-bar .hb-fl,
-    .in-game-ui-wrapper .enemy-health-bar .hb-fl {
-      height: 100%;
-      background: rgba(178, 250, 59, 0.71);
-      box-shadow: inset 0 0px 0 0px black, inset 0 -4px 0 -2px rgba(178, 250, 59, 0.71), inset 4px 0 0 -2px rgba(178, 250, 59, 0.71), inset -4px 0 0 -2px rgba(178, 250, 59, 0.71); }
-  .in-game-ui-wrapper .player-health-bar .hb-fl {
-    float: left;
-    width: 100%; }
-  .in-game-ui-wrapper .enemy-health-bar .hb-fl {
-    float: right;
-    width: 100%; }
-  .in-game-ui-wrapper .score {
-    position: absolute;
-    top: 40px;
-    left: 48%;
-    text-align: center;
-    color: #ffd9bb;
-    font: 35px/36px "Lalezar", Helvetica, sans-serif; }
-  .in-game-ui-wrapper .down-btn-ui-block {
-    position: absolute;
-    width: 100%;
-    bottom: 30px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-content: center; }
-    .in-game-ui-wrapper .down-btn-ui-block .game-btn {
-      position: relative;
-      font-size: 24px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-      .in-game-ui-wrapper .down-btn-ui-block .game-btn:not([disabled]):hover {
-        transform: scale(1.1, 1.1); }
-
-.modal-menu {
-  display: none;
-  z-index: 1;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  width: 600px;
-  height: 400px;
-  padding: 40px 40px 25px 40px;
-  background: #f4fbff;
-  border: 3px solid #8cbef8;
-  border-radius: 7px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-  .modal-menu .close-element {
-    position: absolute;
-    font-size: 30px;
-    font-weight: bold;
-    color: darkslategray;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    display: block;
-    line-height: 1rem;
-    color: white;
-    background-color: lightblue;
-    border: none;
-    border-radius: 3px;
-    text-align: center;
-    width: 22px;
-    height: 22px;
-    font: 31px/28px "Lalezar", Helvetica, sans-serif; }
-    .modal-menu .close-element:not([disabled]):hover {
-      background-color: pink; }
-
-.small-modal-menu {
-  display: none;
-  z-index: 1;
-  width: 180px;
-  height: 180px;
-  top: calc( 50% - 180px / 2);
-  left: calc( 50% - 180px / 2); }
-  .small-modal-menu .spell-wrapper {
-    display: flex;
-    position: absolute;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 50%; }
-    .small-modal-menu .spell-wrapper p {
-      font: 24px/25px "Comic", Helvetica, sans-serif;
-      height: 100%;
-      width: 100%;
-      text-align: center;
-      line-height: 3.5; }
-    .small-modal-menu .spell-wrapper:nth-of-type(1) {
-      top: 0;
-      left: 0; }
-    .small-modal-menu .spell-wrapper:nth-of-type(2) {
-      top: 0;
-      right: 0; }
-    .small-modal-menu .spell-wrapper:nth-of-type(3) {
-      bottom: 0;
-      left: 0; }
-    .small-modal-menu .spell-wrapper:nth-of-type(4) {
-      bottom: 0;
-      right: 0; }
-  .small-modal-menu .spell-wrapper:hover, .small-modal-menu .spell-wrapper:focus {
-    cursor: pointer;
-    background-color: #8cbef8; }
-    .small-modal-menu .spell-wrapper:hover p, .small-modal-menu .spell-wrapper:focus p {
-      transform: scale(1.1, 1.1); }
-
-.game-over-menu-overlay,
-.start-menu-overlay {
-  display: block;
-  margin: auto;
-  width: 640px;
-  height: 480px;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #f4fbff;
-  border-radius: 3px; }
-  .game-over-menu-overlay .menu-btn-block,
-  .start-menu-overlay .menu-btn-block {
-    display: flex;
-    margin: 0 auto;
-    flex-flow: column nowrap;
-    justify-content: start;
-    align-items: center;
-    width: 400px;
-    height: 100%;
-    padding: 75px 0 0px 0;
-    text-align: center; }
-    .game-over-menu-overlay .menu-btn-block h2,
-    .start-menu-overlay .menu-btn-block h2 {
-      padding: 10px;
-      display: block; }
-    .game-over-menu-overlay .menu-btn-block input,
-    .start-menu-overlay .menu-btn-block input {
-      width: 240px;
-      height: 50px;
-      display: block; }
-
-.start-menu-overlay {
-  display: block; }
-  .start-menu-overlay .menu-btn-block * {
-    margin-bottom: 20px; }
-
-.game-over-menu-overlay {
-  display: none; }
-
-table.score-table {
-  height: 230px;
-  width: 250px;
-  text-align: left;
-  display: table;
-  border-collapse: separate;
-  border-spacing: 2px;
-  border-color: gray; }
-  table.score-table td, table.score-table th {
-    text-align: left;
-    font: 30px/36px 'Comic', Helvetica, sans-serif;
-    color: burlywood; }
+body .ui-tooltip {
+	border-width: 2px;
+}
 .maths-task-block {
   height: 100%;
   display: flex;
@@ -1555,39 +1138,18 @@ table.score-table {
       color: greenyellow; }
   .eng-to-rus-task-block .submit-block {
     height: 10%; }
-.words-task-block {
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: stretch; }
-  .words-task-block > div {
-    text-align: center; }
-  .words-task-block p {
-    text-align: center;
-    font-size: 28px;
-    line-height: 38px; }
-  .words-task-block .question-block {
-    margin-bottom: 10px; }
-  .words-task-block .answer-block {
-    height: 40%;
-    text-align: center; }
-    .words-task-block .answer-block .game-btn {
-      min-width: initial;
-      min-height: initial;
-      line-height: 45px;
-      font-size: 35px;
-      font-style: "Lalezar", Helvetica, sans-serif; }
-      .words-task-block .answer-block .game-btn.wrong {
-        background-color: rgba(252, 51, 45, 0.911); }
-      .words-task-block .answer-block .game-btn.correct {
-        background-color: #72ce0f; }
-  .words-task-block .verdict-block {
-    height: 10%; }
-    .words-task-block .verdict-block p {
-      color: greenyellow; }
-  .words-task-block .submit-block {
-    height: 20%; }
+/*!
+ * jQuery UI Draggable 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+.ui-draggable-handle {
+	-ms-touch-action: none;
+	touch-action: none;
+}
 .maths-task-block {
   height: 100%;
   display: flex;
@@ -1985,5 +1547,584 @@ table.score-table {
     .tasks-menu-block .tasks-block .game-btn {
       font-size: 25px;
       line-height: 48px; }
+@font-face {
+  font-family: 'Comic';
+  src: url(../fonts/HVD_Comic_Serif_Pro.otf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lalezar';
+  src: url(../fonts/Lalezar-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+.game-over-menu-overlay,
+.start-menu-overlay {
+  display: block;
+  margin: auto;
+  width: 640px;
+  height: 480px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f4fbff;
+  border-radius: 3px; }
+  .game-over-menu-overlay .menu-btn-block,
+  .start-menu-overlay .menu-btn-block {
+    display: flex;
+    margin: 0 auto;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    padding: 75px 0 0px 0;
+    text-align: center; }
+    .game-over-menu-overlay .menu-btn-block h2,
+    .start-menu-overlay .menu-btn-block h2 {
+      padding: 10px;
+      display: block; }
+    .game-over-menu-overlay .menu-btn-block input,
+    .start-menu-overlay .menu-btn-block input {
+      width: 240px;
+      height: 50px;
+      display: block; }
+
+.start-menu-overlay {
+  display: block; }
+  .start-menu-overlay .menu-btn-block * {
+    margin-bottom: 20px; }
+
+.game-over-menu-overlay {
+  display: none; }
+
+table.score-table {
+  height: 230px;
+  width: 250px;
+  text-align: left;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray; }
+  table.score-table td, table.score-table th {
+    text-align: left;
+    font: 30px/36px 'Comic', Helvetica, sans-serif;
+    color: burlywood; }
+@font-face {
+  font-family: 'Comic';
+  src: url(../fonts/HVD_Comic_Serif_Pro.otf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lalezar';
+  src: url(../fonts/Lalezar-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+.in-game-ui-wrapper {
+  width: 640px;
+  height: 100%;
+  display: none;
+  z-index: 1;
+  margin: 0 auto; }
+  .in-game-ui-wrapper .player-block,
+  .in-game-ui-wrapper .enemy-block {
+    position: absolute;
+    display: flex;
+    min-height: 71px;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .in-game-ui-wrapper .player-block .name, .in-game-ui-wrapper .player-block .nick,
+    .in-game-ui-wrapper .enemy-block .name,
+    .in-game-ui-wrapper .enemy-block .nick {
+      padding: 5px 5px 5px 5px;
+      font: 35px/38px "Comic", Helvetica, sans-serif;
+      max-width: 269px;
+      overflow: hidden;
+      -webkit-text-stroke: 2px #000000; }
+  .in-game-ui-wrapper .player-block {
+    top: 30px;
+    left: 40px;
+    align-items: flex-start; }
+    .in-game-ui-wrapper .player-block .name {
+      text-align: center;
+      color: rgba(126, 207, 245, 0.76); }
+  .in-game-ui-wrapper .enemy-block {
+    top: 30px;
+    right: 40px;
+    align-items: flex-end; }
+    .in-game-ui-wrapper .enemy-block .name, .in-game-ui-wrapper .enemy-block .nick {
+      color: #ff8b67; }
+    .in-game-ui-wrapper .enemy-block .name {
+      text-align: center; }
+    .in-game-ui-wrapper .enemy-block .nick {
+      text-align: right; }
+  .in-game-ui-wrapper .player-health-bar,
+  .in-game-ui-wrapper .enemy-health-bar {
+    position: relative;
+    width: 270px;
+    height: 26px;
+    background-color: rgba(255, 160, 131, 0.56);
+    border: 2px solid black;
+    box-shadow: inset 0 0 0 2px rgba(255, 160, 131, 0.56);
+    overflow: hidden; }
+    .in-game-ui-wrapper .player-health-bar .hb-fl,
+    .in-game-ui-wrapper .enemy-health-bar .hb-fl {
+      height: 100%;
+      background: rgba(178, 250, 59, 0.71);
+      box-shadow: inset 0 0px 0 0px black, inset 0 -4px 0 -2px rgba(178, 250, 59, 0.71), inset 4px 0 0 -2px rgba(178, 250, 59, 0.71), inset -4px 0 0 -2px rgba(178, 250, 59, 0.71); }
+  .in-game-ui-wrapper .player-health-bar .hb-fl {
+    float: left;
+    width: 100%; }
+  .in-game-ui-wrapper .enemy-health-bar .hb-fl {
+    float: right;
+    width: 100%; }
+  .in-game-ui-wrapper .score {
+    position: absolute;
+    top: 40px;
+    left: 48%;
+    text-align: center;
+    color: #ffd9bb;
+    font: 35px/36px "Lalezar", Helvetica, sans-serif; }
+  .in-game-ui-wrapper .down-btn-ui-block {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center; }
+    .in-game-ui-wrapper .down-btn-ui-block .game-btn {
+      position: relative;
+      font-size: 24px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .in-game-ui-wrapper .down-btn-ui-block .game-btn:not([disabled]):hover {
+        transform: scale(1.1, 1.1); }
+@font-face {
+  font-family: 'Comic';
+  src: url(../fonts/HVD_Comic_Serif_Pro.otf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lalezar';
+  src: url(../fonts/Lalezar-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+.modal-menu {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 600px;
+  height: 400px;
+  padding: 40px 40px 25px 40px;
+  background: #f4fbff;
+  border: 3px solid #8cbef8;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .modal-menu .close-element {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: darkslategray;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: block;
+    line-height: 1rem;
+    color: white;
+    background-color: lightblue;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    width: 22px;
+    height: 22px;
+    font: 31px/28px "Lalezar", Helvetica, sans-serif; }
+    .modal-menu .close-element:not([disabled]):hover {
+      background-color: pink; }
+@font-face {
+  font-family: 'Comic';
+  src: url(../fonts/HVD_Comic_Serif_Pro.otf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lalezar';
+  src: url(../fonts/Lalezar-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+.small-modal-menu {
+  display: none;
+  z-index: 1;
+  width: 180px;
+  height: 180px;
+  top: calc( 50% - 180px / 2);
+  left: calc( 50% - 180px / 2); }
+  .small-modal-menu .spell-wrapper {
+    display: flex;
+    position: absolute;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%; }
+    .small-modal-menu .spell-wrapper p {
+      font: 24px/25px "Comic", Helvetica, sans-serif;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      line-height: 3.5; }
+    .small-modal-menu .spell-wrapper:nth-of-type(1) {
+      top: 0;
+      left: 0; }
+    .small-modal-menu .spell-wrapper:nth-of-type(2) {
+      top: 0;
+      right: 0; }
+    .small-modal-menu .spell-wrapper:nth-of-type(3) {
+      bottom: 0;
+      left: 0; }
+    .small-modal-menu .spell-wrapper:nth-of-type(4) {
+      bottom: 0;
+      right: 0; }
+  .small-modal-menu .spell-wrapper:hover, .small-modal-menu .spell-wrapper:focus {
+    cursor: pointer;
+    background-color: #8cbef8; }
+    .small-modal-menu .spell-wrapper:hover p, .small-modal-menu .spell-wrapper:focus p {
+      transform: scale(1.1, 1.1); }
+@font-face {
+  font-family: 'Comic';
+  src: url(../fonts/HVD_Comic_Serif_Pro.otf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lalezar';
+  src: url(../fonts/Lalezar-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+.game-over-menu-overlay,
+.start-menu-overlay {
+  display: block;
+  margin: auto;
+  width: 640px;
+  height: 480px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f4fbff;
+  border-radius: 3px; }
+  .game-over-menu-overlay .menu-btn-block,
+  .start-menu-overlay .menu-btn-block {
+    display: flex;
+    margin: 0 auto;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    padding: 75px 0 0px 0;
+    text-align: center; }
+    .game-over-menu-overlay .menu-btn-block h2,
+    .start-menu-overlay .menu-btn-block h2 {
+      padding: 10px;
+      display: block; }
+    .game-over-menu-overlay .menu-btn-block input,
+    .start-menu-overlay .menu-btn-block input {
+      width: 240px;
+      height: 50px;
+      display: block; }
+
+.start-menu-overlay {
+  display: block; }
+  .start-menu-overlay .menu-btn-block * {
+    margin-bottom: 20px; }
+
+.game-over-menu-overlay {
+  display: none; }
+
+table.score-table {
+  height: 230px;
+  width: 250px;
+  text-align: left;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray; }
+  table.score-table td, table.score-table th {
+    text-align: left;
+    font: 30px/36px 'Comic', Helvetica, sans-serif;
+    color: burlywood; }
+@font-face {
+  font-family: 'Comic';
+  src: url(../fonts/HVD_Comic_Serif_Pro.otf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lalezar';
+  src: url(../fonts/Lalezar-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+.game-wrapper {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: 640px;
+  max-width: 650px; }
+  .game-wrapper .gameCanvas {
+    background: #f4fbff;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px; }
+
+.game-btn {
+  display: inline-block;
+  min-width: 140px;
+  min-height: 60px;
+  padding: 2px 12px 2px 12px;
+  vertical-align: middle;
+  background: #456c8d;
+  border: 3px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  border-color: white;
+  font: 35px/40px "Comic", Helvetica, sans-serif;
+  color: white; }
+  .game-btn:disabled {
+    cursor: default; }
+  .game-btn:not([disabled]):hover, .game-btn:not([disabled]):focus {
+    background-color: #5886ad;
+    border-color: dareken(white, 50%);
+    transform: scale(1.1, 1.1);
+    border-width: 2px; }
+
+input {
+  padding-left: 6px;
+  padding-right: 6px;
+  border: 3px solid;
+  border-radius: 2px;
+  font: 300 25px/30px "Comic", Helvetica, sans-serif;
+  color: #69747c; }
+
+input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: lightgrey; }
+.loading-screen {
+  display: none;
+  border: none;
+  margin: 0 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+  .loading-screen .loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px; }
+
+@font-face {
+  font-family: 'Rakkas';
+  src: url(../fonts/Rakkas-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Comic';
+  src: url(../fonts/HVD_Comic_Serif_Pro.otf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lalezar';
+  src: url(../fonts/Lalezar-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  font: 12px/18px "Comic", Helvetica, sans-serif;
+  color: #5d676e; }
+
+h1 {
+  font-size: 70px; }
+
+h2 {
+  font-size: 35px;
+  padding-bottom: 15px;
+  line-height: 40px; }
+
+h3 {
+  font-size: 25px;
+  padding-bottom: 10px; }
+
+p, address, time {
+  font: 15px/25px "Lalezar", Helvetica, sans-serif;
+  color: #69747c;
+  text-align: justify;
+  -webkit-user-select: none; }
+
+.page {
+  width: 100%;
+  background: url(../img/clouds1.png);
+  background-repeat: repeat;
+  background-color: #8cbef8;
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 0px 0px;
+  grid-template-areas: ". header ."  "main main main" ". footer .";
+  grid-template-rows: minmax(130px, 220px) auto 70px;
+  grid-template-columns: auto minmax(380px, 600px) auto;
+  justify-content: stretch;
+  justify-items: stretch; }
+
+*:focus {
+  outline: none; }
+
+.main-header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  background: orange;
+  text-align: center; }
+  .main-header .logo {
+    align-self: center;
+    display: inline-block;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    user-select: none;
+    text-decoration: none;
+    color: white; }
+    .main-header .logo span {
+      font: 68px/70px "Comic", Helvetica, sans-serif;
+      display: inline-block;
+      margin: 0 19px;
+      min-width: 250px; }
+
+.main-content {
+  grid-area: main;
+  display: grid;
+  grid-gap: 5px 0px;
+  grid-template-areas: ". content .";
+  grid-template-rows: auto;
+  grid-template-columns: auto minmax(400px, 800px) auto; }
+  .main-content section {
+    padding: 0 0px 40px 0px; }
+  .main-content .main-content-wrapper {
+    border-radius: 5px;
+    grid-area: content;
+    background-color: pink;
+    padding: 40px 0 0 0; }
+    .main-content .main-content-wrapper.alt {
+      background-color: #456c8d; }
+    .main-content .main-content-wrapper .play-game-section {
+      display: flex;
+      justify-content: center; }
+      .main-content .main-content-wrapper .play-game-section .play-btn {
+        width: 170px;
+        vertical-align: middle;
+        height: 65px;
+        background: #456c8d;
+        border: 3px solid;
+        border-radius: 2px;
+        cursor: pointer;
+        border-color: white;
+        font: 300 38px/41px "Comic", Helvetica, sans-serif;
+        color: white; }
+        .main-content .main-content-wrapper .play-game-section .play-btn:hover {
+          background-color: #4d799e;
+          color: dareken(white, 5%);
+          border-color: dareken(white, 50%);
+          font-size: 40px;
+          border-width: 2px; }
+    .main-content .main-content-wrapper .about-author-section article {
+      padding: 0 5px 0 5px;
+      max-width: 650px;
+      margin: 0 auto; }
+      .main-content .main-content-wrapper .about-author-section article h2 {
+        text-align: center; }
+      .main-content .main-content-wrapper .about-author-section article p {
+        text-align: justify;
+        width: 100%;
+        font-size: 17px; }
+      .main-content .main-content-wrapper .about-author-section article p:last-child {
+        margin-top: 10px;
+        text-align: right; }
+    .main-content .main-content-wrapper .about-game-section article {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: space-between;
+      max-width: 650px;
+      margin: 0 auto; }
+      .main-content .main-content-wrapper .about-game-section article h2 {
+        width: 100%;
+        text-align: center; }
+      .main-content .main-content-wrapper .about-game-section article p {
+        text-align: center; }
+      .main-content .main-content-wrapper .about-game-section article .img-wrapper {
+        width: 200px;
+        padding: 7px;
+        margin-bottom: 5px;
+        border: solid 2px white;
+        border-radius: 5px;
+        background-color: #456c8d; }
+        .main-content .main-content-wrapper .about-game-section article .img-wrapper .screenshot {
+          max-width: 100%;
+          border: solid 2px white;
+          height: auto;
+          margin-bottom: 3px; }
+        .main-content .main-content-wrapper .about-game-section article .img-wrapper .description {
+          color: white;
+          text-align: center;
+          font-size: 17px;
+          max-height: 90px; }
+
+.main-footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  grid-area: footer;
+  background: orange;
+  color: white; }
+  .main-footer .copyright {
+    align-self: center;
+    display: inline-block;
+    font: 300 20px/20px "Lalezar", Helvetica, sans-serif; }
 
 /*# sourceMappingURL=style.css.map*/

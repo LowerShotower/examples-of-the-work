@@ -1,0 +1,369 @@
+$bg-color: rgb(196, 212, 230);
+$game-bg-color: rgb(244, 251, 255);
+$theme-color: pink;
+$theme-second-color:rgb(140, 190, 248);
+$headers-color: #5d6871;
+$text-color: #69747c;
+$header-footer-color:orange;
+$h-text-color: white;
+$border-color:white;
+$border-alt-color: #8cbef8;
+$btn-color:#456c8d;
+$player-name-color: rgba(126, 207, 245, 0.76);//#53ff79;;
+$enemy-name-color: #ff8b67;
+$hb:rgba(255, 160, 131, 0.56);
+$hb-fl: rgba(178, 250, 59, 0.71);
+$hb-b: black;
+$hb-b-sh:rgba(255, 160, 131, 0.56);
+$score-color: rgb(255, 217, 187);
+$wrong-answer-color:rgba(252, 51, 45, 0.911);
+$right-answer-color:#72ce0f;
+
+$game-width: 640px;
+$game-height: 480px;
+
+$main-font:'Lalezar';
+$header-font:'Comic';
+
+@font-face {
+    font-family: 'Comic';
+    src: url('fonts/HVD_Comic_Serif_Pro.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lalezar';
+    src: url('fonts/Lalezar-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+//  **************************** General ******************************
+.game-wrapper {
+    margin: 0 auto;
+    position: relative;
+    display:block;
+    width: $game-width;
+    max-width: 650px;
+    & .gameCanvas { 
+        background: $game-bg-color; 
+        position: relative;
+        display: block;
+        margin: 0 auto; 
+        border-radius: 4px;
+    }
+}
+
+.game-btn {
+    display: inline-block;
+    min-width:140px;
+    min-height:60px;
+    padding: 2px 12px 2px 12px;
+    vertical-align: middle;
+    background: $btn-color;
+    border: 3px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: $border-color;
+    font:  35px/40px  $header-font, Helvetica, sans-serif;
+    color: $border-color;
+    &:disabled{
+        cursor: default;
+    }
+    &:not([disabled]):hover, &:not([disabled]):focus{
+        background-color: lighten($btn-color, 10%);
+        border-color: dareken($border-color, 50%) ;
+        transform: scale(1.1,1.1);
+        border-width: 2px;
+    }
+}
+
+input {
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 3px solid;
+    border-radius: 2px;
+    font: 300 25px/30px  $header-font, Helvetica, sans-serif;
+    color: $text-color;
+    
+}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: lightgrey;
+  }
+
+//  ************************** UI *********************************
+// .in-game-ui-wrapper {
+//     width: $game-width;
+//     height:100%;
+//     display: none;
+//     z-index: 1;
+//     margin: 0 auto;
+//     position: absolute;
+
+//     & .player-block, 
+//     & .enemy-block {
+//         position: absolute;
+//         display: flex;
+//         min-height: 71px;
+//         flex-flow: column nowrap;
+//         justify-content: flex-start;
+//         align-items: flex-start;
+
+//         & .name, & .nick {
+//             padding: 5px 5px 5px 5px;
+//             font: 35px/38px $header-font, Helvetica, sans-serif;
+//             max-width: 269px;
+//             overflow: hidden;
+//             -webkit-text-stroke: 2px #000000;
+//         }
+//     }
+
+//     & .player-block {
+//         top:30px;left: 40px;
+//         align-items: flex-start;
+
+//         & .name {
+//             text-align: center;
+//             color: $player-name-color;
+//         }
+
+//     }
+//     & .enemy-block {
+//         top:30px;right:40px;
+//         align-items: flex-end;
+//         & .name, & .nick {
+//             color:$enemy-name-color;
+//         }
+//         & .name {
+//             // margin-bottom: 1px;
+//             text-align: center;
+//         }
+//         & .nick {
+//             text-align: right;
+//         }
+//     }
+
+//     & .player-health-bar,
+//     &  .enemy-health-bar {
+//         position: relative;
+//         width: 270px;
+//         height: 26px;
+//         background-color: $hb;
+//         border: 2px solid $hb-b;
+//         box-shadow: inset 0 0 0 2px $hb-b-sh;
+//         overflow: hidden;
+
+//         & .hb-fl {
+//             height: 100%;
+//             background: $hb-fl;
+//             box-shadow: inset 0 0px 0 0px black,
+//             inset 0 -4px 0 -2px $hb-fl,
+//             inset 4px 0 0 -2px $hb-fl,
+//             inset -4px 0 0 -2px $hb-fl;
+//         }
+//     }
+
+//     & .player-health-bar {
+//         // margin-top: -4px;
+//         & .hb-fl {
+//             float:left;
+//             width: 100%;
+//         }
+//     }
+
+//     & .enemy-health-bar {
+//         // margin-top: -2px;
+//         & .hb-fl {
+//             float:right;
+//             width: 100%;
+//         }
+//     }
+
+//     & .score {
+//         position: absolute;
+//         top: 40px;
+//         left: 48%;
+//         text-align: center;
+//         color: $score-color;
+//         font: 35px/36px $main-font, Helvetica, sans-serif;
+//     }
+
+//     & .down-btn-ui-block {
+//         position: absolute;
+//         width:100%;
+//         bottom:30px;
+//         display: flex;
+//         flex-flow: row nowrap;
+//         justify-content: center;
+//         align-content: center;
+        
+//         & .game-btn {
+//             position: relative; 
+//             font-size: 24px;
+//             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+//             &:not([disabled]):hover{
+//                 transform: scale(1.1,1.1);
+//             }
+//         }
+//     }
+// }
+
+//  ************************** modal Menu *********************************
+
+// .modal-menu {
+//     display:none;
+//     z-index: 1;
+//     position: absolute;
+//     left:20px;
+//     top:20px;
+//     width:600px;
+//     height:400px;
+//     padding: 40px 40px 25px 40px;
+//     background: $game-bg-color;
+//     border: 3px solid $theme-second-color;
+//     border-radius: 7px;
+//     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+//     & .close-element {
+//         position: absolute;
+//         font-size: 30px;
+//         font-weight: bold;
+//         color: darkslategray;
+//         top: 20px;
+//         right: 20px;
+//         cursor: pointer;
+//         display: block;
+//         line-height: 1rem;color: white;
+//         background-color: lightblue;
+//         border: none;
+//         border-radius: 3px;
+//         text-align: center;
+//         width: 22px;
+//         height: 22px;
+//         font: 31px/28px "Lalezar", Helvetica, sans-serif;
+
+//         &:not([disabled]):hover {
+//             background-color: $theme-color;
+//         }
+//     }
+
+// }
+
+//  ************************** Small modal menu *********************************
+// .small-modal-menu {
+//     display: none;
+//     z-index: 1;
+//     $s:180px;
+//     width: $s;
+//     height: $s;
+//     top: calc( 50% - 180px / 2 );
+//     left: calc( 50% - 180px / 2 );
+
+//     & .spell-wrapper{
+//         display: flex;
+//         position: absolute;
+//         flex-flow: row nowrap;
+//         justify-content: center;
+//         align-items: center;
+//         width:50%;
+//         height:50%;
+
+//         & p {
+//             font: 24px/25px "Comic", Helvetica, sans-serif;
+//             height: 100%;
+//             width: 100%;
+//             text-align: center;
+//             line-height: 3.5;
+//         }
+
+//         &:nth-of-type(1){
+//             top: 0;left: 0;
+//         }
+
+//         &:nth-of-type(2){
+//             top: 0;right: 0;
+//         }
+
+//         &:nth-of-type(3){
+//             bottom: 0; left: 0; 
+//         }
+        
+//         &:nth-of-type(4){
+//             bottom: 0; right: 0;;
+//         }
+//     }
+    
+//     & .spell-wrapper:hover,& .spell-wrapper:focus{
+//         cursor: pointer;
+//         background-color: $border-alt-color;
+//         & p{
+//             transform: scale(1.1,1.1);
+//         }
+//     }
+// }
+
+//  ************************** start , gameOver menus *********************************
+
+// .game-over-menu-overlay,
+// .start-menu-overlay {
+//     display: block;
+//     margin: auto;
+//     width: $game-width;
+//     height: $game-height;
+//     position: absolute;
+//     z-index: 2;
+//     top: 0; bottom: 0;
+//     left: 0; right: 0;
+//     background-color: $game-bg-color;
+//     border-radius:3px;
+//     // opacity: .5;
+//     & .menu-btn-block {
+//         display: flex;
+//         margin: 0 auto;
+//         flex-flow: column nowrap;
+//         justify-content: start;
+//         align-items: center;
+//         width: 400px;
+//         height: 100%;
+//         padding: 75px 0 0px 0;
+//         text-align: center;
+        
+//         & h2 {
+//             padding: 10px;
+//             display: block;
+//         }
+//         & input {
+//             width:240px;
+//             height:50px;
+//             display: block;
+//         }
+//         & button {
+//         }
+//     }
+// }
+// .start-menu-overlay{
+//     display: block;
+//     & .menu-btn-block {
+//         & * {
+//             margin-bottom: 20px;
+//         }
+//     }
+// }
+
+// .game-over-menu-overlay {
+//     display:none;
+// }
+
+// table.score-table{
+//     height:230px;
+//     width: 250px;
+//     text-align: left;
+//     display: table;
+//     border-collapse: separate;
+//     border-spacing: 2px;
+//     border-color: gray;
+//     & td, & th{
+//         text-align: left;
+//         font: 30px/36px 'Comic', Helvetica, sans-serif;
+//         color: burlywood;
+//     }
+// }

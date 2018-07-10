@@ -1,0 +1,257 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    padding: 0px; margin: 0px;
+}
+
+$grid-gap-v: 0px;
+$grid-gap-h: 0px;
+$grid-auto-rows: minmax(50px,auto);
+
+$theme-color: pink;
+$theme-second-color:rgb(140, 190, 248);
+$headers-color: #5d6871;
+$text-color: #69747c;
+$header-footer-color:orange;
+$h-text-color: white;
+$border-color:white;
+$btn-color:#456c8d;
+
+$header-font:'Comic';
+$main-font:'Lalezar';
+// $logo-font:'TrendSansOne';
+// $iconic-font:'SocialGliphs';
+// $rel-content-font:'CantarellRegular';
+
+@font-face {
+    font-family: 'Rakkas';
+    src: url('fonts/Rakkas-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comic';
+    src: url('fonts/HVD_Comic_Serif_Pro.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lalezar';
+    src: url('fonts/Lalezar-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//  ************* General **********************
+h1,h2,h3,h4,h5,h6{
+    font: 12px/18px $header-font, Helvetica, sans-serif;
+    color:darken($text-color, $amount: 5%);
+}
+
+h1{font-size: 70px;}
+h2{
+    font-size: 35px;
+    padding-bottom: 15px;
+    line-height: 40px;
+}
+h3{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+p, address,time { 
+    font: 15px/25px $main-font, Helvetica, sans-serif; 
+    color: $text-color;
+    text-align: justify;
+    -webkit-user-select: none;
+}
+
+.page {
+    width:100%;
+    background: url('img/clouds1.png');
+    background-repeat: repeat;
+    background-color:$theme-second-color;
+    min-height: 100vh;
+    display: grid;
+    grid-gap: #{$grid-gap-v} #{$grid-gap-h};
+    grid-template-areas: ". header ." 
+                        "main main main"
+                        ". footer .";
+    grid-template-rows:  minmax(130px,220px) auto 70px;
+    grid-template-columns: auto minmax(380px, 600px) auto;
+    justify-content: stretch;
+    justify-items: stretch;
+}
+
+*:focus {
+    outline: none;
+}
+
+// ************** Header ***********************
+.main-header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    background: $header-footer-color;
+    text-align: center;
+    & .logo {
+        align-self: center;
+        display: inline-block;
+        text-align: center;
+        padding: 30px 0 30px 0;
+        user-select: none;
+        text-decoration: none;
+        color: white;
+        & span{
+            font: 68px/70px $header-font, Helvetica, sans-serif;
+            display: inline-block;
+            margin: 0 19px;
+            min-width: 250px;
+        }
+    }
+}
+
+
+// ************** Main content ***********************
+
+.main-content {
+    grid-area: main;
+    display: grid;
+    
+    grid-gap: 5px #{$grid-gap-h};
+    grid-template-areas: ". content .";
+    grid-template-rows: auto;
+    grid-template-columns: auto minmax(400px,800px) auto;
+    & section {
+        padding: 0 0px 40px 0px;
+    }
+
+    
+    & .main-content-wrapper {
+        border-radius: 5px;
+        grid-area: content;
+        background-color: $theme-color;
+        padding: 40px 0 0 0;
+        &.alt {
+            background-color: $btn-color;
+        }
+        & .play-game-section{
+            display: flex;
+            justify-content: center;
+            & .play-btn {
+                width:170px;
+                vertical-align: middle;
+                height:65px;
+                background: $btn-color;
+                
+                border: 3px solid;
+                border-radius: 2px;
+                cursor: pointer;
+                border-color: $border-color;
+                font: 300 38px/41px  $header-font, Helvetica, sans-serif;
+                color: $border-color;
+                &:hover{
+                    background-color: lighten($btn-color, 5%);
+                    color: dareken($border-color, 5%) ;
+                    border-color: dareken($border-color, 50%) ;
+                    font-size: 40px;
+                    border-width: 2px;
+                }
+            }
+            & .game-wrapper {
+                
+            }
+        }
+
+        & .about-author-section {
+            & article {
+                padding: 0 5px 0 5px;
+                max-width: 650px;
+                margin: 0 auto;
+                & h2{
+                    text-align: center;
+                }
+                & p{
+                    text-align:justify;
+                    width:100%;
+                    font-size: 17px;
+                }
+                & p:last-child{
+                    margin-top: 10px;
+                    text-align:right;
+                    
+                }
+            }
+        }
+        
+        & .about-game-section {
+            
+            & article {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: space-between;
+                max-width: 650px;
+                margin: 0 auto;
+                & h2 {
+                    width: 100%;
+                    text-align: center;
+                }
+                & p {
+                    text-align: center;
+                    
+                
+                }
+                & .img-wrapper{
+                    width: 200px;
+                    padding: 7px;
+                    margin-bottom: 5px;
+                     border: solid 2px $border-color;
+                    border-radius: 5px;
+                    background-color: lighten($btn-color,0%);
+
+                    & .screenshot{
+                        max-width: 100%;
+                        border: solid 2px $border-color;
+                    height: auto;
+                        margin-bottom: 3px;
+                    } 
+
+                    & .description{
+                        color:$border-color;
+                        text-align: center;
+                        font-size: 17px;  
+                        max-height: 90px;
+                        
+                    }
+                 }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// ************** Footer ***********************
+.main-footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    grid-area: footer;
+    background: $header-footer-color;
+    color: white;
+    & .copyright {
+        align-self: center;
+        display: inline-block;
+        font: 300 20px/20px  $main-font, Helvetica, sans-serif;
+    }
+}
+
+
+
+

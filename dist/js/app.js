@@ -64388,216 +64388,606 @@ module.exports = function(originalModule) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _js_pages_page_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/pages/page.js */ "./src/js/pages/page.js");
-/* harmony import */ var _img_terrain_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/terrain.jpg */ "./src/img/terrain.jpg");
-/* harmony import */ var _img_terrain_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_terrain_jpg__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _img_terrain2_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/terrain2.jpg */ "./src/img/terrain2.jpg");
-/* harmony import */ var _img_terrain2_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_terrain2_jpg__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _img_sprites_attacks_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/sprites/attacks.png */ "./src/img/sprites/attacks.png");
-/* harmony import */ var _img_sprites_attacks_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_sprites_attacks_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _img_sprites_entities_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/sprites/entities.png */ "./src/img/sprites/entities.png");
-/* harmony import */ var _img_sprites_entities_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_sprites_entities_png__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _img_sprites_explosions_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/sprites/explosions.png */ "./src/img/sprites/explosions.png");
-/* harmony import */ var _img_sprites_explosions_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_img_sprites_explosions_png__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _img_screenshots_ss1_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/screenshots/ss1.jpg */ "./src/img/screenshots/ss1.jpg");
-/* harmony import */ var _img_screenshots_ss1_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_img_screenshots_ss1_jpg__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _img_screenshots_ss2_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./img/screenshots/ss2.jpg */ "./src/img/screenshots/ss2.jpg");
-/* harmony import */ var _img_screenshots_ss2_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_img_screenshots_ss2_jpg__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _img_screenshots_ss3_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./img/screenshots/ss3.jpg */ "./src/img/screenshots/ss3.jpg");
-/* harmony import */ var _img_screenshots_ss3_jpg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_img_screenshots_ss3_jpg__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _img_logo_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./img/logo.png */ "./src/img/logo.png");
-/* harmony import */ var _img_logo_png__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_img_logo_png__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _sounds_burn2_wav__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./sounds/burn2.wav */ "./src/sounds/burn2.wav");
-/* harmony import */ var _sounds_burn2_wav__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_sounds_burn2_wav__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _sounds_poison1_wav__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./sounds/poison1.wav */ "./src/sounds/poison1.wav");
-/* harmony import */ var _sounds_poison1_wav__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_sounds_poison1_wav__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _sounds_water2_wav__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./sounds/water2.wav */ "./src/sounds/water2.wav");
-/* harmony import */ var _sounds_water2_wav__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_sounds_water2_wav__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _sounds_earth1_wav__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./sounds/earth1.wav */ "./src/sounds/earth1.wav");
-/* harmony import */ var _sounds_earth1_wav__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_sounds_earth1_wav__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _sounds_wosh3_wav__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./sounds/wosh3.wav */ "./src/sounds/wosh3.wav");
-/* harmony import */ var _sounds_wosh3_wav__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_sounds_wosh3_wav__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _sounds_soundtrack2_mp3__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./sounds/soundtrack2.mp3 */ "./src/sounds/soundtrack2.mp3");
-/* harmony import */ var _sounds_soundtrack2_mp3__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_sounds_soundtrack2_mp3__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _sounds_soundtrack5_mp3__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./sounds/soundtrack5.mp3 */ "./src/sounds/soundtrack5.mp3");
-/* harmony import */ var _sounds_soundtrack5_mp3__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_sounds_soundtrack5_mp3__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _sounds_soundtrack4_mp3__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./sounds/soundtrack4.mp3 */ "./src/sounds/soundtrack4.mp3");
-/* harmony import */ var _sounds_soundtrack4_mp3__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_sounds_soundtrack4_mp3__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _fonts_Lalezar_Regular_ttf__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./fonts/Lalezar-Regular.ttf */ "./src/fonts/Lalezar-Regular.ttf");
-/* harmony import */ var _fonts_Lalezar_Regular_ttf__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_fonts_Lalezar_Regular_ttf__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var _fonts_HVD_Comic_Serif_Pro_otf__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./fonts/HVD_Comic_Serif_Pro.otf */ "./src/fonts/HVD_Comic_Serif_Pro.otf");
-/* harmony import */ var _fonts_HVD_Comic_Serif_Pro_otf__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_fonts_HVD_Comic_Serif_Pro_otf__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _styles_page_scss__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./styles/page.scss */ "./src/styles/page.scss");
-/* harmony import */ var _styles_page_scss__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_styles_page_scss__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _styles_game_scss__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./styles/game.scss */ "./src/styles/game.scss");
-/* harmony import */ var _styles_game_scss__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_styles_game_scss__WEBPACK_IMPORTED_MODULE_21__);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import './fonts/Rakkas-Regular.ttf';
-
-
-
+/* harmony import */ var _components_screens_home_page_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/screens/home/page.js */ "./src/components/screens/home/page.js");
 
 
 
 /***/ }),
 
-/***/ "./src/fonts/HVD_Comic_Serif_Pro.otf":
-/*!*******************************************!*\
-  !*** ./src/fonts/HVD_Comic_Serif_Pro.otf ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../fonts/HVD_Comic_Serif_Pro.otf";
-
-/***/ }),
-
-/***/ "./src/fonts/Lalezar-Regular.ttf":
+/***/ "./src/components/data/frames.js":
 /*!***************************************!*\
-  !*** ./src/fonts/Lalezar-Regular.ttf ***!
+  !*** ./src/components/data/frames.js ***!
   \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "../fonts/Lalezar-Regular.ttf";
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
 
-/***/ }),
+var Frames = {
+     explosions: {
+          //sprPos    frames
+          'explode': [{ sp: [0, 0], frs: [0, 1, 2, 3, 4, 5, 6, 7, 8], frsize: [60, 80], speed: 10, once: true }, { sp: [0, 80], frs: [0, 1, 2, 3, 4, 5, 6], frsize: [60, 80], speed: 10, once: true }, { sp: [0, 160], frs: [0, 1, 2, 3, 4, 5, 6, 7, 8], frsize: [60, 80], speed: 10, once: true }, { sp: [0, 240], frs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], frsize: [60, 80], speed: 10, once: true }],
+          'idle': [{ sp: [0, 0], frs: [], frsize: [60, 80], speed: 13, once: true }, { sp: [0, 80], frs: [], frsize: [60, 80], speed: 13, once: true }, { sp: [0, 160], frs: [], frsize: [60, 80], speed: 13, once: true }, { sp: [0, 240], frs: [], frsize: [60, 80], speed: 13, once: true }]
 
-/***/ "./src/html/game.html":
-/*!****************************!*\
-  !*** ./src/html/game.html ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+     },
+     monsters: {
+          'idle': {
+               head: [{ sp: [0, 0], frs: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], frsize: [60, 80], speed: 8 }, { sp: [0, 80], frs: [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], frsize: [60, 80], speed: 8 }, { sp: [0, 160], frs: [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], frsize: [60, 80], speed: 8 }],
+               body: [{ sp: [180, 0], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [180, 80], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [180, 160], frs: [0], frsize: [60, 80], speed: 8 }],
+               lArm: [{ sp: [240, 0], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [240, 80], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [240, 160], frs: [0], frsize: [60, 80], speed: 8 }],
+               rArm: [{ sp: [300, 0], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [300, 80], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [300, 160], frs: [0], frsize: [60, 80], speed: 8 }],
+               legs: [{ sp: [360, 0], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [360, 80], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [360, 160], frs: [0], frsize: [60, 80], speed: 8 }]
+          },
+          'attack': {
+               head: [{ sp: [0, 0], frs: [0, 0, 1, 1, 0, 0, 0], frsize: [60, 80], speed: 8, once: true }, { sp: [0, 80], frs: [0, 0, 1, 0, 0, 0, 0], frsize: [60, 80], speed: 8, once: true }, { sp: [0, 160], frs: [0, 0, 1, 1, 0, 0, 0], frsize: [60, 80], speed: 8, once: true }],
+               body: [{ sp: [180, 0], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [180, 80], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [180, 160], frs: [0], frsize: [60, 80], speed: 8, once: true }],
+               lArm: [{ sp: [240, 0], frs: [0, 0, 3, 3, 5, 5, 3, 3, 0], frsize: [60, 80], speed: 8, once: true }, { sp: [240, 80], frs: [0, 0, 3, 3, 5, 5, 3, 3, 0], frsize: [60, 80], speed: 8, once: true }, { sp: [240, 160], frs: [0, 0, 3, 3, 5, 5, 3, 3, 0], frsize: [60, 80], speed: 8, once: true }],
+               rArm: [{ sp: [300, 0], frs: [0, 0, 3, 3, 5, 5, 3, 3, 5, 5, 3, 3, 0], frsize: [60, 80], speed: 8, once: true }, { sp: [300, 80], frs: [0, 0, 3, 3, 5, 5, 3, 3, 5, 3, 3, 0], frsize: [60, 80], speed: 8, once: true }, { sp: [300, 160], frs: [0, 0, 3, 3, 5, 5, 3, 3, 5, 3, 0], frsize: [60, 80], speed: 8, once: true }],
+               legs: [{ sp: [360, 0], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [360, 80], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [360, 160], frs: [0], frsize: [60, 80], speed: 8, once: true }]
+          },
+          'attacked': {
+               head: [{ sp: [0, 0], frs: [2, 2, 2, 2, 2, 2], frsize: [60, 80], speed: 5, once: true }, { sp: [0, 80], frs: [0, 2, 2, 2, 2, 0], frsize: [60, 80], speed: 5, once: true }, { sp: [0, 160], frs: [0, 2, 2, 2, 2, 0], frsize: [60, 80], speed: 5, once: true }],
+               body: [{ sp: [180, 0], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [180, 80], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [180, 160], frs: [0], frsize: [60, 80], speed: 8, once: true }],
+               lArm: [{ sp: [240, 0], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [240, 80], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [240, 160], frs: [0], frsize: [60, 80], speed: 8, once: true }],
+               rArm: [{ sp: [300, 0], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [300, 80], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [300, 160], frs: [0], frsize: [60, 80], speed: 8, once: true }],
+               legs: [{ sp: [360, 0], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [360, 80], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [360, 160], frs: [0], frsize: [60, 80], speed: 8, once: true }]
+          }
+     },
+     humanoids: {
+          'idle': {
+               head: [{ sp: [0, 240], frs: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0], frsize: [60, 80], speed: 8 }],
+               body: [{ sp: [180, 240], frs: [0], frsize: [60, 80], speed: 8 }],
+               lArm: [{ sp: [240, 240], frs: [0], frsize: [60, 80], speed: 8 }],
+               rArm: [{ sp: [300, 240], frs: [0], frsize: [60, 80], speed: 8 }],
+               legs: [{ sp: [360, 240], frs: [0], frsize: [60, 80], speed: 8 }]
+          },
+          'attack': {
+               head: [{ sp: [0, 240], frs: [0, 0, 1, 0, 0, 0, 0, 0, 0, 1], frsize: [60, 80], speed: 11, once: true }],
+               body: [{ sp: [180, 240], frs: [0], frsize: [60, 80], speed: 11, once: true }],
+               lArm: [{ sp: [240, 240], frs: [0, 3, 3, 5, 5, 3, 3, 5, 5, 3, 5, 3, 3, 0], frsize: [60, 80], speed: 11, once: true }],
+               rArm: [{ sp: [300, 240], frs: [0, 3, 3, 5, 5, 3, 3, 5, 5, 3, 3, 3, 0], frsize: [60, 80], speed: 11, once: true }],
+               legs: [{ sp: [360, 240], frs: [0], frsize: [60, 80], speed: 11, once: true }]
+          },
+          'attacked': {
+               head: [{ sp: [0, 240], frs: [0, 2, 2, 2, 2, 0], frsize: [60, 80], speed: 8, once: true }],
+               body: [{ sp: [180, 240], frs: [0], frsize: [60, 80], speed: 8, once: true }],
+               lArm: [{ sp: [240, 240], frs: [0], frsize: [60, 80], speed: 8, once: true }],
+               rArm: [{ sp: [300, 240], frs: [0], frsize: [60, 80], speed: 8, once: true }],
+               legs: [{ sp: [360, 240], frs: [0], frsize: [60, 80], speed: 8, once: true }]
+          }
+     }
+};
 
-module.exports = "\r\n            <section class=\"play-game-section\">\r\n                <div id=\"game\" class = \"game-wrapper\">\r\n                    <div id=\"gameOverMenu\" class=\"game-over-menu-overlay\" tab>\r\n                        <div class=\"menu-btn-block\">\r\n                            <h2>GAME OVER</h2>\r\n                            <table id=\"scoreTable\" class=\"score-table\">\r\n                            <tbody>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                <tr>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                    <td></td>\r\n                                </tr>\r\n                                </tbody>\r\n                            </table>\r\n                            <button id=\"playAgainBtn\" class=\"btn game-btn\">Play Again</button>\r\n                        </div>\r\n                    </div>\r\n                    <!-- Start Menu -->\r\n                    <div id=\"startMenu\" class=\"start-menu-overlay\">\r\n                        <div class=\"menu-btn-block\">\r\n                            <h2>Enter your name:</h2>\r\n                            <input type=\"text\" id=\"startMenuInput\" name=\"userName\" placeholder=\"Tommy zzZ\">\r\n                            <button id=\"startMenuStartBtn\" class=\"btn game-btn\">Start</button>\r\n                            <button id=\"startMenuSoundBtn\" class=\"btn game-btn\">Sound:on</button>\r\n                        </div>\r\n                    </div>\r\n                    <!-- inGame UI -->\r\n                    <div id=\"inGameUI\" class=\"in-game-ui-wrapper\">\r\n                        <div class=\"player-block\">\r\n                            <span id=\"playerName\" class=\"name\">Player</span>\r\n                            <div id=\"playerHealthBar\" class=\"player-health-bar\"  ><div id=\"playerH\" class=\"hb-fl\"></div></div>\r\n                        </div>\r\n                        <div id = \"score\" class=\"score\">score</div>\r\n                        <div class=\"enemy-block\">\r\n                            <p id=\"enemyName\" class=\"name\"></p>\r\n                            <div id=\"enemyHealthBar\" class=\"enemy-health-bar\" ><div id=\"enemyH\" class=\"hb-fl\"></div></div>\r\n                            <p id=\"enemyNick\" class=\"nick\"></p>\r\n                        </div>\r\n                        <div class=\"down-btn-ui-block\">\r\n                            <button id=\"turnMainBtn\" class=\"game-btn\" disabled>Your Turn </button>\r\n                        </div>\r\n                    </div>\r\n\r\n\r\n                    <!-- Modal Menu -->\r\n                    <div id=\"modalMenu\" class=\"modal-menu\">\r\n                        <button id=\"closeModalBtn\" class = \"close-element\">x</button>\r\n                    </div>\r\n\r\n\r\n                    <!-- Small Modal Menu -->\r\n                    <div id=\"smallModalMenu\" class=\"modal-menu small-modal-menu\">\r\n                        <div id=\"earthBtn\"class=\"spell-wrapper menu-el earth\">\r\n                            <p>Earth</p>\r\n                        </div>\r\n                        <div id=\"waterBtn\"class=\"spell-wrapper menu-el water\">\r\n                            <p>Water</p>\r\n                        </div>\r\n                        <div id=\"fireBtn\"class=\"spell-wrapper menu-el fire\">\r\n                            <p>Fire</p>\r\n                        </div>\r\n                        <div id=\"poisonBtn\"class=\"spell-wrapper menu-el poison\">\r\n                            <p>Poison</p>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </section>';";
-
-/***/ }),
-
-/***/ "./src/img/logo.png":
-/*!**************************!*\
-  !*** ./src/img/logo.png ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../img/logo.png";
-
-/***/ }),
-
-/***/ "./src/img/screenshots/ss1.jpg":
-/*!*************************************!*\
-  !*** ./src/img/screenshots/ss1.jpg ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../img/ss1.jpg";
-
-/***/ }),
-
-/***/ "./src/img/screenshots/ss2.jpg":
-/*!*************************************!*\
-  !*** ./src/img/screenshots/ss2.jpg ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../img/ss2.jpg";
-
-/***/ }),
-
-/***/ "./src/img/screenshots/ss3.jpg":
-/*!*************************************!*\
-  !*** ./src/img/screenshots/ss3.jpg ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../img/ss3.jpg";
-
-/***/ }),
-
-/***/ "./src/img/sprites/attacks.png":
-/*!*************************************!*\
-  !*** ./src/img/sprites/attacks.png ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../img/attacks.png";
+window.Frames = Frames;
 
 /***/ }),
 
-/***/ "./src/img/sprites/entities.png":
-/*!**************************************!*\
-  !*** ./src/img/sprites/entities.png ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/components/data/monsterNames.js":
+/*!*********************************************!*\
+  !*** ./src/components/data/monsterNames.js ***!
+  \*********************************************/
+/*! exports provided: monsterNames */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "../img/entities.png";
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "monsterNames", function() { return monsterNames; });
+let monsterNames = [["Scary", "Sad", "Nasty", "Terrible", "Tender", "Silent", "Happy", "Dry", "Dusty", "Stiky", "Bold", "Hight", "Wild", "Cruel", "Famous", "Proud", "Urrogant", "Funny", "Kind"], ["ogr", "goblin", "ork", "swine", "half elf", "demon", "dark hobbit", "ghoul", "drinker", "wyvern", "brownie"], ["Luz", "Eddie", "Frunk", "Matthue", "Vinchester", "Karl", "Tonny", "Brutte", "Yuri", "Andrew", 'Lucas', 'Bergson']];
 
 /***/ }),
 
-/***/ "./src/img/sprites/explosions.png":
+/***/ "./src/components/entities/all.js":
 /*!****************************************!*\
-  !*** ./src/img/sprites/explosions.png ***!
+  !*** ./src/components/entities/all.js ***!
   \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: Enemy, Player, Explosion */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "../img/explosions.png";
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./player */ "./src/components/entities/player.js");
+/* harmony import */ var _enemy_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./enemy.js */ "./src/components/entities/enemy.js");
+/* harmony import */ var _explosion_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./explosion.js */ "./src/components/entities/explosion.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Enemy", function() { return _enemy_js__WEBPACK_IMPORTED_MODULE_1__["Enemy"]; });
 
-/***/ }),
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Player", function() { return _player__WEBPACK_IMPORTED_MODULE_0__["Player"]; });
 
-/***/ "./src/img/terrain.jpg":
-/*!*****************************!*\
-  !*** ./src/img/terrain.jpg ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Explosion", function() { return _explosion_js__WEBPACK_IMPORTED_MODULE_2__["Explosion"]; });
 
-module.exports = "../img/terrain.jpg";
 
-/***/ }),
 
-/***/ "./src/img/terrain2.jpg":
-/*!******************************!*\
-  !*** ./src/img/terrain2.jpg ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
 
-module.exports = "../img/terrain2.jpg";
+
+
+
+
 
 /***/ }),
 
-/***/ "./src/js/components/animator.js":
-/*!***************************************!*\
-  !*** ./src/js/components/animator.js ***!
-  \***************************************/
+/***/ "./src/components/entities/bodyParticle.js":
+/*!*************************************************!*\
+  !*** ./src/components/entities/bodyParticle.js ***!
+  \*************************************************/
+/*! exports provided: Head, Body, LArm, RArm, Legs */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Head", function() { return Head; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Body", function() { return Body; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LArm", function() { return LArm; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RArm", function() { return RArm; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Legs", function() { return Legs; });
+/* harmony import */ var _entity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./entity */ "./src/components/entities/entity.js");
+
+
+class BodyParticle extends _entity__WEBPACK_IMPORTED_MODULE_0__["default"] {
+    constructor(ajustPos, framePos, frameSize, pObj) {
+        super();
+        this.pObj = pObj;
+        this.ajustAnchorPoint = [0, 0];
+        this.anchorPoint = Vector.sum(this.pObj.pos, this.ajustAnchorPoint);
+        this.ajustPos = ajustPos;
+        this.pos = this.setPos(this.anchorPoint);
+        this.originalAjustPos = ajustPos;
+        this.savePos(this);
+        // url,                  pos,                      size,                   speed, frames direction
+        this.sprite = new Sprite('img/entities.png', [framePos[0], framePos[1]], [frameSize[0], frameSize[1]], 10, [0]);
+    }
+    setPos(anchorPoint) {
+        return Vector.sum(anchorPoint, this.ajustAnchorPoint, this.ajustPos);
+    }
+    update() {}
+    translate(point) {
+        this.ajustPos = Vector.sum(point, this.ajustPos);
+        this.pos = this.setPos(this.pObj.pos);
+    }
+    moveTo(point) {
+        this.pos = point;
+    }
+}
+class Head extends BodyParticle {
+    constructor(ajustment, framePos, frameSize, pObj) {
+        super(ajustment, framePos, frameSize, pObj);
+        this.name = "head";
+        this.sprite.frames = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    }
+}
+class Body extends BodyParticle {
+    constructor(ajustment, framePos, frameSize, pObj) {
+        super(ajustment, framePos, frameSize, pObj);
+        this.name = "body";
+    }
+}
+class LArm extends BodyParticle {
+    constructor(ajustment, framePos, frameSize, pObj) {
+        super(ajustment, framePos, frameSize, pObj);
+        this.name = "lArm";
+    }
+}
+class RArm extends BodyParticle {
+    constructor(ajustment, framePos, frameSize, pObj) {
+        super(ajustment, framePos, frameSize, pObj);
+        this.name = "rArm";
+    }
+}
+class Legs extends BodyParticle {
+    constructor(ajustment, framePos, frameSize, pObj) {
+        super(ajustment, framePos, frameSize, pObj);
+        this.name = "lags";
+    }
+}
+
+/***/ }),
+
+/***/ "./src/components/entities/enemy.js":
+/*!******************************************!*\
+  !*** ./src/components/entities/enemy.js ***!
+  \******************************************/
+/*! exports provided: Enemy */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Enemy", function() { return Enemy; });
+/* harmony import */ var _monster__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./monster */ "./src/components/entities/monster.js");
+/* harmony import */ var _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../modals/in-game-menu/index */ "./src/components/modals/in-game-menu/index.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+
+
+
+
+class Enemy extends _monster__WEBPACK_IMPORTED_MODULE_0__["default"] {
+    constructor(pos, sprite) {
+        super(pos);
+        this.name = 'enemy';
+        this.health = 100;
+        this.sprite = null;
+        this.savePos(this);
+        this.idleAnim = new Animation('idle', this.getIdleSprites());
+        this.attackAnim = new Animation('attack', this.getAttackSprites());
+        this.attackedAnim = new Animation('attacked', this.getAttackedSprites());
+        this.animator = new Animator([this.idleAnim, this.attackAnim, this.attackedAnim], 'idle', this.name);
+    }
+    getIdleSprites() {
+        // this.head, tempProgress,  max, direction, speed, repStyle(once,repeat,bounce), [sprite pos, sprite frames, sprite speed]
+        let name = 'idle',
+            coeff = 0.2,
+            st = 'bounce',
+            names = ['head', 'body', 'lArm', 'rArm', 'legs'],
+            head = this.m[name][names[0]][this.N[0]],
+            body = this.m[name][names[1]][this.N[1]],
+            lArm = this.m[name][names[2]][this.N[2]],
+            rArm = this.m[name][names[3]][this.N[3]],
+            legs = this.m[name][names[4]][this.N[4]];
+
+        return [[this[names[0]], 0, 2, [-1, 1], head.speed * coeff, st, 1, [head.sp, head.frs, head.speed, head.once]], [this[names[1]], 0, 1, [0, 1], body.speed * coeff, st, 1, [body.sp, body.frs, body.speed, body.once]], [this[names[2]], 0, 2, [-1, 1], lArm.speed * coeff, st, 1, [lArm.sp, lArm.frs, lArm.speed, lArm.once]], [this[names[3]], 0, 2, [1, 1], rArm.speed * coeff, st, 1, [rArm.sp, rArm.frs, rArm.speed, rArm.once]], [this[names[4]], 0, 1, [1, 0], legs.speed * coeff, st, 1, [legs.sp, legs.frs, legs.speed, legs.once]]];
+    }
+
+    getAttackSprites() {
+        // this.head, tempProgress,  max, direction, speed, repStyle(once,repeat,bounce), [sprite pos, sprite frames, sprite speed]
+        let name = 'attack',
+            coeff = 0.2,
+            st = 'bounce',
+            names = ['head', 'body', 'lArm', 'rArm', 'legs'],
+            head = this.m[name][names[0]][this.N[0]],
+            body = this.m[name][names[1]][this.N[1]],
+            lArm = this.m[name][names[2]][this.N[2]],
+            rArm = this.m[name][names[3]][this.N[3]],
+            legs = this.m[name][names[4]][this.N[4]];
+
+        return [[this[names[0]], 0, 1, [1, 1], head.speed * coeff, st, 1, [head.sp, head.frs, head.speed, head.once]], [this[names[1]], 0, 1, [0, 1], body.speed * coeff, st, 1, [body.sp, body.frs, body.speed, body.once]], [this[names[2]], 0, 1, [1, 1], lArm.speed * coeff, st, 1, [lArm.sp, lArm.frs, lArm.speed, lArm.once]], [this[names[3]], 0, 1, [1, 1], rArm.speed * coeff, st, 1, [rArm.sp, rArm.frs, rArm.speed, rArm.once]], [this[names[4]], 0, 1, [1, 0], legs.speed * coeff, st, 1, [legs.sp, legs.frs, legs.speed, legs.once]]];
+    }
+
+    getAttackedSprites() {
+        // this.head, tempProgress,  max, direction, speed, repStyle(once,repeat,bounce), [sprite pos, sprite frames, sprite speed]
+        let name = 'attacked',
+            coeff = 0.2,
+            st = 'bounce',
+            names = ['head', 'body', 'lArm', 'rArm', 'legs'],
+            head = this.m[name][names[0]][this.N[0]],
+            body = this.m[name][names[1]][this.N[1]],
+            lArm = this.m[name][names[2]][this.N[2]],
+            rArm = this.m[name][names[3]][this.N[3]],
+            legs = this.m[name][names[4]][this.N[4]];
+
+        return [[this[names[0]], 0, 2, [0, 1], head.speed * coeff, st, 1, [head.sp, head.frs, head.speed, head.once]], [this[names[1]], 0, 2, [0, 1], body.speed * coeff, st, 1, [body.sp, body.frs, body.speed, body.once]], [this[names[2]], 0, 1, [1, 1], lArm.speed * coeff, st, 1, [lArm.sp, lArm.frs, lArm.speed, lArm.once]], [this[names[3]], 0, 1, [1, 1], rArm.speed * coeff, st, 1, [rArm.sp, rArm.frs, rArm.speed, rArm.once]], [this[names[4]], 0, 1, [1, 0], legs.speed * coeff, st, 1, [legs.sp, legs.frs, legs.speed, legs.once]]];
+    }
+
+    update(e, dt, entities) {}
+    castSpell() {
+        setTimeout(() => {
+            this.animator.setAnimation('attack', true);
+        }, 100);
+    }
+
+    beingAttacked() {
+        this.animator.setAnimation('attacked', true);
+    }
+
+    decreaseH(val) {
+        this.health -= val;
+        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_1__["setEnemyH"](this.health);
+        return this.health;
+    }
+
+    setH(val) {
+        this.health = val;
+        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_1__["setEnemyH"](this.health);
+    }
+
+    deletBody(arr) {
+        Object(lodash_es__WEBPACK_IMPORTED_MODULE_2__["forEach"])(arr, (v, k) => {
+            Object(lodash_es__WEBPACK_IMPORTED_MODULE_2__["remove"])(entities, Object(lodash_es__WEBPACK_IMPORTED_MODULE_2__["find"])(entities, this[v]));
+        });
+        Object(lodash_es__WEBPACK_IMPORTED_MODULE_2__["remove"])(entities, Object(lodash_es__WEBPACK_IMPORTED_MODULE_2__["find"])(entities, this));
+    }
+
+}
+
+
+
+/***/ }),
+
+/***/ "./src/components/entities/entity.js":
+/*!*******************************************!*\
+  !*** ./src/components/entities/entity.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Entity; });
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+
+
+class Entity {
+    constructor() {
+        entities.unshift(this);
+        events.on('updateEachFrame', Object(lodash_es__WEBPACK_IMPORTED_MODULE_0__["bind"])(this.update, this));
+        this.i = entities.length - 1;
+        this.savedPos = [];
+    }
+    translate(point) {
+        this.pos = Vector.sum(this.pos, point);
+    }
+    moveTo(point) {
+        this.pos = point;
+    }
+    savePos(part) {
+        if (typeof part.pObj != 'undefined' && typeof part.pObj != 'null') {
+            part.savedPos = part.ajustPos;
+        } else {
+            part.savedPos = part.pos;
+        }
+    }
+    implementSavedPos(part) {
+        if (typeof part.pObj != 'undefined' && typeof part.pObj != 'null') {
+            part.ajustPos = part.savedPos;
+        } else {
+            part.pos = part.savedPos;
+        }
+    }
+    update() {}
+}
+
+/***/ }),
+
+/***/ "./src/components/entities/explosion.js":
+/*!**********************************************!*\
+  !*** ./src/components/entities/explosion.js ***!
+  \**********************************************/
+/*! exports provided: Explosion */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Explosion", function() { return Explosion; });
+/* harmony import */ var _entity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./entity */ "./src/components/entities/entity.js");
+
+
+class Explosion extends _entity__WEBPACK_IMPORTED_MODULE_0__["default"] {
+    constructor(pos, explIndex) {
+        super();
+        this.pos = pos || [440, 340];
+        this.name = 'explosion';
+        this.N = explIndex;
+        this.e = Frames.explosions;
+        this.savePos(this); // url, pos, size, speed, frames, dir, once
+        this.sprite = new Sprite('img/explosions.png', this.e.idle[this.N].sp, this.e.idle[this.N].frsize, this.e.idle[this.N].speed, this.e.idle[this.N].frs, null, true);
+        this.idleAnim = new Animation('idle', this.getIdleSprites());
+        this.explodeAnim = new Animation('explode', this.getExplodeSprites());
+        this.animator = new Animator([this.idleAnim, this.explodeAnim], 'idle', this.name);
+    }
+    getIdleSprites() {
+        // this.head, tempProgress,  max, direction, time, repStyle
+        let name = 'idle',
+            st = 'bounce',
+            names = ['explosions'],
+            coeff = 0.2;
+        let explosion = this.e[name][this.N];
+        return [[this, 0, 1, [-1, 1], explosion.speed * coeff, st, 1, [explosion.sp, explosion.frs, explosion.speed, explosion.once]]];
+    }
+
+    getExplodeSprites() {
+        // this.head, tempProgress,  max, direction, time, repStyle
+        let name = 'explode',
+            st = 'bounce',
+            names = ['explosions'],
+            coeff = 0.2;
+        let explosion = this.e[name][this.N];
+        return [[this, 0, 1, [-1, 1], explosion.speed * coeff, st, 1, [explosion.sp, explosion.frs, explosion.speed, explosion.once]]];
+    }
+
+    update(e, dt) {
+
+        //  if(input.isDown('space')){
+        //     this.animator.setAnimation('explode',true);
+        // }
+    }
+
+    explode() {
+        this.animator.setAnimation('explode', true);
+    }
+
+    changeStyleTo(N) {
+        this.N = N;
+        this.explodeAnim = new Animation('explode', this.getExplodeSprites());
+        this.animator = new Animator([this.idleAnim, this.explodeAnim], 'idle', this.name);
+    }
+}
+
+
+
+/***/ }),
+
+/***/ "./src/components/entities/humanoid.js":
+/*!*********************************************!*\
+  !*** ./src/components/entities/humanoid.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Humanoid; });
+/* harmony import */ var _entity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./entity */ "./src/components/entities/entity.js");
+/* harmony import */ var _bodyParticle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bodyParticle */ "./src/components/entities/bodyParticle.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+
+
+
+
+
+class Humanoid extends _entity__WEBPACK_IMPORTED_MODULE_0__["default"] {
+    constructor(pos, N) {
+        super();
+        this.pos = pos || [160, 320];
+        this.N = 0;
+        this.h = Frames.humanoids;
+        //  ajustment      framePos frameSize in sprite sheet
+        this.head = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["Head"]([-30, -73], this.h.idle.head[this.N].sp, this.h.idle.head[this.N].frsize, this);
+        this.lArm = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["LArm"]([-40, 1], this.h.idle.lArm[this.N].sp, this.h.idle.lArm[this.N].frsize, this);
+        this.body = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["Body"]([-13, -3], this.h.idle.body[this.N].sp, this.h.idle.body[this.N].frsize, this);
+        this.legs = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["Legs"]([-20, 24], this.h.idle.legs[this.N].sp, this.h.idle.legs[this.N].frsize, this);
+        this.rArm = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["RArm"]([-20, 1], this.h.idle.rArm[this.N].sp, this.h.idle.rArm[this.N].frsize, this);
+    }
+}
+
+/***/ }),
+
+/***/ "./src/components/entities/monster.js":
+/*!********************************************!*\
+  !*** ./src/components/entities/monster.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Monster; });
+/* harmony import */ var _entity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./entity */ "./src/components/entities/entity.js");
+/* harmony import */ var _bodyParticle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bodyParticle */ "./src/components/entities/bodyParticle.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+
+
+
+
+class Monster extends _entity__WEBPACK_IMPORTED_MODULE_0__["default"] {
+    constructor(pos) {
+        super();
+        this.pos = pos || [460, 340];
+        this.m = Frames.monsters;
+        this.N = Object(lodash_es__WEBPACK_IMPORTED_MODULE_2__["map"])(Array(5), () => randomFromZeroTo(2));
+
+        // ajustment      framePos                 frameSize in sprite sheet
+        this.head = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["Head"]([-30, -68], [0, 80], [60, 80], this);
+        this.rArm = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["RArm"]([-27, 1], [300, 80], [60, 80], this);
+        this.body = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["Body"]([-13, -3], [180, 80], [60, 80], this);
+        this.legs = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["Legs"]([-22, 23], [360, 80], [60, 80], this);
+        this.lArm = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["LArm"]([-40, 1], [240, 80], [60, 80], this);
+    }
+}
+
+function randomFromZeroTo(N) {
+    return Math.round(Math.random() * N);
+}
+
+/***/ }),
+
+/***/ "./src/components/entities/player.js":
+/*!*******************************************!*\
+  !*** ./src/components/entities/player.js ***!
+  \*******************************************/
+/*! exports provided: Player */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Player", function() { return Player; });
+/* harmony import */ var _humanoid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./humanoid */ "./src/components/entities/humanoid.js");
+/* harmony import */ var _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../modals/in-game-menu/index */ "./src/components/modals/in-game-menu/index.js");
+
+
+
+class Player extends _humanoid__WEBPACK_IMPORTED_MODULE_0__["default"] {
+    constructor(pos, userName, N) {
+        super(pos, N);
+        this.name = 'player';
+        this.userName = 'userName';
+        this.health = 100;
+        this.sprite = null;
+        this.savePos(this);
+        this.idleAnim = new Animation('idle', this.getIdleSprites());
+        this.attackAnim = new Animation('attack', this.getAttackSprites());
+        this.attackedAnim = new Animation('attacked', this.getAttackedSprites());
+        this.animator = new Animator([this.idleAnim, this.attackAnim, this.attackedAnim], 'idle', this.name);
+    }
+    getIdleSprites() {
+        let name = 'idle',
+            st = 'bounce',
+            coeff = 0.2,
+            names = ['head', 'body', 'lArm', 'rArm', 'legs'],
+            head = this.h[name][names[0]][this.N],
+            body = this.h[name][names[1]][this.N],
+            lArm = this.h[name][names[2]][this.N],
+            rArm = this.h[name][names[3]][this.N],
+            legs = this.h[name][names[4]][this.N];
+        return [[this[names[0]], 0, 1, [0, 1], head.speed * coeff, st, 1, [head.sp, head.frs, head.speed, head.once]], [this[names[1]], 0, 1, [0, 1], body.speed * coeff, st, 1, [body.sp, body.frs, body.speed, body.once]], [this[names[2]], 0, 2, [0, 1], lArm.speed * coeff, st, 1, [lArm.sp, lArm.frs, lArm.speed, lArm.once]], [this[names[3]], 0, 2, [1, 1], rArm.speed * coeff, st, 1, [rArm.sp, rArm.frs, rArm.speed, rArm.once]], [this[names[4]], 0, 1, [1, 0], legs.speed * coeff, st, 1, [legs.sp, legs.frs, legs.speed, legs.once]]];
+    }
+
+    getAttackSprites() {
+        // this.head, tempProgress,  max, direction, time, repStyle(once,repeat,bounce), [sprite pos, sprite frames, sprite speed, once]
+        let name = 'attack',
+            st = 'bounce',
+            coeff = 0.5,
+            names = ['head', 'body', 'lArm', 'rArm', 'legs'],
+            head = this.h[name][names[0]][this.N],
+            body = this.h[name][names[1]][this.N],
+            lArm = this.h[name][names[2]][this.N],
+            rArm = this.h[name][names[3]][this.N],
+            legs = this.h[name][names[4]][this.N];
+        return [[this[names[0]], 0, 2, [-1, 4], head.speed * coeff, st, 1, [head.sp, head.frs, head.speed, head.once]], [this[names[1]], 0, 2, [0, 1], body.speed * coeff, st, 1, [body.sp, body.frs, body.speed, body.once]], [this[names[2]], 0, 2, [-1, 1], lArm.speed * coeff, st, 1, [lArm.sp, lArm.frs, lArm.speed, lArm.once]], [this[names[3]], 0, 2, [1, 1], rArm.speed * coeff, st, 1, [rArm.sp, rArm.frs, rArm.speed, rArm.once]], [this[names[4]], 0, 2, [1, 0], legs.speed * coeff, st, 1, [legs.sp, legs.frs, legs.speed, legs.once]]];
+    }
+
+    getAttackedSprites() {
+        // this.head, tempProgress,  max, direction, time, repStyle(once,repeat,bounce), [sprite pos, sprite frames, sprite speed, once]
+        let name = 'attacked',
+            st = 'bounce',
+            coeff = 0.2,
+            names = ['head', 'body', 'lArm', 'rArm', 'legs'],
+            head = this.h[name][names[0]][this.N],
+            body = this.h[name][names[1]][this.N],
+            lArm = this.h[name][names[2]][this.N],
+            rArm = this.h[name][names[3]][this.N],
+            legs = this.h[name][names[4]][this.N];
+        return [[this[names[0]], 0, 3, [0, 1], head.speed * coeff, st, 1, [head.sp, head.frs, head.speed, head.once]], [this[names[1]], 0, 3, [0, 1], body.speed * coeff, st, 1, [body.sp, body.frs, body.speed, body.once]], [this[names[2]], 0, 3, [0, 1], lArm.speed * coeff, st, 1, [lArm.sp, lArm.frs, lArm.speed, lArm.once]], [this[names[3]], 0, 3, [0, 1], rArm.speed * coeff, st, 1, [rArm.sp, rArm.frs, rArm.speed, rArm.once]], [this[names[4]], 0, 1, [1, 0], legs.speed * coeff, st, 1, [legs.sp, legs.frs, legs.speed, legs.once]]];
+    }
+
+    update(e, dt, entities) {
+        if (input.isDown('space')) {
+            this.animator.setAnimation('attack', true);
+        }
+    }
+
+    castSpell() {
+        this.animator.setAnimation('attack', true);
+    }
+
+    beingAttacked() {
+        this.animator.setAnimation('attacked', true);
+    }
+
+    decreaseH(val) {
+        this.health -= val;
+        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_1__["setPlayerH"](this.health);
+        return this.health;
+    }
+    increaseH(val) {
+        this.health += val;
+        if (this.health > 100) {
+            this.health = 100;
+        }
+        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_1__["setPlayerH"](this.health);
+        return this.health;
+    }
+    setH(val) {
+        this.health = val;
+        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_1__["setPlayerH"](this.health);
+    }
+}
+
+
+
+/***/ }),
+
+/***/ "./src/components/library/animator.js":
+/*!********************************************!*\
+  !*** ./src/components/library/animator.js ***!
+  \********************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -64723,10 +65113,10 @@ window.Animator = Animator;
 
 /***/ }),
 
-/***/ "./src/js/components/audio.js":
-/*!************************************!*\
-  !*** ./src/js/components/audio.js ***!
-  \************************************/
+/***/ "./src/components/library/audio.js":
+/*!*****************************************!*\
+  !*** ./src/components/library/audio.js ***!
+  \*****************************************/
 /*! exports provided: audio */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -64847,41 +65237,10 @@ let audio = {
 
 /***/ }),
 
-/***/ "./src/js/components/collision.js":
-/*!****************************************!*\
-  !*** ./src/js/components/collision.js ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// Collisions
-
-function collides(x, y, r, b, x2, y2, r2, b2) {
-    return !(r <= x2 || x > r2 || b <= y2 || y > b2);
-}
-
-function boxCollides(pos, size, pos2, size2) {
-    return collides(pos[0], pos[1], pos[0] + size[0], pos[1] + size[1], pos2[0], pos2[1], pos2[0] + size2[0], pos2[1] + size2[1]);
-}
-
-function checkCollisions(entities) {}
-
-function checkPlayerBounds() {
-    // Check bounds
-}
-
-window.Collision = {
-    boxCollides: boxCollides,
-    checkPlayerBounds: checkPlayerBounds,
-    checkCollisions: checkCollisions
-};
-
-/***/ }),
-
-/***/ "./src/js/components/events.js":
-/*!*************************************!*\
-  !*** ./src/js/components/events.js ***!
-  \*************************************/
+/***/ "./src/components/library/events.js":
+/*!******************************************!*\
+  !*** ./src/components/library/events.js ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -64910,18 +65269,15 @@ window.Collision = {
 
 /***/ }),
 
-/***/ "./src/js/components/input.js":
-/*!************************************!*\
-  !*** ./src/js/components/input.js ***!
-  \************************************/
-/*! exports provided: bindKeyboardNavTo, ksortable, keysSimple */
+/***/ "./src/components/library/input.js":
+/*!*****************************************!*\
+  !*** ./src/components/library/input.js ***!
+  \*****************************************/
+/*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bindKeyboardNavTo", function() { return bindKeyboardNavTo; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ksortable", function() { return ksortable; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "keysSimple", function() { return keysSimple; });
 /* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
 /* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -64954,7 +65310,10 @@ function setKey(event, status) {
 
         default:
             // Convert ASCII codes to letters
-            key = code.toUpperCase();
+
+            if (code != undefined) {
+                key = code.toUpperCase();
+            }
     }
 
     pressedKeys[key] = status;
@@ -64966,12 +65325,10 @@ document.addEventListener('keydown', function (e) {
 });
 
 document.addEventListener('keyup', function (e) {
-    event.preventDefault();
     setKey(e, false);
 });
 
 window.addEventListener('blur', function () {
-    event.preventDefault();
     pressedKeys = {};
 });
 
@@ -64981,63 +65338,12 @@ window.input = {
     }
 };
 
-function bindKeyboardNavTo(parent) {}
-
-let spaceWasPressed = false;
-
-function ksortable(target, options) {
-    $(target).sortable(options);
-    $(target).disableSelection(options);
-    $('.answer').attr('tabindex', 0).first().focus();
-    $('.answer').attr('tabindex', 0).on('keydown', function (event) {
-        if (event.key == ' ') {
-            console.log(event.key);
-            event.preventDefault();
-            if (spaceWasPressed == false) spaceWasPressed = true;else spaceWasPressed = false;
-        }
-        if (event.key == 'ArrowLeft' || event.key == 'ArrowUp') {
-            // left or up
-            if (spaceWasPressed) {
-                event.preventDefault();
-                $(this).insertBefore($(this).prev());
-                $(this).focus();
-            } else {
-                $(this).prev().focus();
-            }
-        }
-        if (event.key == 'ArrowRight' || event.key == 'ArrowDown') {
-            // right or down
-            if (spaceWasPressed) {
-                $(this).insertAfter($(this).next());
-                event.preventDefault();
-                $(this).focus();
-            } else {
-                $(this).next().focus();
-            }
-        }
-        if (event.key == 'Tab') {
-            event.preventDefault();
-            if (event.shiftKey) {
-                $(this).next().focus();
-            } else {
-                $(this).prev().focus();
-            }
-        }
-    });
-}
-
-function keysSimple(parent, choosenAnswer) {
-
-    // parent.children('.answer').first().focus();
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
-
 /***/ }),
 
-/***/ "./src/js/components/renderer.js":
-/*!***************************************!*\
-  !*** ./src/js/components/renderer.js ***!
-  \***************************************/
+/***/ "./src/components/library/renderer.js":
+/*!********************************************!*\
+  !*** ./src/components/library/renderer.js ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -65079,10 +65385,10 @@ window.Renderer = Renderer;
 
 /***/ }),
 
-/***/ "./src/js/components/resources.js":
-/*!****************************************!*\
-  !*** ./src/js/components/resources.js ***!
-  \****************************************/
+/***/ "./src/components/library/resources.js":
+/*!*********************************************!*\
+  !*** ./src/components/library/resources.js ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -65149,10 +65455,10 @@ window.Renderer = Renderer;
 
 /***/ }),
 
-/***/ "./src/js/components/sprite.js":
-/*!*************************************!*\
-  !*** ./src/js/components/sprite.js ***!
-  \*************************************/
+/***/ "./src/components/library/sprite.js":
+/*!******************************************!*\
+  !*** ./src/components/library/sprite.js ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -65205,10 +65511,10 @@ window.Renderer = Renderer;
 
 /***/ }),
 
-/***/ "./src/js/components/storage.js":
-/*!**************************************!*\
-  !*** ./src/js/components/storage.js ***!
-  \**************************************/
+/***/ "./src/components/library/storage.js":
+/*!*******************************************!*\
+  !*** ./src/components/library/storage.js ***!
+  \*******************************************/
 /*! exports provided: storage */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -65253,10 +65559,10 @@ Storage.prototype.setAllUsersToStorage = function (orderedUsers) {
 
 /***/ }),
 
-/***/ "./src/js/components/vector.js":
-/*!*************************************!*\
-  !*** ./src/js/components/vector.js ***!
-  \*************************************/
+/***/ "./src/components/library/vector.js":
+/*!******************************************!*\
+  !*** ./src/components/library/vector.js ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -65296,37 +65602,753 @@ window.Vector = Vector;
 
 /***/ }),
 
-/***/ "./src/js/controllers/GameC.js":
-/*!*************************************!*\
-  !*** ./src/js/controllers/GameC.js ***!
-  \*************************************/
+/***/ "./src/components/managers/monsterNameM.js":
+/*!*************************************************!*\
+  !*** ./src/components/managers/monsterNameM.js ***!
+  \*************************************************/
+/*! exports provided: createRandomMName */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createRandomMName", function() { return createRandomMName; });
+/* harmony import */ var _data_monsterNames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../data/monsterNames */ "./src/components/data/monsterNames.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+
+
+
+
+function createRandomMName() {
+    let tempArr = [];
+    Object(lodash_es__WEBPACK_IMPORTED_MODULE_1__["forEach"])(_data_monsterNames__WEBPACK_IMPORTED_MODULE_0__["monsterNames"], e => {
+        tempArr.push(e[Math.floor(Math.random() * (e.length - 1))]);
+    });
+    let nickName = [];
+    nickName.push(Object(lodash_es__WEBPACK_IMPORTED_MODULE_1__["join"])(tempArr.splice(0, 2), ' '));
+    nickName.unshift("\"");
+    nickName.push("\"");
+    Object(lodash_es__WEBPACK_IMPORTED_MODULE_1__["join"])(nickName, '');
+    tempArr.push(nickName);
+    return tempArr;
+}
+
+/***/ }),
+
+/***/ "./src/components/modals/game-over-menu/index.html":
+/*!*********************************************************!*\
+  !*** ./src/components/modals/game-over-menu/index.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"gameOverMenu\" class=\"game-over-menu-overlay\" >\r\n    <div class=\"menu-btn-block\">\r\n        <h2>GAME OVER</h2>\r\n        <table id=\"scoreTable\" class=\"score-table\">\r\n        <tbody>\r\n            <tr>\r\n                <td></td>\r\n                <td></td>\r\n                <td></td>\r\n            </tr>\r\n            <tr>\r\n                <td></td>\r\n                <td></td>\r\n                <td></td>\r\n            </tr>\r\n            <tr>\r\n                <td></td>\r\n                <td></td>\r\n                <td></td>\r\n            </tr>\r\n            <tr>\r\n                <td></td>\r\n                <td></td>\r\n                <td></td>\r\n            </tr>\r\n            <tr>\r\n                <td></td>\r\n                <td></td>\r\n                <td></td>\r\n            </tr>\r\n            <tr>\r\n                <td></td>\r\n                <td></td>\r\n                <td></td>\r\n            </tr>\r\n            <tr>\r\n                <td></td>\r\n                <td></td>\r\n                <td></td>\r\n            </tr>\r\n            <tr>\r\n                <td></td>\r\n                <td></td>\r\n                <td></td>\r\n            </tr>\r\n            <tr>\r\n                <td></td>\r\n                <td></td>\r\n                <td></td>\r\n            </tr>\r\n            <tr>\r\n                <td></td>\r\n                <td></td>\r\n                <td></td>\r\n            </tr>\r\n            </tbody>\r\n        </table>\r\n        <button id=\"playAgainBtn\" class=\"btn game-btn\">Play Again</button>\r\n    </div>\r\n</div>";
+
+/***/ }),
+
+/***/ "./src/components/modals/game-over-menu/index.js":
+/*!*******************************************************!*\
+  !*** ./src/components/modals/game-over-menu/index.js ***!
+  \*******************************************************/
+/*! exports provided: scoreTable, init, fillTable */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "scoreTable", function() { return scoreTable; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fillTable", function() { return fillTable; });
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.html */ "./src/components/modals/game-over-menu/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.scss */ "./src/components/modals/game-over-menu/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+
+
+let scoreTable;
+
+function init() {
+    //Game Over Menu
+    addHtml($("#game"));
+    scoreTable = $("#scoreTable");
+}
+
+//********************************* Game Over Menu *****************************/
+
+function fillTable(userList) {
+    Object(lodash_es__WEBPACK_IMPORTED_MODULE_0__["forEach"])(userList, (v, k) => {
+        for (let i = 0; i < 2; i++) {
+            console.log("v " + v[i]);
+            scoreTable.children("tbody").children("tr:nth-of-type(" + (k + 1) + ")").children("td:nth-of-type(" + (i + 1) + ")").html(v[i]);
+        }
+    });
+}
+
+function addHtml(parent) {
+    parent.append(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a);
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/modals/game-over-menu/index.scss":
+/*!*********************************************************!*\
+  !*** ./src/components/modals/game-over-menu/index.scss ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/components/modals/in-game-menu/index.html":
+/*!*******************************************************!*\
+  !*** ./src/components/modals/in-game-menu/index.html ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- inGame UI -->\r\n<div id=\"inGameUI\" class=\"in-game-ui-wrapper\">\r\n    <div class=\"player-block\">\r\n        <span id=\"playerName\" class=\"name\">Player</span>\r\n        <div id=\"playerHealthBar\" class=\"player-health-bar\"  ><div id=\"playerH\" class=\"hb-fl\"></div></div>\r\n    </div>\r\n    <div id = \"score\" class=\"score\">score</div>\r\n    <div class=\"enemy-block\">\r\n        <p id=\"enemyName\" class=\"name\"></p>\r\n        <div id=\"enemyHealthBar\" class=\"enemy-health-bar\" ><div id=\"enemyH\" class=\"hb-fl\"></div></div>\r\n        <p id=\"enemyNick\" class=\"nick\"></p>\r\n    </div>\r\n    <div class=\"down-btn-ui-block\">\r\n        <button id=\"turnMainBtn\" class=\"game-btn\" disabled>Your Turn </button>\r\n    </div>\r\n</div>";
+
+/***/ }),
+
+/***/ "./src/components/modals/in-game-menu/index.js":
+/*!*****************************************************!*\
+  !*** ./src/components/modals/in-game-menu/index.js ***!
+  \*****************************************************/
+/*! exports provided: enemyName, playerName, enemyH, playerH, enemyNick, turnMainBtn, init, setInGameUIPlayerName, setInGameUIEnemyName, disableTurnMainBtn, enableTurnMainBtn, setEnemyH, setPlayerH, changeMainBtnText */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "enemyName", function() { return enemyName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "playerName", function() { return playerName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "enemyH", function() { return enemyH; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "playerH", function() { return playerH; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "enemyNick", function() { return enemyNick; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "turnMainBtn", function() { return turnMainBtn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setInGameUIPlayerName", function() { return setInGameUIPlayerName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setInGameUIEnemyName", function() { return setInGameUIEnemyName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "disableTurnMainBtn", function() { return disableTurnMainBtn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "enableTurnMainBtn", function() { return enableTurnMainBtn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setEnemyH", function() { return setEnemyH; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setPlayerH", function() { return setPlayerH; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "changeMainBtnText", function() { return changeMainBtnText; });
+/* harmony import */ var _start_menu_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../start-menu/index */ "./src/components/modals/start-menu/index.js");
+/* harmony import */ var _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../screens/game/LevelM */ "./src/components/screens/game/LevelM.js");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.html */ "./src/components/modals/in-game-menu/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.scss */ "./src/components/modals/in-game-menu/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+
+let
+//inGame UI
+enemyName, playerName, enemyH, playerH, enemyNick, turnMainBtn;
+
+function init() {
+    addHtml($("#game"));
+    enemyName = $('#enemyName');
+    playerName = $('#playerName');
+    enemyH = $('#enemyH');
+    playerH = $('#playerH');
+    enemyNick = $('#enemyNick');
+    turnMainBtn = $('#turnMainBtn');
+}
+
+function addHtml(parent) {
+    parent.append(_index_html__WEBPACK_IMPORTED_MODULE_2___default.a);
+}
+
+// *************************** InGame Menu ********************************
+function setInGameUIPlayerName(name) {
+    let userName;
+    if (_start_menu_index__WEBPACK_IMPORTED_MODULE_0__["startMenuInput"].val() != '') {
+        userName = name || startMenuInput.val();
+    } else {
+        userName = 'Tommy <small>z</small>zZ';
+    }
+    _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_1__["default"].setUserName(userName);
+    playerName.html(userName);
+};
+
+function setInGameUIEnemyName(name) {
+    enemyNick.html(name[1]);
+    enemyName.html(name[0]);
+}
+
+function disableTurnMainBtn() {
+    turnMainBtn.prop('disabled', true);
+}
+
+function enableTurnMainBtn() {
+    turnMainBtn.prop('disabled', false);
+}
+
+function setEnemyH(val) {
+    enemyH.css("width", val + '%');
+}
+
+function setPlayerH(val) {
+    playerH.css("width", val + '%');
+}
+
+function changeMainBtnText(text) {
+    turnMainBtn.html(text);
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/modals/in-game-menu/index.scss":
+/*!*******************************************************!*\
+  !*** ./src/components/modals/in-game-menu/index.scss ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/components/modals/loading-screen/index.html":
+/*!*********************************************************!*\
+  !*** ./src/components/modals/loading-screen/index.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id = \"loadingScreen\" class=\"loading-screen\">\r\n<div class='loader'></div>\r\n</div>";
+
+/***/ }),
+
+/***/ "./src/components/modals/loading-screen/index.js":
+/*!*******************************************************!*\
+  !*** ./src/components/modals/loading-screen/index.js ***!
+  \*******************************************************/
+/*! exports provided: init, show, hide */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "show", function() { return show; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hide", function() { return hide; });
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ "./src/components/modals/loading-screen/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.html */ "./src/components/modals/loading-screen/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+
+let loadingScreen;
+function init() {
+    addHtml('body');
+    loadingScreen = $('#loadingScreen');
+}
+init();
+
+function addHtml(stringParent) {
+    $(stringParent).prepend(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a);
+}
+
+function show() {
+    loadingScreen.css('display', 'flex');
+}
+
+function hide() {
+    loadingScreen.css('display', 'none');
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/modals/loading-screen/index.scss":
+/*!*********************************************************!*\
+  !*** ./src/components/modals/loading-screen/index.scss ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/components/modals/modal-menu/index.html":
+/*!*****************************************************!*\
+  !*** ./src/components/modals/modal-menu/index.html ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = " <!-- Modal Menu -->\r\n <div id=\"modalMenu\" class=\"modal-menu\">\r\n    <button id=\"closeModalBtn\" class = \"close-element\">x</button>\r\n</div>";
+
+/***/ }),
+
+/***/ "./src/components/modals/modal-menu/index.js":
+/*!***************************************************!*\
+  !*** ./src/components/modals/modal-menu/index.js ***!
+  \***************************************************/
+/*! exports provided: modalMenu, closeModalBtn, currTask, checkEnterButton, init, openModalMenu, instantiateTask, closeModalMenu, setCheckEnterButton, disableCloseModalBtn, enableCloseModalBtn */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "modalMenu", function() { return modalMenu; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeModalBtn", function() { return closeModalBtn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currTask", function() { return currTask; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "checkEnterButton", function() { return checkEnterButton; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openModalMenu", function() { return openModalMenu; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "instantiateTask", function() { return instantiateTask; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeModalMenu", function() { return closeModalMenu; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setCheckEnterButton", function() { return setCheckEnterButton; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "disableCloseModalBtn", function() { return disableCloseModalBtn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "enableCloseModalBtn", function() { return enableCloseModalBtn; });
+/* harmony import */ var _tasks_taskManager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../tasks/taskManager */ "./src/components/tasks/taskManager.js");
+/* harmony import */ var _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../tasks/tasksMenu/index */ "./src/components/tasks/tasksMenu/index.js");
+/* harmony import */ var _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../screens/game/LevelM */ "./src/components/screens/game/LevelM.js");
+/* harmony import */ var _in_game_menu_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../in-game-menu/index */ "./src/components/modals/in-game-menu/index.js");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index.html */ "./src/components/modals/modal-menu/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index.scss */ "./src/components/modals/modal-menu/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+
+
+
+let modalMenu,
+    closeModalBtn,
+    currTask = null,
+    checkEnterButton = false;
+
+function init() {
+    addHtml($("#game"));
+    modalMenu = $("#modalMenu");
+    closeModalBtn = $("#closeModalBtn");
+}
+
+function addHtml(parent) {
+    parent.append(_index_html__WEBPACK_IMPORTED_MODULE_4___default.a);
+}
+
+// *************************** Modal Menu ********************************
+async function waitFor(msec) {
+    await new Promise((resolve, reject) => setTimeout(resolve, msec));
+}
+
+function openModalMenu() {
+    _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_1__["loadTo"]('#modalMenu');
+    modalMenu.css("display", "block");
+    $("#modalMenu").find('#tasks').children('.menu-el').first().focus();
+    _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_1__["tasksMenu"].on('tasksMenuSubmitted', () => {
+        _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_1__["clear"]();
+        instantiateTask(_tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_1__["selectedTask"]);
+    });
+
+    closeModalBtn.click(e => {
+        closeModalMenu();
+    });
+    $(document).on('keydown', event => {
+        if (event.key == 'Escape') {
+            closeModalBtn.click();
+        }
+    });
+}
+
+function instantiateTask(name) {
+    currTask = _tasks_taskManager__WEBPACK_IMPORTED_MODULE_0__["generateTask"](name);
+    currTask.instantiateHtmlAndJsTo('#modalMenu');
+    waitFor(400).then(() => {
+        currTask.setKeyboardReadyBtn();
+    });
+
+    currTask.taskBlock.on('answerSubmitted', () => {
+        _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_2__["default"].setTaskSolved(currTask.answerState);
+        if (currTask.answerState) {
+            waitFor(2000).then(() => {
+                closeModalMenu();events.trigger('playerTurn');
+            });
+            waitFor(2000).then(() => {
+                closeModalMenu();events.trigger('playerTurn');
+            });
+        } else {
+            waitFor(2000).then(() => {
+                closeModalMenu();events.trigger('enemyTurn');
+            });
+        }
+    });
+}
+
+function closeModalMenu() {
+    modalMenu.css("display", "none");
+    if (currTask != null) {
+        currTask.clear();
+    };
+    currTask = null;
+    _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_1__["clear"]();
+    checkEnterButton = false;
+    _in_game_menu_index__WEBPACK_IMPORTED_MODULE_3__["enableTurnMainBtn"]();
+}
+
+function setCheckEnterButton(bul) {
+    checkEnterButton = bul;
+}
+
+function disableCloseModalBtn() {
+    closeModalBtn.prop('disabled', true);
+}
+
+function enableCloseModalBtn() {
+    closeModalBtn.prop('disabled', false);
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/modals/modal-menu/index.scss":
+/*!*****************************************************!*\
+  !*** ./src/components/modals/modal-menu/index.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/components/modals/small-modal-menu/index.html":
+/*!***********************************************************!*\
+  !*** ./src/components/modals/small-modal-menu/index.html ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Small Modal Menu -->\r\n<div id=\"smallModalMenu\" class=\"modal-menu small-modal-menu\">\r\n    <div id=\"earthBtn\"class=\"spell-wrapper menu-el earth\">\r\n        <p>Earth</p>\r\n    </div>\r\n    <div id=\"waterBtn\"class=\"spell-wrapper menu-el water\">\r\n        <p>Water</p>\r\n    </div>\r\n    <div id=\"fireBtn\"class=\"spell-wrapper menu-el fire\">\r\n        <p>Fire</p>\r\n    </div>\r\n    <div id=\"poisonBtn\"class=\"spell-wrapper menu-el poison\">\r\n        <p>Poison</p>\r\n    </div>\r\n</div>";
+
+/***/ }),
+
+/***/ "./src/components/modals/small-modal-menu/index.js":
+/*!*********************************************************!*\
+  !*** ./src/components/modals/small-modal-menu/index.js ***!
+  \*********************************************************/
+/*! exports provided: smallModalMenu, earthBtn, fireBtn, waterBtn, groundBtn, init, closeSmallModalMenu, openSmallModalMenu, onSpellSubmit */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "smallModalMenu", function() { return smallModalMenu; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "earthBtn", function() { return earthBtn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fireBtn", function() { return fireBtn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "waterBtn", function() { return waterBtn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "groundBtn", function() { return groundBtn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeSmallModalMenu", function() { return closeSmallModalMenu; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openSmallModalMenu", function() { return openSmallModalMenu; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onSpellSubmit", function() { return onSpellSubmit; });
+/* harmony import */ var _in_game_menu_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../in-game-menu/index */ "./src/components/modals/in-game-menu/index.js");
+/* harmony import */ var _modal_menu_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../modal-menu/index */ "./src/components/modals/modal-menu/index.js");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.html */ "./src/components/modals/small-modal-menu/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.scss */ "./src/components/modals/small-modal-menu/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../screens/game/LevelM */ "./src/components/screens/game/LevelM.js");
+
+
+
+
+
+
+
+
+let smallModalMenu, earthBtn, fireBtn, waterBtn, groundBtn;
+
+function init() {
+    addHtml($("#game"));
+    smallModalMenu = $("#smallModalMenu");
+    earthBtn = $("#earthBtn");
+    fireBtn = $("#fireBtn");
+    waterBtn = $("#waterBtn");
+    groundBtn = $("#groundBtn");
+}
+
+function addHtml(parent) {
+    parent.append(_index_html__WEBPACK_IMPORTED_MODULE_2___default.a);
+}
+
+// *************************** Small modal Menu ********************************
+function closeSmallModalMenu() {
+    smallModalMenu.css("display", "none");
+    smallModalMenu.children('.menu-el').attr('tabindex', 0).off('keydown');
+    smallModalMenu.off('click');
+}
+
+function openSmallModalMenu() {
+    smallModalMenu.css("display", "block");
+    _in_game_menu_index__WEBPACK_IMPORTED_MODULE_0__["disableTurnMainBtn"]();
+
+    smallModalMenu.click(e => {
+        onSpellSubmit(e.target);
+    });
+
+    smallModalMenu.children('.menu-el').attr('tabindex', 0).first().focus();
+    smallModalMenu.children('.menu-el').attr('tabindex', 0).on('keydown', event => {
+        let ct = event.currentTarget;
+        if (event.key == 'ArrowLeft' || event.key == 'ArrowUp') {
+            // left or up
+            $(ct).prev().focus();
+        }
+        if (event.key == 'ArrowRight' || event.key == 'ArrowDown') {
+            // right or down
+            $(ct).next().focus();
+        }
+        if (event.key == 'Enter') {
+            // right or down
+            onSpellSubmit($(ct).children('p'));
+        }
+    });
+}
+
+function onSpellSubmit(elem) {
+    console.log($(elem).html().toLocaleLowerCase());
+    _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_4__["default"].setUserSpell($(elem).html().toLocaleLowerCase());
+    closeSmallModalMenu();
+    _modal_menu_index__WEBPACK_IMPORTED_MODULE_1__["openModalMenu"]();
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/modals/small-modal-menu/index.scss":
+/*!***********************************************************!*\
+  !*** ./src/components/modals/small-modal-menu/index.scss ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/components/modals/start-menu/index.html":
+/*!*****************************************************!*\
+  !*** ./src/components/modals/start-menu/index.html ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Start Menu -->\r\n<div id=\"startMenu\" class=\"start-menu-overlay\">\r\n    <div class=\"menu-btn-block\">\r\n        <h2>Enter your name:</h2>\r\n        <input type=\"text\" id=\"startMenuInput\" name=\"userName\" placeholder=\"Tommy zzZ\">\r\n        <button id=\"startMenuStartBtn\" class=\"btn game-btn\">Start</button>\r\n        <button id=\"startMenuSoundBtn\" class=\"btn game-btn\">Sound:on</button>\r\n    </div>\r\n</div>";
+
+/***/ }),
+
+/***/ "./src/components/modals/start-menu/index.js":
+/*!***************************************************!*\
+  !*** ./src/components/modals/start-menu/index.js ***!
+  \***************************************************/
+/*! exports provided: startMenuInput, startMenuStartBtn, init, getStartMenuInputVal */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "startMenuInput", function() { return startMenuInput; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "startMenuStartBtn", function() { return startMenuStartBtn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStartMenuInputVal", function() { return getStartMenuInputVal; });
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/modals/start-menu/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/modals/start-menu/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+let
+//Start Menu
+startMenuInput, startMenuStartBtn;
+
+function init() {
+    addHtml($("#game"));
+    startMenuInput = $('#startMenuInput');
+    startMenuStartBtn = $('#startMenuStartBtn');
+}
+
+// *************************** Start Menu ********************************
+function getStartMenuInputVal() {
+    return $('#startMenuInput').val();
+}
+
+function addHtml(parent) {
+    parent.append(_index_html__WEBPACK_IMPORTED_MODULE_0___default.a);
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/modals/start-menu/index.scss":
+/*!*****************************************************!*\
+  !*** ./src/components/modals/start-menu/index.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/components/modals/uiManager.js":
+/*!********************************************!*\
+  !*** ./src/components/modals/uiManager.js ***!
+  \********************************************/
+/*! exports provided: init */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
+/* harmony import */ var _managers_monsterNameM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../managers/monsterNameM */ "./src/components/managers/monsterNameM.js");
+/* harmony import */ var _modal_menu_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modal-menu/index */ "./src/components/modals/modal-menu/index.js");
+/* harmony import */ var _small_modal_menu_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./small-modal-menu/index */ "./src/components/modals/small-modal-menu/index.js");
+/* harmony import */ var _game_over_menu_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./game-over-menu/index */ "./src/components/modals/game-over-menu/index.js");
+/* harmony import */ var _in_game_menu_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./in-game-menu/index */ "./src/components/modals/in-game-menu/index.js");
+/* harmony import */ var _start_menu_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./start-menu/index */ "./src/components/modals/start-menu/index.js");
+
+
+
+
+
+
+
+
+function init() {
+    //Start Menu
+    _start_menu_index__WEBPACK_IMPORTED_MODULE_5__["init"]();
+    //inGame UI
+    _in_game_menu_index__WEBPACK_IMPORTED_MODULE_4__["init"]();
+    //Modal menu
+    _modal_menu_index__WEBPACK_IMPORTED_MODULE_1__["init"]();
+    //Small modal menu
+    _small_modal_menu_index__WEBPACK_IMPORTED_MODULE_2__["init"]();
+    //Game Over Menu
+    _game_over_menu_index__WEBPACK_IMPORTED_MODULE_3__["init"]();
+    //Start Menu
+    _start_menu_index__WEBPACK_IMPORTED_MODULE_5__["startMenuStartBtn"].click(e => {
+        _in_game_menu_index__WEBPACK_IMPORTED_MODULE_4__["setInGameUIPlayerName"](_start_menu_index__WEBPACK_IMPORTED_MODULE_5__["startMenuInput"].val());
+    });
+    //In Game Menu
+    _in_game_menu_index__WEBPACK_IMPORTED_MODULE_4__["setInGameUIEnemyName"](_managers_monsterNameM__WEBPACK_IMPORTED_MODULE_0__["createRandomMName"]());
+    _in_game_menu_index__WEBPACK_IMPORTED_MODULE_4__["turnMainBtn"].click(e => {
+        _small_modal_menu_index__WEBPACK_IMPORTED_MODULE_2__["openSmallModalMenu"]();
+    });
+
+    $(document).on("keydown", () => {
+        if ($('#inGameUI').css("display") != 'none' && $('#startMenu').css("display") != undefined && !_in_game_menu_index__WEBPACK_IMPORTED_MODULE_4__["turnMainBtn"].prop("disabled")) {
+            if (event.key == 'Enter') {
+                _in_game_menu_index__WEBPACK_IMPORTED_MODULE_4__["turnMainBtn"].click();
+            }
+        }
+    });
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/components/screens/game/GameC.js":
+/*!**********************************************!*\
+  !*** ./src/components/screens/game/GameC.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return initGame; });
-/* harmony import */ var _components_audio_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/audio.js */ "./src/js/components/audio.js");
-/* harmony import */ var _data_frames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/frames */ "./src/js/data/frames.js");
-/* harmony import */ var _components_resources_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/resources.js */ "./src/js/components/resources.js");
-/* harmony import */ var _components_resources_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_resources_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_sprite_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/sprite.js */ "./src/js/components/sprite.js");
-/* harmony import */ var _components_sprite_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_sprite_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_animator_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/animator.js */ "./src/js/components/animator.js");
-/* harmony import */ var _components_input_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/input.js */ "./src/js/components/input.js");
-/* harmony import */ var _components_renderer_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/renderer.js */ "./src/js/components/renderer.js");
-/* harmony import */ var _components_renderer_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_renderer_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _components_collision_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/collision.js */ "./src/js/components/collision.js");
-/* harmony import */ var _components_collision_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_collision_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_vector_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/vector.js */ "./src/js/components/vector.js");
-/* harmony import */ var _components_vector_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_vector_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../managers/LevelM */ "./src/js/managers/LevelM.js");
-/* harmony import */ var _entities_all_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../entities/all.js */ "./src/js/entities/all.js");
-/* harmony import */ var _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./../managers/uiM.js */ "./src/js/managers/uiM.js");
-/* harmony import */ var _managers_monsterNameM_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./../managers/monsterNameM.js */ "./src/js/managers/monsterNameM.js");
-/* harmony import */ var _uiC_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./uiC.js */ "./src/js/controllers/uiC.js");
-/* harmony import */ var timers__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! timers */ "./node_modules/timers-browserify/main.js");
-/* harmony import */ var timers__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(timers__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _library_audio_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../library/audio.js */ "./src/components/library/audio.js");
+/* harmony import */ var _data_frames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../data/frames */ "./src/components/data/frames.js");
+/* harmony import */ var _library_resources_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../library/resources.js */ "./src/components/library/resources.js");
+/* harmony import */ var _library_resources_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_library_resources_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _library_sprite_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../library/sprite.js */ "./src/components/library/sprite.js");
+/* harmony import */ var _library_sprite_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_library_sprite_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _library_animator_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../library/animator.js */ "./src/components/library/animator.js");
+/* harmony import */ var _library_input_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../library/input.js */ "./src/components/library/input.js");
+/* harmony import */ var _library_renderer_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../library/renderer.js */ "./src/components/library/renderer.js");
+/* harmony import */ var _library_renderer_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_library_renderer_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _library_vector_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../library/vector.js */ "./src/components/library/vector.js");
+/* harmony import */ var _library_vector_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_library_vector_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../screens/game/LevelM */ "./src/components/screens/game/LevelM.js");
+/* harmony import */ var _entities_all_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../entities/all.js */ "./src/components/entities/all.js");
+/* harmony import */ var _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./../../modals/in-game-menu/index */ "./src/components/modals/in-game-menu/index.js");
+/* harmony import */ var _managers_monsterNameM__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./../../managers/monsterNameM */ "./src/components/managers/monsterNameM.js");
+/* harmony import */ var _modals_uiManager__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../modals/uiManager */ "./src/components/modals/uiManager.js");
+/* harmony import */ var timers__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! timers */ "./node_modules/timers-browserify/main.js");
+/* harmony import */ var timers__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(timers__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _game_scss__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./game.scss */ "./src/components/screens/game/game.scss");
+/* harmony import */ var _game_scss__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_game_scss__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _fonts_Lalezar_Regular_ttf__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./fonts/Lalezar-Regular.ttf */ "./src/components/screens/game/fonts/Lalezar-Regular.ttf");
+/* harmony import */ var _fonts_Lalezar_Regular_ttf__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_fonts_Lalezar_Regular_ttf__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _img_terrain_jpg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./img/terrain.jpg */ "./src/components/screens/game/img/terrain.jpg");
+/* harmony import */ var _img_terrain_jpg__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_img_terrain_jpg__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _img_terrain2_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./img/terrain2.jpg */ "./src/components/screens/game/img/terrain2.jpg");
+/* harmony import */ var _img_terrain2_jpg__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_img_terrain2_jpg__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _img_sprites_attacks_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./img/sprites/attacks.png */ "./src/components/screens/game/img/sprites/attacks.png");
+/* harmony import */ var _img_sprites_attacks_png__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_img_sprites_attacks_png__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _img_sprites_entities_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./img/sprites/entities.png */ "./src/components/screens/game/img/sprites/entities.png");
+/* harmony import */ var _img_sprites_entities_png__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_img_sprites_entities_png__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _img_sprites_explosions_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./img/sprites/explosions.png */ "./src/components/screens/game/img/sprites/explosions.png");
+/* harmony import */ var _img_sprites_explosions_png__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_img_sprites_explosions_png__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _img_screenshots_ss1_jpg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./img/screenshots/ss1.jpg */ "./src/components/screens/game/img/screenshots/ss1.jpg");
+/* harmony import */ var _img_screenshots_ss1_jpg__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_img_screenshots_ss1_jpg__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _img_screenshots_ss2_jpg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./img/screenshots/ss2.jpg */ "./src/components/screens/game/img/screenshots/ss2.jpg");
+/* harmony import */ var _img_screenshots_ss2_jpg__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_img_screenshots_ss2_jpg__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _img_screenshots_ss3_jpg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./img/screenshots/ss3.jpg */ "./src/components/screens/game/img/screenshots/ss3.jpg");
+/* harmony import */ var _img_screenshots_ss3_jpg__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_img_screenshots_ss3_jpg__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var _sounds_burn2_wav__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./sounds/burn2.wav */ "./src/components/screens/game/sounds/burn2.wav");
+/* harmony import */ var _sounds_burn2_wav__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_sounds_burn2_wav__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _sounds_poison1_wav__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./sounds/poison1.wav */ "./src/components/screens/game/sounds/poison1.wav");
+/* harmony import */ var _sounds_poison1_wav__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_sounds_poison1_wav__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var _sounds_water2_wav__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./sounds/water2.wav */ "./src/components/screens/game/sounds/water2.wav");
+/* harmony import */ var _sounds_water2_wav__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(_sounds_water2_wav__WEBPACK_IMPORTED_MODULE_26__);
+/* harmony import */ var _sounds_earth1_wav__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./sounds/earth1.wav */ "./src/components/screens/game/sounds/earth1.wav");
+/* harmony import */ var _sounds_earth1_wav__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(_sounds_earth1_wav__WEBPACK_IMPORTED_MODULE_27__);
+/* harmony import */ var _sounds_wosh3_wav__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./sounds/wosh3.wav */ "./src/components/screens/game/sounds/wosh3.wav");
+/* harmony import */ var _sounds_wosh3_wav__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(_sounds_wosh3_wav__WEBPACK_IMPORTED_MODULE_28__);
+/* harmony import */ var _sounds_soundtrack2_mp3__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./sounds/soundtrack2.mp3 */ "./src/components/screens/game/sounds/soundtrack2.mp3");
+/* harmony import */ var _sounds_soundtrack2_mp3__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(_sounds_soundtrack2_mp3__WEBPACK_IMPORTED_MODULE_29__);
+/* harmony import */ var _sounds_soundtrack5_mp3__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./sounds/soundtrack5.mp3 */ "./src/components/screens/game/sounds/soundtrack5.mp3");
+/* harmony import */ var _sounds_soundtrack5_mp3__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(_sounds_soundtrack5_mp3__WEBPACK_IMPORTED_MODULE_30__);
+/* harmony import */ var _sounds_soundtrack4_mp3__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./sounds/soundtrack4.mp3 */ "./src/components/screens/game/sounds/soundtrack4.mp3");
+/* harmony import */ var _sounds_soundtrack4_mp3__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(_sounds_soundtrack4_mp3__WEBPACK_IMPORTED_MODULE_31__);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -65349,7 +66371,7 @@ __webpack_require__.r(__webpack_exports__);
 function initGame(canvas) {
     Renderer.settings.canvas = canvas;
     var ctx = Renderer.settings.ctx = canvas.getContext("2d");
-    _uiC_js__WEBPACK_IMPORTED_MODULE_13__["init"]();
+    _modals_uiManager__WEBPACK_IMPORTED_MODULE_12__["init"]();
 
     //************************************************************************************* */
     var requestAnimFrame = window.requestAnimationFrame;
@@ -65376,44 +66398,44 @@ function initGame(canvas) {
 
     function initPlayField() {
         Renderer.init();
-        _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].init();
+        _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].init();
         lastTime = Date.now();
         Renderer.createTerrain(['img/terrain.jpg', 'img/terrain2.jpg'], 'no-repeat');
-        enemy = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Enemy"]([460, 358], 'HolyPlayer', 0);
+        enemy = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Enemy"]([460, 358], 'HolyPlayer', 0);
         player.setH(100);
         enemy.setH(100);
-        _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].setScore(0);
-        _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["setInGameUIEnemyName"](_managers_monsterNameM_js__WEBPACK_IMPORTED_MODULE_12__["createRandomMName"]());
+        _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].setScore(0);
+        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_10__["setInGameUIEnemyName"](_managers_monsterNameM__WEBPACK_IMPORTED_MODULE_11__["createRandomMName"]());
         loop();
         window.entities = [];
 
-        exEarth = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Explosion"]([430, 340], 3);
-        exWater = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Explosion"]([144, 330], 2);
-        exFire = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Explosion"]([425, 330], 1);
-        exPoison = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Explosion"]([425, 330], 0);
-        exPlayer = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Explosion"]([146, 330], 0);
-        enemy = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Enemy"]([460, 358], 'HolyPlayer', 0);
-        player = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Player"]([160, 330], 'EvilMonster', 0);
-        gameTime = _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].settings.gameTime;
-        isGameOver = _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].settings.isGameOver;
+        exEarth = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Explosion"]([430, 340], 3);
+        exWater = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Explosion"]([144, 330], 2);
+        exFire = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Explosion"]([425, 330], 1);
+        exPoison = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Explosion"]([425, 330], 0);
+        exPlayer = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Explosion"]([146, 330], 0);
+        enemy = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Enemy"]([460, 358], 'HolyPlayer', 0);
+        player = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Player"]([160, 330], 'EvilMonster', 0);
+        gameTime = _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].settings.gameTime;
+        isGameOver = _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].settings.isGameOver;
     };
 
     window.entities = [];
 
-    var exEarth = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Explosion"]([430, 325], 3);
-    var exWater = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Explosion"]([410, 320], 2);
-    var exFire = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Explosion"]([425, 320], 1);
-    var exPoison = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Explosion"]([425, 320], 0);
-    var exPlayer = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Explosion"]([160, 315], 0);
-    var enemy = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Enemy"]([460, 358], '', 0);
-    var player = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Player"]([160, 320], '', 0);
-    var gameTime = _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].settings.gameTime;
-    var isGameOver = _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].settings.isGameOver;
+    var exEarth = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Explosion"]([430, 325], 3);
+    var exWater = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Explosion"]([410, 320], 2);
+    var exFire = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Explosion"]([425, 320], 1);
+    var exPoison = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Explosion"]([425, 320], 0);
+    var exPlayer = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Explosion"]([160, 315], 0);
+    var enemy = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Enemy"]([460, 358], '', 0);
+    var player = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Player"]([160, 320], '', 0);
+    var gameTime = _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].settings.gameTime;
+    var isGameOver = _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].settings.isGameOver;
     var prevSpell = null;
     var earthCounter = 1;
 
     Renderer.init();
-    _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].init();
+    _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].init();
     lastTime = Date.now();
     events.on("animEnded", (e, objName, animName) => {
 
@@ -65421,13 +66443,13 @@ function initGame(canvas) {
             case "player":
                 switch (animName) {
                     case "attack":
-                        _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["disableTurnMainBtn"]();
+                        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_10__["disableTurnMainBtn"]();
 
-                        switch (_managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].getUserSpell()) {
+                        switch (_screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].getUserSpell()) {
                             case "earth":
                                 exEarth.explode();
-                                _components_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].earthSound.playNext();
-                                if (prevSpell == _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].getUserSpell()) {
+                                _library_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].earthSound.playNext();
+                                if (prevSpell == _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].getUserSpell()) {
                                     earthCounter += 2;
                                 } else {
                                     earthCounter = 1;
@@ -65436,45 +66458,45 @@ function initGame(canvas) {
                                 break;
                             case "water":
                                 exWater.explode();
-                                _components_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].waterSound.playNext();
+                                _library_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].waterSound.playNext();
                                 player.increaseH(Math.floor(Math.random() * 25) + 10);
                                 break;
                             case "fire":
                                 exFire.explode();
-                                _components_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].fireSound.playNext();
+                                _library_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].fireSound.playNext();
                                 enemy.decreaseH(10 * Math.random() + 20);
                                 break;
                             case "poison":
                                 exPoison.explode();
-                                _components_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].poisonSound.playNext();
+                                _library_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].poisonSound.playNext();
                                 enemy.decreaseH(20);
                                 break;
                         }
-                        prevSpell = _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].getUserSpell();
+                        prevSpell = _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].getUserSpell();
                         enemy.beingAttacked();
                         break;
                     case "attacked":
-                        _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["changeMainBtnText"]("Your Turn");
+                        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_10__["changeMainBtnText"]("Your Turn");
                 }
                 break;
 
             case "enemy":
                 switch (animName) {
                     case "attack":
-                        _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["disableTurnMainBtn"]();
+                        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_10__["disableTurnMainBtn"]();
                         let l = Math.floor(Math.random() * 2);
                         exPlayer.changeStyleTo(l);
                         if (l == 0) {
-                            _components_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].waterSound.playNext();
+                            _library_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].waterSound.playNext();
                         } else if (l == 1) {
-                            _components_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].fireSound.playNext();
+                            _library_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].fireSound.playNext();
                         } else {
-                            _components_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].poisonSound.playNext();
+                            _library_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].poisonSound.playNext();
                         }
                         exPlayer.explode();
                         player.beingAttacked();
                         player.decreaseH((exPlayer.N + 1) * 15);
-                        _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["changeMainBtnText"]("Your Turn");
+                        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_10__["changeMainBtnText"]("Your Turn");
                         break;
                     case "attacked":
                         if (enemy.health > 0) {
@@ -65490,27 +66512,27 @@ function initGame(canvas) {
 
                         if (enemy.health <= 0) {
                             console.log("You win!");
-                            Object(timers__WEBPACK_IMPORTED_MODULE_14__["setTimeout"])(() => {
-                                _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].changeScoreOn(1);
-                                _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["setInGameUIEnemyName"](_managers_monsterNameM_js__WEBPACK_IMPORTED_MODULE_12__["createRandomMName"]());
+                            Object(timers__WEBPACK_IMPORTED_MODULE_13__["setTimeout"])(() => {
+                                _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].changeScoreOn(1);
+                                _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_10__["setInGameUIEnemyName"](_managers_monsterNameM__WEBPACK_IMPORTED_MODULE_11__["createRandomMName"]());
                                 enemy.deletBody(['head', 'body', 'lArm', 'rArm', 'legs']);
-                                enemy = new _entities_all_js__WEBPACK_IMPORTED_MODULE_10__["Enemy"]([460, 358], 'HolyPlayer', 0);
+                                enemy = new _entities_all_js__WEBPACK_IMPORTED_MODULE_9__["Enemy"]([460, 358], 'HolyPlayer', 0);
                                 enemy.setH(100);
-                                _components_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].musicSound.playNext(true);
+                                _library_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].musicSound.playNext(true);
                             }, 1000);
                         }
                         if (player.health <= 0) {
                             console.log("You loose!");
-                            _components_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].stopAllAudio();
-                            Object(timers__WEBPACK_IMPORTED_MODULE_14__["setTimeout"])(() => {
-                                _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["disableTurnMainBtn"]();
-                                _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].hideInGameMenu();
+                            _library_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].stopAllAudio();
+                            Object(timers__WEBPACK_IMPORTED_MODULE_13__["setTimeout"])(() => {
+                                _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_10__["disableTurnMainBtn"]();
+                                _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].hideInGameMenu();
 
-                                _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].onGameOver();isGameOver = true;
-                                _components_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].musicSound.stopCurrent();
+                                _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].onGameOver();isGameOver = true;
+                                _library_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].musicSound.stopCurrent();
                             }, 1000);
                         }
-                        _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["enableTurnMainBtn"]();
+                        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_10__["enableTurnMainBtn"]();
                         break;
                 }
                 break;
@@ -65518,18 +66540,18 @@ function initGame(canvas) {
     });
 
     events.on("enemyTurn", e => {
-        _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["changeMainBtnText"]("Monster Turn");
-        _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["disableTurnMainBtn"]();
+        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_10__["changeMainBtnText"]("Monster Turn");
+        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_10__["disableTurnMainBtn"]();
         enemy.castSpell();
     });
 
     events.on("playerTurn", e => {
-        _managers_uiM_js__WEBPACK_IMPORTED_MODULE_11__["disableTurnMainBtn"]();
-        player.castSpell(_managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].getUserSpell());
+        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_10__["disableTurnMainBtn"]();
+        player.castSpell(_screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].getUserSpell());
     });
     //****************************************************************** */
     async function waitFor(msec) {
-        await new Promise((resolve, reject) => Object(timers__WEBPACK_IMPORTED_MODULE_14__["setTimeout"])(resolve, msec));
+        await new Promise((resolve, reject) => Object(timers__WEBPACK_IMPORTED_MODULE_13__["setTimeout"])(resolve, msec));
     }
 
     $(document).on("keydown", event => {
@@ -65544,8 +66566,8 @@ function initGame(canvas) {
     });
 
     $('#playAgainBtn').click(function () {
-        _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].goToMainMenu();
-        _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].setScore(0);
+        _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].goToMainMenu();
+        _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].setScore(0);
         player.setH(100);
         enemy.setH(100);
     });
@@ -65569,13 +66591,13 @@ function initGame(canvas) {
     $('#startMenuStartBtn').click(function () {
         if (resources.isReady()) {
             initPlayField();
-            _managers_LevelM__WEBPACK_IMPORTED_MODULE_9__["default"].startGame();
-            _components_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].musicSound.playNext(true);
+            _screens_game_LevelM__WEBPACK_IMPORTED_MODULE_8__["default"].startGame();
+            _library_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].musicSound.playNext(true);
         }
     });
     $('#startMenuSoundBtn').click(function () {
 
-        _components_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].toggleVolume($(this));
+        _library_audio_js__WEBPACK_IMPORTED_MODULE_0__["audio"].toggleVolume($(this));
     });
 }
 
@@ -65584,660 +66606,21 @@ function initGame(canvas) {
 
 /***/ }),
 
-/***/ "./src/js/controllers/uiC.js":
-/*!***********************************!*\
-  !*** ./src/js/controllers/uiC.js ***!
-  \***********************************/
-/*! exports provided: init */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
-/* harmony import */ var _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../managers/uiM.js */ "./src/js/managers/uiM.js");
-/* harmony import */ var _managers_monsterNameM_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../managers/monsterNameM.js */ "./src/js/managers/monsterNameM.js");
-
-
-
-function init() {
-    _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["init"]();
-    //Start Menu
-    _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["startMenuStartBtn"].click(e => {
-        _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["setInGameUIPlayerName"](_managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["startMenuInput"].val());
-    });
-    //In Game Menu
-    _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["setInGameUIEnemyName"](_managers_monsterNameM_js__WEBPACK_IMPORTED_MODULE_1__["createRandomMName"]());
-    _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["turnMainBtn"].click(e => {
-        _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["openSmallModalMenu"]();
-    });
-
-    $(document).on("keydown", () => {
-        if ($('#inGameUI').css("display") != 'none' && $('#startMenu').css("display") != undefined && !_managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["turnMainBtn"].prop("disabled")) {
-            if (event.key == 'Enter') {
-                _managers_uiM_js__WEBPACK_IMPORTED_MODULE_0__["turnMainBtn"].click();
-            }
-        }
-    });
-    //Module Menu
-
-
-    //Small Module Menu
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
-/***/ "./src/js/data/frames.js":
-/*!*******************************!*\
-  !*** ./src/js/data/frames.js ***!
-  \*******************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-
-var Frames = {
-     explosions: {
-          //sprPos    frames
-          'explode': [{ sp: [0, 0], frs: [0, 1, 2, 3, 4, 5, 6, 7, 8], frsize: [60, 80], speed: 10, once: true }, { sp: [0, 80], frs: [0, 1, 2, 3, 4, 5, 6], frsize: [60, 80], speed: 10, once: true }, { sp: [0, 160], frs: [0, 1, 2, 3, 4, 5, 6, 7, 8], frsize: [60, 80], speed: 10, once: true }, { sp: [0, 240], frs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], frsize: [60, 80], speed: 10, once: true }],
-          'idle': [{ sp: [0, 0], frs: [], frsize: [60, 80], speed: 13, once: true }, { sp: [0, 80], frs: [], frsize: [60, 80], speed: 13, once: true }, { sp: [0, 160], frs: [], frsize: [60, 80], speed: 13, once: true }, { sp: [0, 240], frs: [], frsize: [60, 80], speed: 13, once: true }]
-
-     },
-     monsters: {
-          'idle': {
-               head: [{ sp: [0, 0], frs: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], frsize: [60, 80], speed: 8 }, { sp: [0, 80], frs: [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], frsize: [60, 80], speed: 8 }, { sp: [0, 160], frs: [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], frsize: [60, 80], speed: 8 }],
-               body: [{ sp: [180, 0], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [180, 80], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [180, 160], frs: [0], frsize: [60, 80], speed: 8 }],
-               lArm: [{ sp: [240, 0], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [240, 80], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [240, 160], frs: [0], frsize: [60, 80], speed: 8 }],
-               rArm: [{ sp: [300, 0], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [300, 80], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [300, 160], frs: [0], frsize: [60, 80], speed: 8 }],
-               legs: [{ sp: [360, 0], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [360, 80], frs: [0], frsize: [60, 80], speed: 8 }, { sp: [360, 160], frs: [0], frsize: [60, 80], speed: 8 }]
-          },
-          'attack': {
-               head: [{ sp: [0, 0], frs: [0, 0, 1, 1, 0, 0, 0], frsize: [60, 80], speed: 8, once: true }, { sp: [0, 80], frs: [0, 0, 1, 0, 0, 0, 0], frsize: [60, 80], speed: 8, once: true }, { sp: [0, 160], frs: [0, 0, 1, 1, 0, 0, 0], frsize: [60, 80], speed: 8, once: true }],
-               body: [{ sp: [180, 0], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [180, 80], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [180, 160], frs: [0], frsize: [60, 80], speed: 8, once: true }],
-               lArm: [{ sp: [240, 0], frs: [0, 0, 3, 3, 5, 5, 3, 3, 0], frsize: [60, 80], speed: 8, once: true }, { sp: [240, 80], frs: [0, 0, 3, 3, 5, 5, 3, 3, 0], frsize: [60, 80], speed: 8, once: true }, { sp: [240, 160], frs: [0, 0, 3, 3, 5, 5, 3, 3, 0], frsize: [60, 80], speed: 8, once: true }],
-               rArm: [{ sp: [300, 0], frs: [0, 0, 3, 3, 5, 5, 3, 3, 5, 5, 3, 3, 0], frsize: [60, 80], speed: 8, once: true }, { sp: [300, 80], frs: [0, 0, 3, 3, 5, 5, 3, 3, 5, 3, 3, 0], frsize: [60, 80], speed: 8, once: true }, { sp: [300, 160], frs: [0, 0, 3, 3, 5, 5, 3, 3, 5, 3, 0], frsize: [60, 80], speed: 8, once: true }],
-               legs: [{ sp: [360, 0], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [360, 80], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [360, 160], frs: [0], frsize: [60, 80], speed: 8, once: true }]
-          },
-          'attacked': {
-               head: [{ sp: [0, 0], frs: [2, 2, 2, 2, 2, 2], frsize: [60, 80], speed: 5, once: true }, { sp: [0, 80], frs: [0, 2, 2, 2, 2, 0], frsize: [60, 80], speed: 5, once: true }, { sp: [0, 160], frs: [0, 2, 2, 2, 2, 0], frsize: [60, 80], speed: 5, once: true }],
-               body: [{ sp: [180, 0], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [180, 80], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [180, 160], frs: [0], frsize: [60, 80], speed: 8, once: true }],
-               lArm: [{ sp: [240, 0], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [240, 80], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [240, 160], frs: [0], frsize: [60, 80], speed: 8, once: true }],
-               rArm: [{ sp: [300, 0], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [300, 80], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [300, 160], frs: [0], frsize: [60, 80], speed: 8, once: true }],
-               legs: [{ sp: [360, 0], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [360, 80], frs: [0], frsize: [60, 80], speed: 8, once: true }, { sp: [360, 160], frs: [0], frsize: [60, 80], speed: 8, once: true }]
-          }
-     },
-     humanoids: {
-          'idle': {
-               head: [{ sp: [0, 240], frs: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0], frsize: [60, 80], speed: 8 }],
-               body: [{ sp: [180, 240], frs: [0], frsize: [60, 80], speed: 8 }],
-               lArm: [{ sp: [240, 240], frs: [0], frsize: [60, 80], speed: 8 }],
-               rArm: [{ sp: [300, 240], frs: [0], frsize: [60, 80], speed: 8 }],
-               legs: [{ sp: [360, 240], frs: [0], frsize: [60, 80], speed: 8 }]
-          },
-          'attack': {
-               head: [{ sp: [0, 240], frs: [0, 0, 1, 0, 0, 0, 0, 0, 0, 1], frsize: [60, 80], speed: 11, once: true }],
-               body: [{ sp: [180, 240], frs: [0], frsize: [60, 80], speed: 11, once: true }],
-               lArm: [{ sp: [240, 240], frs: [0, 3, 3, 5, 5, 3, 3, 5, 5, 3, 5, 3, 3, 0], frsize: [60, 80], speed: 11, once: true }],
-               rArm: [{ sp: [300, 240], frs: [0, 3, 3, 5, 5, 3, 3, 5, 5, 3, 3, 3, 0], frsize: [60, 80], speed: 11, once: true }],
-               legs: [{ sp: [360, 240], frs: [0], frsize: [60, 80], speed: 11, once: true }]
-          },
-          'attacked': {
-               head: [{ sp: [0, 240], frs: [0, 2, 2, 2, 2, 0], frsize: [60, 80], speed: 8, once: true }],
-               body: [{ sp: [180, 240], frs: [0], frsize: [60, 80], speed: 8, once: true }],
-               lArm: [{ sp: [240, 240], frs: [0], frsize: [60, 80], speed: 8, once: true }],
-               rArm: [{ sp: [300, 240], frs: [0], frsize: [60, 80], speed: 8, once: true }],
-               legs: [{ sp: [360, 240], frs: [0], frsize: [60, 80], speed: 8, once: true }]
-          }
-     }
-};
-
-window.Frames = Frames;
-
-/***/ }),
-
-/***/ "./src/js/data/monsterNames.js":
-/*!*************************************!*\
-  !*** ./src/js/data/monsterNames.js ***!
-  \*************************************/
-/*! exports provided: monsterNames */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "monsterNames", function() { return monsterNames; });
-let monsterNames = [["Scary", "Sad", "Nasty", "Terrible", "Tender", "Silent", "Happy", "Dry", "Dusty", "Stiky", "Bold", "Hight", "Wild", "Cruel", "Famous", "Proud", "Urrogant", "Funny", "Kind"], ["ogr", "goblin", "ork", "swine", "half elf", "demon", "dark hobbit", "ghoul", "drinker", "wyvern", "brownie"], ["Luz", "Eddie", "Frunk", "Matthue", "Vinchester", "Karl", "Tonny", "Brutte", "Yuri", "Andrew", 'Lucas', 'Bergson']];
-
-/***/ }),
-
-/***/ "./src/js/entities/all.js":
-/*!********************************!*\
-  !*** ./src/js/entities/all.js ***!
-  \********************************/
-/*! exports provided: Enemy, Player, Explosion */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./player */ "./src/js/entities/player.js");
-/* harmony import */ var _enemy_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./enemy.js */ "./src/js/entities/enemy.js");
-/* harmony import */ var _explosion_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./explosion.js */ "./src/js/entities/explosion.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Enemy", function() { return _enemy_js__WEBPACK_IMPORTED_MODULE_1__["Enemy"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Player", function() { return _player__WEBPACK_IMPORTED_MODULE_0__["Player"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Explosion", function() { return _explosion_js__WEBPACK_IMPORTED_MODULE_2__["Explosion"]; });
-
-
-
-
-
-
-
-
-
-/***/ }),
-
-/***/ "./src/js/entities/bodyParticle.js":
-/*!*****************************************!*\
-  !*** ./src/js/entities/bodyParticle.js ***!
-  \*****************************************/
-/*! exports provided: Head, Body, LArm, RArm, Legs */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Head", function() { return Head; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Body", function() { return Body; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LArm", function() { return LArm; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RArm", function() { return RArm; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Legs", function() { return Legs; });
-/* harmony import */ var _entity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./entity */ "./src/js/entities/entity.js");
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-
-
-
-class BodyParticle extends _entity__WEBPACK_IMPORTED_MODULE_0__["default"] {
-    constructor(ajustPos, framePos, frameSize, pObj) {
-        super();
-        this.pObj = pObj;
-        this.ajustAnchorPoint = [0, 0];
-        this.anchorPoint = Vector.sum(this.pObj.pos, this.ajustAnchorPoint);
-        this.ajustPos = ajustPos;
-        this.pos = this.setPos(this.anchorPoint);
-        this.originalAjustPos = ajustPos;
-        this.savePos(this);
-        // url,                  pos,                      size,                   speed, frames direction
-        this.sprite = new Sprite('img/entities.png', [framePos[0], framePos[1]], [frameSize[0], frameSize[1]], 10, [0]);
-    }
-    setPos(anchorPoint) {
-        return Vector.sum(anchorPoint, this.ajustAnchorPoint, this.ajustPos);
-    }
-    update() {}
-    translate(point) {
-        this.ajustPos = Vector.sum(point, this.ajustPos);
-        this.pos = this.setPos(this.pObj.pos);
-    }
-    moveTo(point) {
-        this.pos = point;
-    }
-}
-class Head extends BodyParticle {
-    constructor(ajustment, framePos, frameSize, pObj) {
-        super(ajustment, framePos, frameSize, pObj);
-        this.name = "head";
-        this.sprite.frames = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-    }
-}
-class Body extends BodyParticle {
-    constructor(ajustment, framePos, frameSize, pObj) {
-        super(ajustment, framePos, frameSize, pObj);
-        this.name = "body";
-    }
-}
-class LArm extends BodyParticle {
-    constructor(ajustment, framePos, frameSize, pObj) {
-        super(ajustment, framePos, frameSize, pObj);
-        this.name = "lArm";
-    }
-}
-class RArm extends BodyParticle {
-    constructor(ajustment, framePos, frameSize, pObj) {
-        super(ajustment, framePos, frameSize, pObj);
-        this.name = "rArm";
-    }
-}
-class Legs extends BodyParticle {
-    constructor(ajustment, framePos, frameSize, pObj) {
-        super(ajustment, framePos, frameSize, pObj);
-        this.name = "lags";
-    }
-}
-
-/***/ }),
-
-/***/ "./src/js/entities/enemy.js":
-/*!**********************************!*\
-  !*** ./src/js/entities/enemy.js ***!
-  \**********************************/
-/*! exports provided: Enemy */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Enemy", function() { return Enemy; });
-/* harmony import */ var _monster__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./monster */ "./src/js/entities/monster.js");
-/* harmony import */ var _managers_uiM__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../managers/uiM */ "./src/js/managers/uiM.js");
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-
-
-
-
-class Enemy extends _monster__WEBPACK_IMPORTED_MODULE_0__["default"] {
-    constructor(pos, sprite) {
-        super(pos);
-        this.name = 'enemy';
-        this.health = 100;
-        this.sprite = null;
-        this.savePos(this);
-        this.idleAnim = new Animation('idle', this.getIdleSprites());
-        this.attackAnim = new Animation('attack', this.getAttackSprites());
-        this.attackedAnim = new Animation('attacked', this.getAttackedSprites());
-        this.animator = new Animator([this.idleAnim, this.attackAnim, this.attackedAnim], 'idle', this.name);
-    }
-    getIdleSprites() {
-        // this.head, tempProgress,  max, direction, speed, repStyle(once,repeat,bounce), [sprite pos, sprite frames, sprite speed]
-        let name = 'idle',
-            coeff = 0.2,
-            st = 'bounce',
-            names = ['head', 'body', 'lArm', 'rArm', 'legs'],
-            head = this.m[name][names[0]][this.N[0]],
-            body = this.m[name][names[1]][this.N[1]],
-            lArm = this.m[name][names[2]][this.N[2]],
-            rArm = this.m[name][names[3]][this.N[3]],
-            legs = this.m[name][names[4]][this.N[4]];
-
-        return [[this[names[0]], 0, 2, [-1, 1], head.speed * coeff, st, 1, [head.sp, head.frs, head.speed, head.once]], [this[names[1]], 0, 1, [0, 1], body.speed * coeff, st, 1, [body.sp, body.frs, body.speed, body.once]], [this[names[2]], 0, 2, [-1, 1], lArm.speed * coeff, st, 1, [lArm.sp, lArm.frs, lArm.speed, lArm.once]], [this[names[3]], 0, 2, [1, 1], rArm.speed * coeff, st, 1, [rArm.sp, rArm.frs, rArm.speed, rArm.once]], [this[names[4]], 0, 1, [1, 0], legs.speed * coeff, st, 1, [legs.sp, legs.frs, legs.speed, legs.once]]];
-    }
-
-    getAttackSprites() {
-        // this.head, tempProgress,  max, direction, speed, repStyle(once,repeat,bounce), [sprite pos, sprite frames, sprite speed]
-        let name = 'attack',
-            coeff = 0.2,
-            st = 'bounce',
-            names = ['head', 'body', 'lArm', 'rArm', 'legs'],
-            head = this.m[name][names[0]][this.N[0]],
-            body = this.m[name][names[1]][this.N[1]],
-            lArm = this.m[name][names[2]][this.N[2]],
-            rArm = this.m[name][names[3]][this.N[3]],
-            legs = this.m[name][names[4]][this.N[4]];
-
-        return [[this[names[0]], 0, 1, [1, 1], head.speed * coeff, st, 1, [head.sp, head.frs, head.speed, head.once]], [this[names[1]], 0, 1, [0, 1], body.speed * coeff, st, 1, [body.sp, body.frs, body.speed, body.once]], [this[names[2]], 0, 1, [1, 1], lArm.speed * coeff, st, 1, [lArm.sp, lArm.frs, lArm.speed, lArm.once]], [this[names[3]], 0, 1, [1, 1], rArm.speed * coeff, st, 1, [rArm.sp, rArm.frs, rArm.speed, rArm.once]], [this[names[4]], 0, 1, [1, 0], legs.speed * coeff, st, 1, [legs.sp, legs.frs, legs.speed, legs.once]]];
-    }
-
-    getAttackedSprites() {
-        // this.head, tempProgress,  max, direction, speed, repStyle(once,repeat,bounce), [sprite pos, sprite frames, sprite speed]
-        let name = 'attacked',
-            coeff = 0.2,
-            st = 'bounce',
-            names = ['head', 'body', 'lArm', 'rArm', 'legs'],
-            head = this.m[name][names[0]][this.N[0]],
-            body = this.m[name][names[1]][this.N[1]],
-            lArm = this.m[name][names[2]][this.N[2]],
-            rArm = this.m[name][names[3]][this.N[3]],
-            legs = this.m[name][names[4]][this.N[4]];
-
-        return [[this[names[0]], 0, 2, [0, 1], head.speed * coeff, st, 1, [head.sp, head.frs, head.speed, head.once]], [this[names[1]], 0, 2, [0, 1], body.speed * coeff, st, 1, [body.sp, body.frs, body.speed, body.once]], [this[names[2]], 0, 1, [1, 1], lArm.speed * coeff, st, 1, [lArm.sp, lArm.frs, lArm.speed, lArm.once]], [this[names[3]], 0, 1, [1, 1], rArm.speed * coeff, st, 1, [rArm.sp, rArm.frs, rArm.speed, rArm.once]], [this[names[4]], 0, 1, [1, 0], legs.speed * coeff, st, 1, [legs.sp, legs.frs, legs.speed, legs.once]]];
-    }
-
-    update(e, dt, entities) {}
-    castSpell() {
-        setTimeout(() => {
-            this.animator.setAnimation('attack', true);
-        }, 100);
-    }
-
-    beingAttacked() {
-        this.animator.setAnimation('attacked', true);
-    }
-
-    decreaseH(val) {
-        this.health -= val;
-        _managers_uiM__WEBPACK_IMPORTED_MODULE_1__["setEnemyH"](this.health);
-        return this.health;
-    }
-
-    setH(val) {
-        this.health = val;
-        _managers_uiM__WEBPACK_IMPORTED_MODULE_1__["setEnemyH"](this.health);
-    }
-
-    deletBody(arr) {
-        Object(lodash_es__WEBPACK_IMPORTED_MODULE_2__["forEach"])(arr, (v, k) => {
-            Object(lodash_es__WEBPACK_IMPORTED_MODULE_2__["remove"])(entities, Object(lodash_es__WEBPACK_IMPORTED_MODULE_2__["find"])(entities, this[v]));
-        });
-        Object(lodash_es__WEBPACK_IMPORTED_MODULE_2__["remove"])(entities, Object(lodash_es__WEBPACK_IMPORTED_MODULE_2__["find"])(entities, this));
-    }
-
-}
-
-
-
-/***/ }),
-
-/***/ "./src/js/entities/entity.js":
-/*!***********************************!*\
-  !*** ./src/js/entities/entity.js ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Entity; });
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-
-
-class Entity {
-    constructor() {
-        entities.unshift(this);
-        events.on('updateEachFrame', Object(lodash_es__WEBPACK_IMPORTED_MODULE_0__["bind"])(this.update, this));
-        this.i = entities.length - 1;
-        this.savedPos = [];
-    }
-    translate(point) {
-        this.pos = Vector.sum(this.pos, point);
-    }
-    moveTo(point) {
-        this.pos = point;
-    }
-    savePos(part) {
-        if (typeof part.pObj != 'undefined' && typeof part.pObj != 'null') {
-            part.savedPos = part.ajustPos;
-        } else {
-            part.savedPos = part.pos;
-        }
-    }
-    implementSavedPos(part) {
-        if (typeof part.pObj != 'undefined' && typeof part.pObj != 'null') {
-            part.ajustPos = part.savedPos;
-        } else {
-            part.pos = part.savedPos;
-        }
-    }
-    update() {}
-}
-
-/***/ }),
-
-/***/ "./src/js/entities/explosion.js":
-/*!**************************************!*\
-  !*** ./src/js/entities/explosion.js ***!
-  \**************************************/
-/*! exports provided: Explosion */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Explosion", function() { return Explosion; });
-/* harmony import */ var _entity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./entity */ "./src/js/entities/entity.js");
-/* harmony import */ var _managers_LevelM__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../managers/LevelM */ "./src/js/managers/LevelM.js");
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-
-
-
-
-class Explosion extends _entity__WEBPACK_IMPORTED_MODULE_0__["default"] {
-    constructor(pos, explIndex) {
-        super();
-        this.pos = pos || [440, 340];
-        this.name = 'explosion';
-        this.N = explIndex;
-        this.e = Frames.explosions;
-        this.savePos(this); // url, pos, size, speed, frames, dir, once
-        this.sprite = new Sprite('img/explosions.png', this.e.idle[this.N].sp, this.e.idle[this.N].frsize, this.e.idle[this.N].speed, this.e.idle[this.N].frs, null, true);
-        this.idleAnim = new Animation('idle', this.getIdleSprites());
-        this.explodeAnim = new Animation('explode', this.getExplodeSprites());
-        this.animator = new Animator([this.idleAnim, this.explodeAnim], 'idle', this.name);
-    }
-    getIdleSprites() {
-        // this.head, tempProgress,  max, direction, time, repStyle
-        let name = 'idle',
-            st = 'bounce',
-            names = ['explosions'],
-            coeff = 0.2;
-        let explosion = this.e[name][this.N];
-        return [[this, 0, 1, [-1, 1], explosion.speed * coeff, st, 1, [explosion.sp, explosion.frs, explosion.speed, explosion.once]]];
-    }
-
-    getExplodeSprites() {
-        // this.head, tempProgress,  max, direction, time, repStyle
-        let name = 'explode',
-            st = 'bounce',
-            names = ['explosions'],
-            coeff = 0.2;
-        let explosion = this.e[name][this.N];
-        return [[this, 0, 1, [-1, 1], explosion.speed * coeff, st, 1, [explosion.sp, explosion.frs, explosion.speed, explosion.once]]];
-    }
-
-    update(e, dt) {
-
-        //  if(input.isDown('space')){
-        //     this.animator.setAnimation('explode',true);
-        // }
-    }
-
-    explode() {
-        this.animator.setAnimation('explode', true);
-    }
-
-    changeStyleTo(N) {
-        this.N = N;
-        this.explodeAnim = new Animation('explode', this.getExplodeSprites());
-        this.animator = new Animator([this.idleAnim, this.explodeAnim], 'idle', this.name);
-    }
-}
-
-
-
-/***/ }),
-
-/***/ "./src/js/entities/humanoid.js":
-/*!*************************************!*\
-  !*** ./src/js/entities/humanoid.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Humanoid; });
-/* harmony import */ var _entity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./entity */ "./src/js/entities/entity.js");
-/* harmony import */ var _bodyParticle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bodyParticle */ "./src/js/entities/bodyParticle.js");
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-
-
-
-
-class Humanoid extends _entity__WEBPACK_IMPORTED_MODULE_0__["default"] {
-    constructor(pos, N) {
-        super();
-        this.pos = pos || [160, 320];
-        this.N = 0;
-        this.h = Frames.humanoids;
-        //  ajustment      framePos frameSize in sprite sheet
-        this.head = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["Head"]([-30, -73], this.h.idle.head[this.N].sp, this.h.idle.head[this.N].frsize, this);
-        this.lArm = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["LArm"]([-40, 1], this.h.idle.lArm[this.N].sp, this.h.idle.lArm[this.N].frsize, this);
-        this.body = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["Body"]([-13, -3], this.h.idle.body[this.N].sp, this.h.idle.body[this.N].frsize, this);
-        this.legs = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["Legs"]([-20, 24], this.h.idle.legs[this.N].sp, this.h.idle.legs[this.N].frsize, this);
-        this.rArm = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["RArm"]([-20, 1], this.h.idle.rArm[this.N].sp, this.h.idle.rArm[this.N].frsize, this);
-    }
-}
-
-/***/ }),
-
-/***/ "./src/js/entities/monster.js":
-/*!************************************!*\
-  !*** ./src/js/entities/monster.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Monster; });
-/* harmony import */ var _entity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./entity */ "./src/js/entities/entity.js");
-/* harmony import */ var _bodyParticle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bodyParticle */ "./src/js/entities/bodyParticle.js");
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-
-
-
-
-class Monster extends _entity__WEBPACK_IMPORTED_MODULE_0__["default"] {
-    constructor(pos) {
-        super();
-        this.pos = pos || [460, 340];
-        this.m = Frames.monsters;
-        this.N = Object(lodash_es__WEBPACK_IMPORTED_MODULE_2__["map"])(Array(5), () => randomFromZeroTo(2));
-
-        // ajustment      framePos                 frameSize in sprite sheet
-        this.head = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["Head"]([-30, -68], [0, 80], [60, 80], this);
-        this.rArm = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["RArm"]([-27, 1], [300, 80], [60, 80], this);
-        this.body = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["Body"]([-13, -3], [180, 80], [60, 80], this);
-        this.legs = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["Legs"]([-22, 23], [360, 80], [60, 80], this);
-        this.lArm = new _bodyParticle__WEBPACK_IMPORTED_MODULE_1__["LArm"]([-40, 1], [240, 80], [60, 80], this);
-    }
-}
-
-function randomFromZeroTo(N) {
-    return Math.round(Math.random() * N);
-}
-
-/***/ }),
-
-/***/ "./src/js/entities/player.js":
-/*!***********************************!*\
-  !*** ./src/js/entities/player.js ***!
-  \***********************************/
-/*! exports provided: Player */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Player", function() { return Player; });
-/* harmony import */ var _humanoid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./humanoid */ "./src/js/entities/humanoid.js");
-/* harmony import */ var _managers_uiM__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../managers/uiM */ "./src/js/managers/uiM.js");
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-
-
-
-
-class Player extends _humanoid__WEBPACK_IMPORTED_MODULE_0__["default"] {
-    constructor(pos, userName, N) {
-        super(pos, N);
-        this.name = 'player';
-        this.userName = 'userName';
-        this.health = 100;
-        this.sprite = null;
-        this.savePos(this);
-        this.idleAnim = new Animation('idle', this.getIdleSprites());
-        this.attackAnim = new Animation('attack', this.getAttackSprites());
-        this.attackedAnim = new Animation('attacked', this.getAttackedSprites());
-        this.animator = new Animator([this.idleAnim, this.attackAnim, this.attackedAnim], 'idle', this.name);
-    }
-    getIdleSprites() {
-        let name = 'idle',
-            st = 'bounce',
-            coeff = 0.2,
-            names = ['head', 'body', 'lArm', 'rArm', 'legs'],
-            head = this.h[name][names[0]][this.N],
-            body = this.h[name][names[1]][this.N],
-            lArm = this.h[name][names[2]][this.N],
-            rArm = this.h[name][names[3]][this.N],
-            legs = this.h[name][names[4]][this.N];
-        return [[this[names[0]], 0, 1, [0, 1], head.speed * coeff, st, 1, [head.sp, head.frs, head.speed, head.once]], [this[names[1]], 0, 1, [0, 1], body.speed * coeff, st, 1, [body.sp, body.frs, body.speed, body.once]], [this[names[2]], 0, 2, [0, 1], lArm.speed * coeff, st, 1, [lArm.sp, lArm.frs, lArm.speed, lArm.once]], [this[names[3]], 0, 2, [1, 1], rArm.speed * coeff, st, 1, [rArm.sp, rArm.frs, rArm.speed, rArm.once]], [this[names[4]], 0, 1, [1, 0], legs.speed * coeff, st, 1, [legs.sp, legs.frs, legs.speed, legs.once]]];
-    }
-
-    getAttackSprites() {
-        // this.head, tempProgress,  max, direction, time, repStyle(once,repeat,bounce), [sprite pos, sprite frames, sprite speed, once]
-        let name = 'attack',
-            st = 'bounce',
-            coeff = 0.5,
-            names = ['head', 'body', 'lArm', 'rArm', 'legs'],
-            head = this.h[name][names[0]][this.N],
-            body = this.h[name][names[1]][this.N],
-            lArm = this.h[name][names[2]][this.N],
-            rArm = this.h[name][names[3]][this.N],
-            legs = this.h[name][names[4]][this.N];
-        return [[this[names[0]], 0, 2, [-1, 4], head.speed * coeff, st, 1, [head.sp, head.frs, head.speed, head.once]], [this[names[1]], 0, 2, [0, 1], body.speed * coeff, st, 1, [body.sp, body.frs, body.speed, body.once]], [this[names[2]], 0, 2, [-1, 1], lArm.speed * coeff, st, 1, [lArm.sp, lArm.frs, lArm.speed, lArm.once]], [this[names[3]], 0, 2, [1, 1], rArm.speed * coeff, st, 1, [rArm.sp, rArm.frs, rArm.speed, rArm.once]], [this[names[4]], 0, 2, [1, 0], legs.speed * coeff, st, 1, [legs.sp, legs.frs, legs.speed, legs.once]]];
-    }
-
-    getAttackedSprites() {
-        // this.head, tempProgress,  max, direction, time, repStyle(once,repeat,bounce), [sprite pos, sprite frames, sprite speed, once]
-        let name = 'attacked',
-            st = 'bounce',
-            coeff = 0.2,
-            names = ['head', 'body', 'lArm', 'rArm', 'legs'],
-            head = this.h[name][names[0]][this.N],
-            body = this.h[name][names[1]][this.N],
-            lArm = this.h[name][names[2]][this.N],
-            rArm = this.h[name][names[3]][this.N],
-            legs = this.h[name][names[4]][this.N];
-        return [[this[names[0]], 0, 3, [0, 1], head.speed * coeff, st, 1, [head.sp, head.frs, head.speed, head.once]], [this[names[1]], 0, 3, [0, 1], body.speed * coeff, st, 1, [body.sp, body.frs, body.speed, body.once]], [this[names[2]], 0, 3, [0, 1], lArm.speed * coeff, st, 1, [lArm.sp, lArm.frs, lArm.speed, lArm.once]], [this[names[3]], 0, 3, [0, 1], rArm.speed * coeff, st, 1, [rArm.sp, rArm.frs, rArm.speed, rArm.once]], [this[names[4]], 0, 1, [1, 0], legs.speed * coeff, st, 1, [legs.sp, legs.frs, legs.speed, legs.once]]];
-    }
-
-    update(e, dt, entities) {
-        if (input.isDown('space')) {
-            this.animator.setAnimation('attack', true);
-        }
-    }
-
-    castSpell() {
-        this.animator.setAnimation('attack', true);
-    }
-
-    beingAttacked() {
-        this.animator.setAnimation('attacked', true);
-    }
-
-    decreaseH(val) {
-        this.health -= val;
-        _managers_uiM__WEBPACK_IMPORTED_MODULE_1__["setPlayerH"](this.health);
-        return this.health;
-    }
-    increaseH(val) {
-        this.health += val;
-        if (this.health > 100) {
-            this.health = 100;
-        }
-        _managers_uiM__WEBPACK_IMPORTED_MODULE_1__["setPlayerH"](this.health);
-        return this.health;
-    }
-    setH(val) {
-        this.health = val;
-        _managers_uiM__WEBPACK_IMPORTED_MODULE_1__["setPlayerH"](this.health);
-    }
-}
-
-
-
-/***/ }),
-
-/***/ "./src/js/managers/LevelM.js":
-/*!***********************************!*\
-  !*** ./src/js/managers/LevelM.js ***!
-  \***********************************/
+/***/ "./src/components/screens/game/LevelM.js":
+/*!***********************************************!*\
+  !*** ./src/components/screens/game/LevelM.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return LevelManager; });
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-/* harmony import */ var _uiM_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./uiM.js */ "./src/js/managers/uiM.js");
-/* harmony import */ var _components_storage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../components/storage */ "./src/js/components/storage.js");
-/* harmony import */ var _components_audio_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/audio.js */ "./src/js/components/audio.js");
+/* harmony import */ var _modals_uiManager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../modals/uiManager */ "./src/components/modals/uiManager.js");
+/* harmony import */ var _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../modals/in-game-menu/index */ "./src/components/modals/in-game-menu/index.js");
+/* harmony import */ var _modals_game_over_menu_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../modals/game-over-menu/index */ "./src/components/modals/game-over-menu/index.js");
+/* harmony import */ var _library_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../library/storage */ "./src/components/library/storage.js");
+
 
 
 
@@ -66268,8 +66651,8 @@ let LevelManager = {
         s.isGameOver = true;
 
         let currentUser = ["" + this.getUserName(), +this.getScore()];
-        _components_storage__WEBPACK_IMPORTED_MODULE_2__["storage"].getAllUsersFromStorage();
-        _uiM_js__WEBPACK_IMPORTED_MODULE_1__["fillTable"](_components_storage__WEBPACK_IMPORTED_MODULE_2__["storage"].setUserToStorage(currentUser));
+        _library_storage__WEBPACK_IMPORTED_MODULE_3__["storage"].getAllUsersFromStorage();
+        _modals_game_over_menu_index__WEBPACK_IMPORTED_MODULE_2__["fillTable"](_library_storage__WEBPACK_IMPORTED_MODULE_3__["storage"].setUserToStorage(currentUser));
     },
 
     startGame: function () {
@@ -66279,7 +66662,7 @@ let LevelManager = {
         s.isGameOver = false;
         s.gameTime = 0;
         s.score = 0;
-        _uiM_js__WEBPACK_IMPORTED_MODULE_1__["enableTurnMainBtn"]();
+        _modals_in_game_menu_index__WEBPACK_IMPORTED_MODULE_1__["enableTurnMainBtn"]();
     },
 
     goToMainMenu: function () {
@@ -66337,342 +66720,257 @@ let LevelManager = {
 
 /***/ }),
 
-/***/ "./src/js/managers/monsterNameM.js":
-/*!*****************************************!*\
-  !*** ./src/js/managers/monsterNameM.js ***!
-  \*****************************************/
-/*! exports provided: createRandomMName */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./src/components/screens/game/fonts/Lalezar-Regular.ttf":
+/*!***************************************************************!*\
+  !*** ./src/components/screens/game/fonts/Lalezar-Regular.ttf ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createRandomMName", function() { return createRandomMName; });
-/* harmony import */ var _data_monsterNames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../data/monsterNames */ "./src/js/data/monsterNames.js");
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-
-
-
-
-function createRandomMName() {
-    let tempArr = [];
-    Object(lodash_es__WEBPACK_IMPORTED_MODULE_1__["forEach"])(_data_monsterNames__WEBPACK_IMPORTED_MODULE_0__["monsterNames"], e => {
-        tempArr.push(e[Math.floor(Math.random() * (e.length - 1))]);
-    });
-    let nickName = [];
-    nickName.push(Object(lodash_es__WEBPACK_IMPORTED_MODULE_1__["join"])(tempArr.splice(0, 2), ' '));
-    nickName.unshift("\"");
-    nickName.push("\"");
-    Object(lodash_es__WEBPACK_IMPORTED_MODULE_1__["join"])(nickName, '');
-    tempArr.push(nickName);
-    return tempArr;
-}
+module.exports = "../fonts/Lalezar-Regular.ttf";
 
 /***/ }),
 
-/***/ "./src/js/managers/uiM.js":
-/*!********************************!*\
-  !*** ./src/js/managers/uiM.js ***!
-  \********************************/
-/*! exports provided: startMenuInput, startMenuStartBtn, enemyName, playerName, enemyH, playerH, enemyNick, turnMainBtn, modalMenu, closeModalBtn, currTask, checkEnterButton, smallModalMenu, earthBtn, fireBtn, waterBtn, groundBtn, scoreTable, init, getStartMenuInputVal, setInGameUIPlayerName, setInGameUIEnemyName, disableTurnMainBtn, enableTurnMainBtn, setEnemyH, setPlayerH, changeMainBtnText, openModalMenu, instantiateTask, closeModalMenu, setCheckEnterButton, disableCloseModalBtn, enableCloseModalBtn, closeSmallModalMenu, openSmallModalMenu, onSpellSubmit, fillTable */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./src/components/screens/game/game.html":
+/*!***********************************************!*\
+  !*** ./src/components/screens/game/game.html ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "startMenuInput", function() { return startMenuInput; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "startMenuStartBtn", function() { return startMenuStartBtn; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "enemyName", function() { return enemyName; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "playerName", function() { return playerName; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "enemyH", function() { return enemyH; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "playerH", function() { return playerH; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "enemyNick", function() { return enemyNick; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "turnMainBtn", function() { return turnMainBtn; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "modalMenu", function() { return modalMenu; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeModalBtn", function() { return closeModalBtn; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currTask", function() { return currTask; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "checkEnterButton", function() { return checkEnterButton; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "smallModalMenu", function() { return smallModalMenu; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "earthBtn", function() { return earthBtn; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fireBtn", function() { return fireBtn; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "waterBtn", function() { return waterBtn; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "groundBtn", function() { return groundBtn; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "scoreTable", function() { return scoreTable; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStartMenuInputVal", function() { return getStartMenuInputVal; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setInGameUIPlayerName", function() { return setInGameUIPlayerName; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setInGameUIEnemyName", function() { return setInGameUIEnemyName; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "disableTurnMainBtn", function() { return disableTurnMainBtn; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "enableTurnMainBtn", function() { return enableTurnMainBtn; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setEnemyH", function() { return setEnemyH; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setPlayerH", function() { return setPlayerH; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "changeMainBtnText", function() { return changeMainBtnText; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openModalMenu", function() { return openModalMenu; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "instantiateTask", function() { return instantiateTask; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeModalMenu", function() { return closeModalMenu; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setCheckEnterButton", function() { return setCheckEnterButton; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "disableCloseModalBtn", function() { return disableCloseModalBtn; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "enableCloseModalBtn", function() { return enableCloseModalBtn; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeSmallModalMenu", function() { return closeSmallModalMenu; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openSmallModalMenu", function() { return openSmallModalMenu; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onSpellSubmit", function() { return onSpellSubmit; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fillTable", function() { return fillTable; });
-/* harmony import */ var _tasks_taskManager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../tasks/taskManager */ "./src/js/tasks/taskManager.js");
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-/* harmony import */ var _managers_LevelM__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../managers/LevelM */ "./src/js/managers/LevelM.js");
-/* harmony import */ var _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../tasks/tasksMenu/index */ "./src/js/tasks/tasksMenu/index.js");
-
-
-
-
-
-let
-//Start Menu
-startMenuInput,
-    startMenuStartBtn,
-
-//inGame UI
-enemyName,
-    playerName,
-    enemyH,
-    playerH,
-    enemyNick,
-    turnMainBtn,
-
-//Modal menu
-modalMenu,
-    closeModalBtn,
-    currTask = null,
-    checkEnterButton = false,
-
-//Small modal menu
-smallModalMenu,
-    earthBtn,
-    fireBtn,
-    waterBtn,
-    groundBtn,
-
-//Game Over Menu
-scoreTable;
-
-function init() {
-    //Start Menu
-    startMenuInput = $('#startMenuInput');
-    startMenuStartBtn = $('#startMenuStartBtn');
-    //inGame UI
-    enemyName = $('#enemyName');
-    playerName = $('#playerName');
-    enemyH = $('#enemyH');
-    playerH = $('#playerH');
-    enemyNick = $('#enemyNick');
-    turnMainBtn = $('#turnMainBtn');
-    //Modal menu
-    modalMenu = $("#modalMenu");
-    closeModalBtn = $("#closeModalBtn");
-    //Small modal menu
-    smallModalMenu = $("#smallModalMenu");
-    earthBtn = $("#earthBtn");
-    fireBtn = $("#fireBtn");
-    waterBtn = $("#waterBtn");
-    groundBtn = $("#groundBtn");
-    //Game Over Menu
-    scoreTable = $("#scoreTable");
-}
-
-// *************************** Start Menu ********************************
-function getStartMenuInputVal() {
-    return $('#startMenuInput').val();
-}
-
-// *************************** InGame Menu ********************************
-function setInGameUIPlayerName(name) {
-    let userName;
-    if (startMenuInput.val() != '') {
-        userName = name || startMenuInput.val();
-    } else {
-        userName = 'Tommy <small>z</small>zZ';
-    }
-    _managers_LevelM__WEBPACK_IMPORTED_MODULE_2__["default"].setUserName(userName);
-    playerName.html(userName);
-};
-
-function setInGameUIEnemyName(name) {
-    enemyNick.html(name[1]);
-    enemyName.html(name[0]);
-}
-
-function disableTurnMainBtn() {
-    turnMainBtn.prop('disabled', true);
-}
-
-function enableTurnMainBtn() {
-    turnMainBtn.prop('disabled', false);
-}
-
-function setEnemyH(val) {
-    enemyH.css("width", val + '%');
-}
-
-function setPlayerH(val) {
-    playerH.css("width", val + '%');
-}
-
-function changeMainBtnText(text) {
-    turnMainBtn.html(text);
-}
-
-// *************************** Modal Menu ********************************
-
-async function waitFor(msec) {
-    await new Promise((resolve, reject) => setTimeout(resolve, msec));
-}
-
-function openModalMenu() {
-    _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["loadTo"]('#modalMenu');
-    modalMenu.css("display", "block");
-    $("#modalMenu").find('#tasks').children('.menu-el').first().focus();
-    _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["tasksMenu"].on('tasksMenuSubmitted', () => {
-        _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["clear"]();
-        instantiateTask(_tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["selectedTask"]);
-    });
-    // disableTurnMainBtn();
-
-    closeModalBtn.click(e => {
-        closeModalMenu();
-    });
-    $(document).on('keydown', event => {
-        if (event.key == 'Escape') {
-            closeModalBtn.click();
-        }
-    });
-}
-
-function instantiateTask(name) {
-    currTask = _tasks_taskManager__WEBPACK_IMPORTED_MODULE_0__["generateTask"](name);
-    currTask.instantiateHtmlAndJsTo('#modalMenu');
-    waitFor(400).then(() => {
-        currTask.setKeyboardReadyBtn();
-    });
-
-    currTask.taskBlock.on('answerSubmitted', () => {
-        _managers_LevelM__WEBPACK_IMPORTED_MODULE_2__["default"].setTaskSolved(currTask.answerState);
-        if (currTask.answerState) {
-            waitFor(2000).then(() => {
-                closeModalMenu();events.trigger('playerTurn');
-            });
-            waitFor(2000).then(() => {
-                closeModalMenu();events.trigger('playerTurn');
-            });
-        } else {
-            waitFor(2000).then(() => {
-                closeModalMenu();events.trigger('enemyTurn');
-            });
-        }
-    });
-}
-
-function closeModalMenu() {
-    modalMenu.css("display", "none");
-    if (currTask != null) {
-        currTask.clear();
-    };
-    currTask = null;
-    _tasks_tasksMenu_index__WEBPACK_IMPORTED_MODULE_3__["clear"]();
-    checkEnterButton = false;
-    enableTurnMainBtn();
-}
-
-function setCheckEnterButton(bul) {
-    checkEnterButton = bul;
-}
-
-// export function onAnswerSubmit(){
-// }
-
-
-function disableCloseModalBtn() {
-    closeModalBtn.prop('disabled', true);
-}
-
-function enableCloseModalBtn() {
-    closeModalBtn.prop('disabled', false);
-}
-
-// *************************** Small modal Menu ********************************
-
-function closeSmallModalMenu() {
-    smallModalMenu.css("display", "none");
-    smallModalMenu.children('.menu-el').attr('tabindex', 0).off('keydown');
-    smallModalMenu.off('click');
-}
-
-function openSmallModalMenu() {
-    smallModalMenu.css("display", "block");
-    disableTurnMainBtn();
-
-    smallModalMenu.click(e => {
-        onSpellSubmit(e.target);
-    });
-
-    smallModalMenu.children('.menu-el').attr('tabindex', 0).first().focus();
-    smallModalMenu.children('.menu-el').attr('tabindex', 0).on('keydown', event => {
-        let ct = event.currentTarget;
-        if (event.key == 'ArrowLeft' || event.key == 'ArrowUp') {
-            // left or up
-            $(ct).prev().focus();
-        }
-        if (event.key == 'ArrowRight' || event.key == 'ArrowDown') {
-            // right or down
-            $(ct).next().focus();
-        }
-        if (event.key == 'Enter') {
-            // right or down
-            onSpellSubmit($(ct).children('p'));
-        }
-    });
-}
-
-function onSpellSubmit(elem) {
-    console.log($(elem).html().toLocaleLowerCase());
-    _managers_LevelM__WEBPACK_IMPORTED_MODULE_2__["default"].setUserSpell($(elem).html().toLocaleLowerCase());
-    closeSmallModalMenu();
-    openModalMenu();
-}
-
-//********************************* Game Over Menu *****************************/
-
-
-function fillTable(userList) {
-    Object(lodash_es__WEBPACK_IMPORTED_MODULE_1__["forEach"])(userList, (v, k) => {
-        for (let i = 0; i < 2; i++) {
-            console.log("v " + v[i]);
-            scoreTable.children("tbody").children("tr:nth-of-type(" + (k + 1) + ")").children("td:nth-of-type(" + (i + 1) + ")").html(v[i]);
-        }
-    });
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+module.exports = "\r\n            <section class=\"play-game-section\">\r\n                <div id=\"game\" class = \"game-wrapper\">\r\n                <!-- //menues here -->\r\n                </div>\r\n            </section>';";
 
 /***/ }),
 
-/***/ "./src/js/pages/page.js":
-/*!******************************!*\
-  !*** ./src/js/pages/page.js ***!
-  \******************************/
+/***/ "./src/components/screens/game/game.scss":
+/*!***********************************************!*\
+  !*** ./src/components/screens/game/game.scss ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/components/screens/game/img/screenshots/ss1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/components/screens/game/img/screenshots/ss1.jpg ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/ss1.jpg";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/img/screenshots/ss2.jpg":
+/*!*************************************************************!*\
+  !*** ./src/components/screens/game/img/screenshots/ss2.jpg ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/ss2.jpg";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/img/screenshots/ss3.jpg":
+/*!*************************************************************!*\
+  !*** ./src/components/screens/game/img/screenshots/ss3.jpg ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/ss3.jpg";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/img/sprites/attacks.png":
+/*!*************************************************************!*\
+  !*** ./src/components/screens/game/img/sprites/attacks.png ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/attacks.png";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/img/sprites/entities.png":
+/*!**************************************************************!*\
+  !*** ./src/components/screens/game/img/sprites/entities.png ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/entities.png";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/img/sprites/explosions.png":
+/*!****************************************************************!*\
+  !*** ./src/components/screens/game/img/sprites/explosions.png ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/explosions.png";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/img/terrain.jpg":
+/*!*****************************************************!*\
+  !*** ./src/components/screens/game/img/terrain.jpg ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/terrain.jpg";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/img/terrain2.jpg":
+/*!******************************************************!*\
+  !*** ./src/components/screens/game/img/terrain2.jpg ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/terrain2.jpg";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/sounds/burn2.wav":
+/*!******************************************************!*\
+  !*** ./src/components/screens/game/sounds/burn2.wav ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../audio/burn2.wav";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/sounds/earth1.wav":
+/*!*******************************************************!*\
+  !*** ./src/components/screens/game/sounds/earth1.wav ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../audio/earth1.wav";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/sounds/poison1.wav":
+/*!********************************************************!*\
+  !*** ./src/components/screens/game/sounds/poison1.wav ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../audio/poison1.wav";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/sounds/soundtrack2.mp3":
+/*!************************************************************!*\
+  !*** ./src/components/screens/game/sounds/soundtrack2.mp3 ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../audio/soundtrack2.mp3";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/sounds/soundtrack4.mp3":
+/*!************************************************************!*\
+  !*** ./src/components/screens/game/sounds/soundtrack4.mp3 ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../audio/soundtrack4.mp3";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/sounds/soundtrack5.mp3":
+/*!************************************************************!*\
+  !*** ./src/components/screens/game/sounds/soundtrack5.mp3 ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../audio/soundtrack5.mp3";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/sounds/water2.wav":
+/*!*******************************************************!*\
+  !*** ./src/components/screens/game/sounds/water2.wav ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../audio/water2.wav";
+
+/***/ }),
+
+/***/ "./src/components/screens/game/sounds/wosh3.wav":
+/*!******************************************************!*\
+  !*** ./src/components/screens/game/sounds/wosh3.wav ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../audio/wosh3.wav";
+
+/***/ }),
+
+/***/ "./src/components/screens/home/img/clouds1.png":
+/*!*****************************************************!*\
+  !*** ./src/components/screens/home/img/clouds1.png ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/clouds1.png";
+
+/***/ }),
+
+/***/ "./src/components/screens/home/page.js":
+/*!*********************************************!*\
+  !*** ./src/components/screens/home/page.js ***!
+  \*********************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _components_events_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/events.js */ "./src/js/components/events.js");
-/* harmony import */ var _components_events_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_events_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _controllers_GameC__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/GameC */ "./src/js/controllers/GameC.js");
-/* harmony import */ var _html_game_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../html/game.html */ "./src/html/game.html");
-/* harmony import */ var _html_game_html__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_html_game_html__WEBPACK_IMPORTED_MODULE_2__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _library_events_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../library/events.js */ "./src/components/library/events.js");
+/* harmony import */ var _library_events_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_library_events_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _game_GameC__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../game/GameC */ "./src/components/screens/game/GameC.js");
+/* harmony import */ var _game_game_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../game/game.html */ "./src/components/screens/game/game.html");
+/* harmony import */ var _game_game_html__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_game_game_html__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modals_loading_screen_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../modals/loading-screen/index */ "./src/components/modals/loading-screen/index.js");
+/* harmony import */ var _page_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./page.scss */ "./src/components/screens/home/page.scss");
+/* harmony import */ var _page_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_page_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _img_clouds1_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/clouds1.png */ "./src/components/screens/home/img/clouds1.png");
+/* harmony import */ var _img_clouds1_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_img_clouds1_png__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
 
 
 
 
 function initPage(name, where, whatToDelete) {
 
-    document.body.querySelector(where).innerHTML = _html_game_html__WEBPACK_IMPORTED_MODULE_2___default.a;
+    document.body.querySelector(where).innerHTML = _game_game_html__WEBPACK_IMPORTED_MODULE_2___default.a;
 }
 
 function createCanvas() {
@@ -66691,23 +66989,41 @@ $(document).on("keydown", event => {
     }
 });
 $('#playStartBtn').on('click', function () {
-    console.log('ufff');
+    _modals_loading_screen_index__WEBPACK_IMPORTED_MODULE_3__["show"]();
+    console.log('hah');
     initPage('game', '.main-content-wrapper');
     $('.main-content-wrapper').addClass('alt');
     resources.load(['img/entities.png', 'img/attacks.png', 'img/explosions.png', 'img/terrain.jpg', 'img/terrain2.jpg']);
     events.on("resourcesWasLoaded", () => {
-        Object(_controllers_GameC__WEBPACK_IMPORTED_MODULE_1__["default"])(createCanvas());
-        // $('#playStartBtn').off("keydown");
+        waitFor(800).then(() => {
+            Object(_game_GameC__WEBPACK_IMPORTED_MODULE_1__["default"])(createCanvas());
+            _modals_loading_screen_index__WEBPACK_IMPORTED_MODULE_3__["hide"]();
+        });
     });
 });
+
+async function waitFor(msec) {
+    await new Promise((resolve, reject) => setTimeout(resolve, msec));
+}
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
-/***/ "./src/js/tasks/InsertChar/data.js":
-/*!*****************************************!*\
-  !*** ./src/js/tasks/InsertChar/data.js ***!
-  \*****************************************/
+/***/ "./src/components/screens/home/page.scss":
+/*!***********************************************!*\
+  !*** ./src/components/screens/home/page.scss ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/components/tasks/InsertChar/data.js":
+/*!*************************************************!*\
+  !*** ./src/components/tasks/InsertChar/data.js ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -66724,10 +67040,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/InsertChar/index.html":
-/*!********************************************!*\
-  !*** ./src/js/tasks/InsertChar/index.html ***!
-  \********************************************/
+/***/ "./src/components/tasks/InsertChar/index.html":
+/*!****************************************************!*\
+  !*** ./src/components/tasks/InsertChar/index.html ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -66735,22 +67051,22 @@ module.exports = "\r\n    <div id=\"insertCharTask\" class = \"task insert-char-
 
 /***/ }),
 
-/***/ "./src/js/tasks/InsertChar/index.js":
-/*!******************************************!*\
-  !*** ./src/js/tasks/InsertChar/index.js ***!
-  \******************************************/
+/***/ "./src/components/tasks/InsertChar/index.js":
+/*!**************************************************!*\
+  !*** ./src/components/tasks/InsertChar/index.js ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return InsertCharTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/InsertChar/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/InsertChar/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/InsertChar/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/InsertChar/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/InsertChar/data.js");
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/InsertChar/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
 
 
@@ -66862,10 +67178,10 @@ class InsertCharTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] 
 
 /***/ }),
 
-/***/ "./src/js/tasks/InsertChar/index.scss":
-/*!********************************************!*\
-  !*** ./src/js/tasks/InsertChar/index.scss ***!
-  \********************************************/
+/***/ "./src/components/tasks/InsertChar/index.scss":
+/*!****************************************************!*\
+  !*** ./src/components/tasks/InsertChar/index.scss ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -66873,10 +67189,10 @@ class InsertCharTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] 
 
 /***/ }),
 
-/***/ "./src/js/tasks/capital/data.js":
-/*!**************************************!*\
-  !*** ./src/js/tasks/capital/data.js ***!
-  \**************************************/
+/***/ "./src/components/tasks/capital/data.js":
+/*!**********************************************!*\
+  !*** ./src/components/tasks/capital/data.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -66892,10 +67208,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/capital/index.html":
-/*!*****************************************!*\
-  !*** ./src/js/tasks/capital/index.html ***!
-  \*****************************************/
+/***/ "./src/components/tasks/capital/index.html":
+/*!*************************************************!*\
+  !*** ./src/components/tasks/capital/index.html ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -66903,22 +67219,22 @@ module.exports = "\r\n    <div id=\"capitalTask\" class = \"task capital-task-bl
 
 /***/ }),
 
-/***/ "./src/js/tasks/capital/index.js":
-/*!***************************************!*\
-  !*** ./src/js/tasks/capital/index.js ***!
-  \***************************************/
+/***/ "./src/components/tasks/capital/index.js":
+/*!***********************************************!*\
+  !*** ./src/components/tasks/capital/index.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CapitalTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/capital/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/capital/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/capital/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/capital/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/capital/data.js");
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/capital/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
 
 
@@ -67014,10 +67330,10 @@ class CapitalTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/capital/index.scss":
-/*!*****************************************!*\
-  !*** ./src/js/tasks/capital/index.scss ***!
-  \*****************************************/
+/***/ "./src/components/tasks/capital/index.scss":
+/*!*************************************************!*\
+  !*** ./src/components/tasks/capital/index.scss ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -67025,10 +67341,10 @@ class CapitalTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/commonWord/data.js":
-/*!*****************************************!*\
-  !*** ./src/js/tasks/commonWord/data.js ***!
-  \*****************************************/
+/***/ "./src/components/tasks/commonWord/data.js":
+/*!*************************************************!*\
+  !*** ./src/components/tasks/commonWord/data.js ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -67045,10 +67361,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/commonWord/index.html":
-/*!********************************************!*\
-  !*** ./src/js/tasks/commonWord/index.html ***!
-  \********************************************/
+/***/ "./src/components/tasks/commonWord/index.html":
+/*!****************************************************!*\
+  !*** ./src/components/tasks/commonWord/index.html ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -67056,22 +67372,22 @@ module.exports = "\r\n    <div id=\"commonWordTask\" class = \"task common-word-
 
 /***/ }),
 
-/***/ "./src/js/tasks/commonWord/index.js":
-/*!******************************************!*\
-  !*** ./src/js/tasks/commonWord/index.js ***!
-  \******************************************/
+/***/ "./src/components/tasks/commonWord/index.js":
+/*!**************************************************!*\
+  !*** ./src/components/tasks/commonWord/index.js ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CommonWordTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/commonWord/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/commonWord/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/commonWord/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/commonWord/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/commonWord/data.js");
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/commonWord/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
 
 
@@ -67167,10 +67483,10 @@ class CommonWordTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] 
 
 /***/ }),
 
-/***/ "./src/js/tasks/commonWord/index.scss":
-/*!********************************************!*\
-  !*** ./src/js/tasks/commonWord/index.scss ***!
-  \********************************************/
+/***/ "./src/components/tasks/commonWord/index.scss":
+/*!****************************************************!*\
+  !*** ./src/components/tasks/commonWord/index.scss ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -67178,10 +67494,10 @@ class CommonWordTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] 
 
 /***/ }),
 
-/***/ "./src/js/tasks/days/data.js":
-/*!***********************************!*\
-  !*** ./src/js/tasks/days/data.js ***!
-  \***********************************/
+/***/ "./src/components/tasks/days/data.js":
+/*!*******************************************!*\
+  !*** ./src/components/tasks/days/data.js ***!
+  \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -67197,10 +67513,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/days/index.html":
-/*!**************************************!*\
-  !*** ./src/js/tasks/days/index.html ***!
-  \**************************************/
+/***/ "./src/components/tasks/days/index.html":
+/*!**********************************************!*\
+  !*** ./src/components/tasks/days/index.html ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -67208,22 +67524,22 @@ module.exports = "\r\n    <div id=\"daysTask\" class = \"task days-task-block\">
 
 /***/ }),
 
-/***/ "./src/js/tasks/days/index.js":
-/*!************************************!*\
-  !*** ./src/js/tasks/days/index.js ***!
-  \************************************/
+/***/ "./src/components/tasks/days/index.js":
+/*!********************************************!*\
+  !*** ./src/components/tasks/days/index.js ***!
+  \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DaysTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/days/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/days/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/days/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/days/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/days/data.js");
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/days/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
 
 
@@ -67323,10 +67639,10 @@ class DaysTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/days/index.scss":
-/*!**************************************!*\
-  !*** ./src/js/tasks/days/index.scss ***!
-  \**************************************/
+/***/ "./src/components/tasks/days/index.scss":
+/*!**********************************************!*\
+  !*** ./src/components/tasks/days/index.scss ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -67334,10 +67650,10 @@ class DaysTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/diapason/data.js":
-/*!***************************************!*\
-  !*** ./src/js/tasks/diapason/data.js ***!
-  \***************************************/
+/***/ "./src/components/tasks/diapason/data.js":
+/*!***********************************************!*\
+  !*** ./src/components/tasks/diapason/data.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -67354,10 +67670,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/diapason/index.html":
-/*!******************************************!*\
-  !*** ./src/js/tasks/diapason/index.html ***!
-  \******************************************/
+/***/ "./src/components/tasks/diapason/index.html":
+/*!**************************************************!*\
+  !*** ./src/components/tasks/diapason/index.html ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -67365,22 +67681,22 @@ module.exports = "\r\n    <div id=\"diapasonTask\" class = \"task diapason-task-
 
 /***/ }),
 
-/***/ "./src/js/tasks/diapason/index.js":
-/*!****************************************!*\
-  !*** ./src/js/tasks/diapason/index.js ***!
-  \****************************************/
+/***/ "./src/components/tasks/diapason/index.js":
+/*!************************************************!*\
+  !*** ./src/components/tasks/diapason/index.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DiapasonTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/diapason/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/diapason/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/diapason/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/diapason/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/diapason/data.js");
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/diapason/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
 
 
@@ -67482,10 +67798,10 @@ class DiapasonTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/diapason/index.scss":
-/*!******************************************!*\
-  !*** ./src/js/tasks/diapason/index.scss ***!
-  \******************************************/
+/***/ "./src/components/tasks/diapason/index.scss":
+/*!**************************************************!*\
+  !*** ./src/components/tasks/diapason/index.scss ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -67493,10 +67809,10 @@ class DiapasonTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/engToRus/data.js":
-/*!***************************************!*\
-  !*** ./src/js/tasks/engToRus/data.js ***!
-  \***************************************/
+/***/ "./src/components/tasks/engToRus/data.js":
+/*!***********************************************!*\
+  !*** ./src/components/tasks/engToRus/data.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -67513,10 +67829,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/engToRus/index.html":
-/*!******************************************!*\
-  !*** ./src/js/tasks/engToRus/index.html ***!
-  \******************************************/
+/***/ "./src/components/tasks/engToRus/index.html":
+/*!**************************************************!*\
+  !*** ./src/components/tasks/engToRus/index.html ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -67524,26 +67840,23 @@ module.exports = "\r\n    <div id=\"engToRusTask\" class = \"task eng-to-rus-tas
 
 /***/ }),
 
-/***/ "./src/js/tasks/engToRus/index.js":
-/*!****************************************!*\
-  !*** ./src/js/tasks/engToRus/index.js ***!
-  \****************************************/
+/***/ "./src/components/tasks/engToRus/index.js":
+/*!************************************************!*\
+  !*** ./src/components/tasks/engToRus/index.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return EngToRusTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/engToRus/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/engToRus/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/engToRus/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/engToRus/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/engToRus/data.js");
-/* harmony import */ var _components_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../components/input */ "./src/js/components/input.js");
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-
-
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/engToRus/data.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
 
 
 
@@ -67554,7 +67867,6 @@ __webpack_require__.r(__webpack_exports__);
 class EngToRusTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
     constructor() {
         super("engToRus", _data__WEBPACK_IMPORTED_MODULE_3__["default"]);
-        var self = this;
         this.taskBlock;
         this.description;
         this.question;
@@ -67565,13 +67877,13 @@ class EngToRusTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
     }
 
     getQuestion() {
-        let pair = Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["sample"])(this.data.pairs);
+        let pair = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(this.data.pairs);
         return [pair[0], pair];
     }
 
     getAnswerVariantsArr(answer, feiks) {
-        let tempArr = Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["concat"])([Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["sample"])(feiks), Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["sample"])(feiks), Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["sample"])(feiks)], answer);
-        return Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["shuffle"])(tempArr);
+        let tempArr = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["concat"])([Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(feiks), Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(feiks), Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(feiks)], answer);
+        return Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["shuffle"])(tempArr);
     }
 
     getAnswer(q) {
@@ -67637,12 +67949,10 @@ class EngToRusTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
         if (this.checkAnswer(this.clickedBtn.html())) {
             this.clickedBtn.addClass("correct");
             this.clickedBtn.html("Correct!");
-            // this.answerBlock.children('.answer').addClass("correct");
             this.answerState = true;
         } else {
             this.clickedBtn.addClass("wrong");
             this.clickedBtn.html("Wrong!");
-            // this.answerBlock.children('.answer').addClass("wrong");
             this.verdictBlock.find("#verdict").html(this.answer);
             this.answerState = false;
         }
@@ -67658,10 +67968,10 @@ class EngToRusTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/engToRus/index.scss":
-/*!******************************************!*\
-  !*** ./src/js/tasks/engToRus/index.scss ***!
-  \******************************************/
+/***/ "./src/components/tasks/engToRus/index.scss":
+/*!**************************************************!*\
+  !*** ./src/components/tasks/engToRus/index.scss ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -67669,10 +67979,10 @@ class EngToRusTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/history/data.js":
-/*!**************************************!*\
-  !*** ./src/js/tasks/history/data.js ***!
-  \**************************************/
+/***/ "./src/components/tasks/history/data.js":
+/*!**********************************************!*\
+  !*** ./src/components/tasks/history/data.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -67689,10 +67999,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/history/index.html":
-/*!*****************************************!*\
-  !*** ./src/js/tasks/history/index.html ***!
-  \*****************************************/
+/***/ "./src/components/tasks/history/index.html":
+/*!*************************************************!*\
+  !*** ./src/components/tasks/history/index.html ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -67700,22 +68010,22 @@ module.exports = "\r\n    <div id=\"historyTask\" class = \"task history-block\"
 
 /***/ }),
 
-/***/ "./src/js/tasks/history/index.js":
-/*!***************************************!*\
-  !*** ./src/js/tasks/history/index.js ***!
-  \***************************************/
+/***/ "./src/components/tasks/history/index.js":
+/*!***********************************************!*\
+  !*** ./src/components/tasks/history/index.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return HistoryTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/history/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/history/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/history/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/history/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/history/data.js");
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/history/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
 
 
@@ -67847,10 +68157,10 @@ class HistoryTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/history/index.scss":
-/*!*****************************************!*\
-  !*** ./src/js/tasks/history/index.scss ***!
-  \*****************************************/
+/***/ "./src/components/tasks/history/index.scss":
+/*!*************************************************!*\
+  !*** ./src/components/tasks/history/index.scss ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -67858,10 +68168,10 @@ class HistoryTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/jsQuiz/data.js":
-/*!*************************************!*\
-  !*** ./src/js/tasks/jsQuiz/data.js ***!
-  \*************************************/
+/***/ "./src/components/tasks/jsQuiz/data.js":
+/*!*********************************************!*\
+  !*** ./src/components/tasks/jsQuiz/data.js ***!
+  \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -67878,10 +68188,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/jsQuiz/index.html":
-/*!****************************************!*\
-  !*** ./src/js/tasks/jsQuiz/index.html ***!
-  \****************************************/
+/***/ "./src/components/tasks/jsQuiz/index.html":
+/*!************************************************!*\
+  !*** ./src/components/tasks/jsQuiz/index.html ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -67889,22 +68199,22 @@ module.exports = "\r\n    <div id=\"jsQuizTask\" class = \"task js-quiz-block\">
 
 /***/ }),
 
-/***/ "./src/js/tasks/jsQuiz/index.js":
-/*!**************************************!*\
-  !*** ./src/js/tasks/jsQuiz/index.js ***!
-  \**************************************/
+/***/ "./src/components/tasks/jsQuiz/index.js":
+/*!**********************************************!*\
+  !*** ./src/components/tasks/jsQuiz/index.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return JsQuizTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/jsQuiz/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/jsQuiz/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/jsQuiz/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/jsQuiz/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/jsQuiz/data.js");
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/jsQuiz/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
 
 
@@ -68036,10 +68346,10 @@ class JsQuizTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/jsQuiz/index.scss":
-/*!****************************************!*\
-  !*** ./src/js/tasks/jsQuiz/index.scss ***!
-  \****************************************/
+/***/ "./src/components/tasks/jsQuiz/index.scss":
+/*!************************************************!*\
+  !*** ./src/components/tasks/jsQuiz/index.scss ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -68047,10 +68357,10 @@ class JsQuizTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/legs/data.js":
-/*!***********************************!*\
-  !*** ./src/js/tasks/legs/data.js ***!
-  \***********************************/
+/***/ "./src/components/tasks/legs/data.js":
+/*!*******************************************!*\
+  !*** ./src/components/tasks/legs/data.js ***!
+  \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -68066,10 +68376,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/legs/index.html":
-/*!**************************************!*\
-  !*** ./src/js/tasks/legs/index.html ***!
-  \**************************************/
+/***/ "./src/components/tasks/legs/index.html":
+/*!**********************************************!*\
+  !*** ./src/components/tasks/legs/index.html ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -68077,22 +68387,22 @@ module.exports = "\r\n    <div id=\"rainbowTask\" class = \"task rainbow-task-bl
 
 /***/ }),
 
-/***/ "./src/js/tasks/legs/index.js":
-/*!************************************!*\
-  !*** ./src/js/tasks/legs/index.js ***!
-  \************************************/
+/***/ "./src/components/tasks/legs/index.js":
+/*!********************************************!*\
+  !*** ./src/components/tasks/legs/index.js ***!
+  \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return LegsTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/legs/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/legs/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/legs/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/legs/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/legs/data.js");
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/legs/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
 
 
@@ -68188,10 +68498,10 @@ class LegsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/legs/index.scss":
-/*!**************************************!*\
-  !*** ./src/js/tasks/legs/index.scss ***!
-  \**************************************/
+/***/ "./src/components/tasks/legs/index.scss":
+/*!**********************************************!*\
+  !*** ./src/components/tasks/legs/index.scss ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -68199,10 +68509,10 @@ class LegsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/maths/data.js":
-/*!************************************!*\
-  !*** ./src/js/tasks/maths/data.js ***!
-  \************************************/
+/***/ "./src/components/tasks/maths/data.js":
+/*!********************************************!*\
+  !*** ./src/components/tasks/maths/data.js ***!
+  \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -68220,10 +68530,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/maths/index.html":
-/*!***************************************!*\
-  !*** ./src/js/tasks/maths/index.html ***!
-  \***************************************/
+/***/ "./src/components/tasks/maths/index.html":
+/*!***********************************************!*\
+  !*** ./src/components/tasks/maths/index.html ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -68231,22 +68541,22 @@ module.exports = "\r\n    <div id=\"mathsTask\" class = \"task maths-task-block\
 
 /***/ }),
 
-/***/ "./src/js/tasks/maths/index.js":
-/*!*************************************!*\
-  !*** ./src/js/tasks/maths/index.js ***!
-  \*************************************/
+/***/ "./src/components/tasks/maths/index.js":
+/*!*********************************************!*\
+  !*** ./src/components/tasks/maths/index.js ***!
+  \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MathsTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/maths/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/maths/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/maths/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/maths/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/maths/data.js");
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/maths/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
 
 
@@ -68343,10 +68653,10 @@ class MathsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/maths/index.scss":
-/*!***************************************!*\
-  !*** ./src/js/tasks/maths/index.scss ***!
-  \***************************************/
+/***/ "./src/components/tasks/maths/index.scss":
+/*!***********************************************!*\
+  !*** ./src/components/tasks/maths/index.scss ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -68354,10 +68664,10 @@ class MathsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/order/data.js":
-/*!************************************!*\
-  !*** ./src/js/tasks/order/data.js ***!
-  \************************************/
+/***/ "./src/components/tasks/order/data.js":
+/*!********************************************!*\
+  !*** ./src/components/tasks/order/data.js ***!
+  \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -68365,7 +68675,7 @@ class MathsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
 let taskData = {
-        description: "Set in ascended order: ",
+        description: "Set in ascended order  (Tip: Use Space to fix your focus): ",
         min: "0",
         max: "100"
 };
@@ -68374,10 +68684,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/order/index.html":
-/*!***************************************!*\
-  !*** ./src/js/tasks/order/index.html ***!
-  \***************************************/
+/***/ "./src/components/tasks/order/index.html":
+/*!***********************************************!*\
+  !*** ./src/components/tasks/order/index.html ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -68385,28 +68695,25 @@ module.exports = "\r\n    <div id=\"orderTask\" class = \"task order-task-block\
 
 /***/ }),
 
-/***/ "./src/js/tasks/order/index.js":
-/*!*************************************!*\
-  !*** ./src/js/tasks/order/index.js ***!
-  \*************************************/
+/***/ "./src/components/tasks/order/index.js":
+/*!*********************************************!*\
+  !*** ./src/components/tasks/order/index.js ***!
+  \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return OrderTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/order/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/order/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/order/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/order/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/order/data.js");
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/order/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-/* harmony import */ var _components_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../components/input */ "./src/js/components/input.js");
-/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
-/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6__);
-
-
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
@@ -68502,7 +68809,7 @@ class OrderTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
             $(e).html(this.answerVariants[i]);
         });
 
-        _components_input__WEBPACK_IMPORTED_MODULE_5__["ksortable"]('.sortable');
+        this.ksortable('.sortable');
         this.readyBtn.click(() => {
             this.onAnswerSubmit();
         });
@@ -68512,10 +68819,10 @@ class OrderTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/order/index.scss":
-/*!***************************************!*\
-  !*** ./src/js/tasks/order/index.scss ***!
-  \***************************************/
+/***/ "./src/components/tasks/order/index.scss":
+/*!***********************************************!*\
+  !*** ./src/components/tasks/order/index.scss ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -68523,10 +68830,10 @@ class OrderTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/rainbow/data.js":
-/*!**************************************!*\
-  !*** ./src/js/tasks/rainbow/data.js ***!
-  \**************************************/
+/***/ "./src/components/tasks/rainbow/data.js":
+/*!**********************************************!*\
+  !*** ./src/components/tasks/rainbow/data.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -68542,10 +68849,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/rainbow/index.html":
-/*!*****************************************!*\
-  !*** ./src/js/tasks/rainbow/index.html ***!
-  \*****************************************/
+/***/ "./src/components/tasks/rainbow/index.html":
+/*!*************************************************!*\
+  !*** ./src/components/tasks/rainbow/index.html ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -68553,22 +68860,22 @@ module.exports = "\r\n    <div id=\"rainbowTask\" class = \"task rainbow-task-bl
 
 /***/ }),
 
-/***/ "./src/js/tasks/rainbow/index.js":
-/*!***************************************!*\
-  !*** ./src/js/tasks/rainbow/index.js ***!
-  \***************************************/
+/***/ "./src/components/tasks/rainbow/index.js":
+/*!***********************************************!*\
+  !*** ./src/components/tasks/rainbow/index.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RainbowTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/rainbow/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/rainbow/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/rainbow/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/rainbow/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/rainbow/data.js");
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/rainbow/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
 
 
@@ -68664,10 +68971,10 @@ class RainbowTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/rainbow/index.scss":
-/*!*****************************************!*\
-  !*** ./src/js/tasks/rainbow/index.scss ***!
-  \*****************************************/
+/***/ "./src/components/tasks/rainbow/index.scss":
+/*!*************************************************!*\
+  !*** ./src/components/tasks/rainbow/index.scss ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -68675,10 +68982,10 @@ class RainbowTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/sentence/data.js":
-/*!***************************************!*\
-  !*** ./src/js/tasks/sentence/data.js ***!
-  \***************************************/
+/***/ "./src/components/tasks/sentence/data.js":
+/*!***********************************************!*\
+  !*** ./src/components/tasks/sentence/data.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -68686,7 +68993,7 @@ class RainbowTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
 let taskData = {
-        description: "Compose sentence: ",
+        description: "Compose sentence (Tip: Use Space to fix your focus): ",
         sentences: ['I love you', 'He is a doctor', 'Kate is eating an apple', 'The universe is endless', 'Let\'splay tennis']
 };
 
@@ -68694,10 +69001,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/sentence/index.html":
-/*!******************************************!*\
-  !*** ./src/js/tasks/sentence/index.html ***!
-  \******************************************/
+/***/ "./src/components/tasks/sentence/index.html":
+/*!**************************************************!*\
+  !*** ./src/components/tasks/sentence/index.html ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -68705,28 +69012,25 @@ module.exports = "\r\n    <div id=\"sentenceTask\" class = \"task sentence-task-
 
 /***/ }),
 
-/***/ "./src/js/tasks/sentence/index.js":
-/*!****************************************!*\
-  !*** ./src/js/tasks/sentence/index.js ***!
-  \****************************************/
+/***/ "./src/components/tasks/sentence/index.js":
+/*!************************************************!*\
+  !*** ./src/components/tasks/sentence/index.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SentenceTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/sentence/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/sentence/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/sentence/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/sentence/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/sentence/data.js");
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/sentence/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-/* harmony import */ var _components_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../components/input */ "./src/js/components/input.js");
-/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
-/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6__);
-
-
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
@@ -68816,7 +69120,6 @@ class SentenceTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
         this.readyBtn = this.taskBlock.find("#readyBtn");
 
         this.taskBlock.find('#description').html(this.description);
-        // this.taskBlock.find('#question').html(this.question);
 
         this.answerVariants = this.getVariantsArr(this.devQuestion);
         for (let i = 0; i < this.devQuestion.length; i++) {
@@ -68826,7 +69129,7 @@ class SentenceTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
             $(e).html(this.answerVariants[i]);
         });
 
-        _components_input__WEBPACK_IMPORTED_MODULE_5__["ksortable"]('.sortable');
+        this.ksortable('.sortable');
         this.readyBtn.click(() => {
             this.onAnswerSubmit();
         });
@@ -68836,10 +69139,10 @@ class SentenceTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/sentence/index.scss":
-/*!******************************************!*\
-  !*** ./src/js/tasks/sentence/index.scss ***!
-  \******************************************/
+/***/ "./src/components/tasks/sentence/index.scss":
+/*!**************************************************!*\
+  !*** ./src/components/tasks/sentence/index.scss ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -68847,10 +69150,10 @@ class SentenceTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/synthesis/data.js":
-/*!****************************************!*\
-  !*** ./src/js/tasks/synthesis/data.js ***!
-  \****************************************/
+/***/ "./src/components/tasks/synthesis/data.js":
+/*!************************************************!*\
+  !*** ./src/components/tasks/synthesis/data.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -68866,10 +69169,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/synthesis/index.html":
-/*!*******************************************!*\
-  !*** ./src/js/tasks/synthesis/index.html ***!
-  \*******************************************/
+/***/ "./src/components/tasks/synthesis/index.html":
+/*!***************************************************!*\
+  !*** ./src/components/tasks/synthesis/index.html ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -68877,22 +69180,22 @@ module.exports = "\r\n    <div id=\"mathsTask\" class = \"task maths-task-block\
 
 /***/ }),
 
-/***/ "./src/js/tasks/synthesis/index.js":
-/*!*****************************************!*\
-  !*** ./src/js/tasks/synthesis/index.js ***!
-  \*****************************************/
+/***/ "./src/components/tasks/synthesis/index.js":
+/*!*************************************************!*\
+  !*** ./src/components/tasks/synthesis/index.js ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SynthesisTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/synthesis/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/synthesis/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/synthesis/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/synthesis/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/synthesis/data.js");
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/synthesis/data.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
 
 
@@ -68992,10 +69295,10 @@ class SynthesisTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/synthesis/index.scss":
-/*!*******************************************!*\
-  !*** ./src/js/tasks/synthesis/index.scss ***!
-  \*******************************************/
+/***/ "./src/components/tasks/synthesis/index.scss":
+/*!***************************************************!*\
+  !*** ./src/components/tasks/synthesis/index.scss ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -69003,10 +69306,10 @@ class SynthesisTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/taskClass.js":
-/*!***********************************!*\
-  !*** ./src/js/tasks/taskClass.js ***!
-  \***********************************/
+/***/ "./src/components/tasks/taskClass.js":
+/*!*******************************************!*\
+  !*** ./src/components/tasks/taskClass.js ***!
+  \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -69024,7 +69327,6 @@ class Task {
         this.devQuestion = diffImplementationOfQuestionArr[1];
         this.answer = this.getAnswer(this.devQuestion);
         this.answerState = null;
-        // this.setKeyboardReadyBtn();
     }
 
     getDescription() {
@@ -69047,15 +69349,57 @@ class Task {
             }
         });
     }
+
+    ksortable(target, options) {
+        let spaceWasPressed = false;
+        $(target).sortable(options);
+        $(target).disableSelection(options);
+        $('.answer').attr('tabindex', 0).first().focus();
+        $('.answer').attr('tabindex', 0).on('keydown', function (event) {
+            if (event.key == ' ') {
+                console.log(event.key);
+                event.preventDefault();
+                if (spaceWasPressed == false) spaceWasPressed = true;else spaceWasPressed = false;
+            }
+            if (event.key == 'ArrowLeft' || event.key == 'ArrowUp') {
+                // left or up
+                if (spaceWasPressed) {
+                    event.preventDefault();
+                    $(this).insertBefore($(this).prev());
+                    $(this).focus();
+                } else {
+                    $(this).prev().focus();
+                }
+            }
+            if (event.key == 'ArrowRight' || event.key == 'ArrowDown') {
+                // right or down
+                if (spaceWasPressed) {
+                    $(this).insertAfter($(this).next());
+                    event.preventDefault();
+                    $(this).focus();
+                } else {
+                    $(this).next().focus();
+                }
+            }
+            if (event.key == 'Tab') {
+                event.preventDefault();
+                if (event.shiftKey) {
+                    $(this).next().focus();
+                } else {
+                    $(this).prev().focus();
+                }
+            }
+        });
+    }
 }
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
-/***/ "./src/js/tasks/taskManager.js":
-/*!*************************************!*\
-  !*** ./src/js/tasks/taskManager.js ***!
-  \*************************************/
+/***/ "./src/components/tasks/taskManager.js":
+/*!*********************************************!*\
+  !*** ./src/components/tasks/taskManager.js ***!
+  \*********************************************/
 /*! exports provided: generateTask, getAvaliableTasksNames */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -69063,22 +69407,22 @@ class Task {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "generateTask", function() { return generateTask; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getAvaliableTasksNames", function() { return getAvaliableTasksNames; });
-/* harmony import */ var _maths_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./maths/index */ "./src/js/tasks/maths/index.js");
-/* harmony import */ var _engToRus_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./engToRus/index */ "./src/js/tasks/engToRus/index.js");
-/* harmony import */ var _words_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./words/index */ "./src/js/tasks/words/index.js");
-/* harmony import */ var _synthesis_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./synthesis/index */ "./src/js/tasks/synthesis/index.js");
+/* harmony import */ var _maths_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./maths/index */ "./src/components/tasks/maths/index.js");
+/* harmony import */ var _engToRus_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./engToRus/index */ "./src/components/tasks/engToRus/index.js");
+/* harmony import */ var _words_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./words/index */ "./src/components/tasks/words/index.js");
+/* harmony import */ var _synthesis_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./synthesis/index */ "./src/components/tasks/synthesis/index.js");
 /* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-/* harmony import */ var _InsertChar_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./InsertChar/index */ "./src/js/tasks/InsertChar/index.js");
-/* harmony import */ var _history_index__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./history/index */ "./src/js/tasks/history/index.js");
-/* harmony import */ var _diapason_index__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./diapason/index */ "./src/js/tasks/diapason/index.js");
-/* harmony import */ var _capital_index__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./capital/index */ "./src/js/tasks/capital/index.js");
-/* harmony import */ var _rainbow_index__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./rainbow/index */ "./src/js/tasks/rainbow/index.js");
-/* harmony import */ var _legs_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./legs/index */ "./src/js/tasks/legs/index.js");
-/* harmony import */ var _order_index__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./order/index */ "./src/js/tasks/order/index.js");
-/* harmony import */ var _commonWord_index__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./commonWord/index */ "./src/js/tasks/commonWord/index.js");
-/* harmony import */ var _sentence_index__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./sentence/index */ "./src/js/tasks/sentence/index.js");
-/* harmony import */ var _jsQuiz_index__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./jsQuiz/index */ "./src/js/tasks/jsQuiz/index.js");
-/* harmony import */ var _days_index__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./days/index */ "./src/js/tasks/days/index.js");
+/* harmony import */ var _InsertChar_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./InsertChar/index */ "./src/components/tasks/InsertChar/index.js");
+/* harmony import */ var _history_index__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./history/index */ "./src/components/tasks/history/index.js");
+/* harmony import */ var _diapason_index__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./diapason/index */ "./src/components/tasks/diapason/index.js");
+/* harmony import */ var _capital_index__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./capital/index */ "./src/components/tasks/capital/index.js");
+/* harmony import */ var _rainbow_index__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./rainbow/index */ "./src/components/tasks/rainbow/index.js");
+/* harmony import */ var _legs_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./legs/index */ "./src/components/tasks/legs/index.js");
+/* harmony import */ var _order_index__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./order/index */ "./src/components/tasks/order/index.js");
+/* harmony import */ var _commonWord_index__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./commonWord/index */ "./src/components/tasks/commonWord/index.js");
+/* harmony import */ var _sentence_index__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./sentence/index */ "./src/components/tasks/sentence/index.js");
+/* harmony import */ var _jsQuiz_index__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./jsQuiz/index */ "./src/components/tasks/jsQuiz/index.js");
+/* harmony import */ var _days_index__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./days/index */ "./src/components/tasks/days/index.js");
 
 
 
@@ -69131,10 +69475,10 @@ function getAvaliableTasksNames() {
 
 /***/ }),
 
-/***/ "./src/js/tasks/tasksMenu/index.html":
-/*!*******************************************!*\
-  !*** ./src/js/tasks/tasksMenu/index.html ***!
-  \*******************************************/
+/***/ "./src/components/tasks/tasksMenu/index.html":
+/*!***************************************************!*\
+  !*** ./src/components/tasks/tasksMenu/index.html ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -69142,10 +69486,10 @@ module.exports = "<div id=\"tasksMenu\" class = \"tasks-menu-block\">\r\n       
 
 /***/ }),
 
-/***/ "./src/js/tasks/tasksMenu/index.js":
-/*!*****************************************!*\
-  !*** ./src/js/tasks/tasksMenu/index.js ***!
-  \*****************************************/
+/***/ "./src/components/tasks/tasksMenu/index.js":
+/*!*************************************************!*\
+  !*** ./src/components/tasks/tasksMenu/index.js ***!
+  \*************************************************/
 /*! exports provided: parent, tasksMenu, selectedTask, loadTo, onTasksMenuSubmit, clear, disableBtns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -69158,9 +69502,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onTasksMenuSubmit", function() { return onTasksMenuSubmit; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "clear", function() { return clear; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "disableBtns", function() { return disableBtns; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/tasksMenu/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/tasksMenu/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/tasksMenu/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/tasksMenu/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -69216,10 +69560,10 @@ function disableBtns() {
 
 /***/ }),
 
-/***/ "./src/js/tasks/tasksMenu/index.scss":
-/*!*******************************************!*\
-  !*** ./src/js/tasks/tasksMenu/index.scss ***!
-  \*******************************************/
+/***/ "./src/components/tasks/tasksMenu/index.scss":
+/*!***************************************************!*\
+  !*** ./src/components/tasks/tasksMenu/index.scss ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -69227,10 +69571,10 @@ function disableBtns() {
 
 /***/ }),
 
-/***/ "./src/js/tasks/words/data.js":
-/*!************************************!*\
-  !*** ./src/js/tasks/words/data.js ***!
-  \************************************/
+/***/ "./src/components/tasks/words/data.js":
+/*!********************************************!*\
+  !*** ./src/components/tasks/words/data.js ***!
+  \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -69238,7 +69582,7 @@ function disableBtns() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return taskData; });
 let taskData = {
-    description: "Compose the word: ",
+    description: "Compose the word (Tip: Use Space to fix your focus): ",
     words: ['door', 'flow', 'milk', 'silk', 'hall', 'ceil', 'bell', 'kort', 'show']
 
 };
@@ -69247,10 +69591,10 @@ let taskData = {
 
 /***/ }),
 
-/***/ "./src/js/tasks/words/index.html":
-/*!***************************************!*\
-  !*** ./src/js/tasks/words/index.html ***!
-  \***************************************/
+/***/ "./src/components/tasks/words/index.html":
+/*!***********************************************!*\
+  !*** ./src/components/tasks/words/index.html ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -69258,28 +69602,25 @@ module.exports = "\r\n    <div id=\"wordsTask\" class = \"task words-task-block\
 
 /***/ }),
 
-/***/ "./src/js/tasks/words/index.js":
-/*!*************************************!*\
-  !*** ./src/js/tasks/words/index.js ***!
-  \*************************************/
+/***/ "./src/components/tasks/words/index.js":
+/*!*********************************************!*\
+  !*** ./src/components/tasks/words/index.js ***!
+  \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return WordsTask; });
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/js/tasks/words/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ "./src/components/tasks/words/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/js/tasks/words/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/tasks/words/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/js/tasks/taskClass.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/js/tasks/words/data.js");
-/* harmony import */ var _components_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../components/input */ "./src/js/components/input.js");
-/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
-/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
-/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_6__);
-
-
+/* harmony import */ var _taskClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../taskClass */ "./src/components/tasks/taskClass.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ "./src/components/tasks/words/data.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/lodash.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! webpack-jquery-ui */ "./node_modules/webpack-jquery-ui/index.js");
+/* harmony import */ var webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(webpack_jquery_ui__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
@@ -69303,13 +69644,13 @@ class WordsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
     }
 
     getQuestion() {
-        let word = Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["sample"])(this.data.words);
+        let word = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["sample"])(this.data.words);
         return [word, word];
     }
 
     getAnswerVariantsArr(word) {
-        let tempArr = Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["split"])(word, '');
-        let tempChar = tempArr.splice(Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["random"])(0, tempArr.length - 2), 1);
+        let tempArr = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["split"])(word, '');
+        let tempChar = tempArr.splice(Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["random"])(0, tempArr.length - 2), 1);
         tempArr.push(tempChar);
         return tempArr;
     }
@@ -69324,7 +69665,7 @@ class WordsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
             userAnswer.push($(e).html());
         });
         console.log(this.answer + ' ' + userAnswer[0]);
-        userAnswer = Object(lodash_es__WEBPACK_IMPORTED_MODULE_5__["join"])(userAnswer, '');
+        userAnswer = Object(lodash_es__WEBPACK_IMPORTED_MODULE_4__["join"])(userAnswer, '');
         console.log(this.answer + ' ' + userAnswer);
         if (this.answer == userAnswer) {
             return true;
@@ -69370,14 +69711,13 @@ class WordsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
         this.readyBtn = this.taskBlock.find("#readyBtn");
 
         this.taskBlock.find('#description').html(this.description);
-        // this.taskBlock.find('#question').html(this.question);
 
         this.answerVariants = this.getAnswerVariantsArr(this.answer);
         this.answerBlock.children('li').each((i, e) => {
             $(e).html(this.answerVariants[i]);
         });
 
-        _components_input__WEBPACK_IMPORTED_MODULE_4__["ksortable"]('.sortable');
+        this.ksortable('.sortable');
         this.readyBtn.click(() => {
             this.onAnswerSubmit();
         });
@@ -69387,120 +69727,10 @@ class WordsTask extends _taskClass__WEBPACK_IMPORTED_MODULE_2__["default"] {
 
 /***/ }),
 
-/***/ "./src/js/tasks/words/index.scss":
-/*!***************************************!*\
-  !*** ./src/js/tasks/words/index.scss ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "./src/sounds/burn2.wav":
-/*!******************************!*\
-  !*** ./src/sounds/burn2.wav ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../audio/burn2.wav";
-
-/***/ }),
-
-/***/ "./src/sounds/earth1.wav":
-/*!*******************************!*\
-  !*** ./src/sounds/earth1.wav ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../audio/earth1.wav";
-
-/***/ }),
-
-/***/ "./src/sounds/poison1.wav":
-/*!********************************!*\
-  !*** ./src/sounds/poison1.wav ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../audio/poison1.wav";
-
-/***/ }),
-
-/***/ "./src/sounds/soundtrack2.mp3":
-/*!************************************!*\
-  !*** ./src/sounds/soundtrack2.mp3 ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../audio/soundtrack2.mp3";
-
-/***/ }),
-
-/***/ "./src/sounds/soundtrack4.mp3":
-/*!************************************!*\
-  !*** ./src/sounds/soundtrack4.mp3 ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../audio/soundtrack4.mp3";
-
-/***/ }),
-
-/***/ "./src/sounds/soundtrack5.mp3":
-/*!************************************!*\
-  !*** ./src/sounds/soundtrack5.mp3 ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../audio/soundtrack5.mp3";
-
-/***/ }),
-
-/***/ "./src/sounds/water2.wav":
-/*!*******************************!*\
-  !*** ./src/sounds/water2.wav ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../audio/water2.wav";
-
-/***/ }),
-
-/***/ "./src/sounds/wosh3.wav":
-/*!******************************!*\
-  !*** ./src/sounds/wosh3.wav ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../audio/wosh3.wav";
-
-/***/ }),
-
-/***/ "./src/styles/game.scss":
-/*!******************************!*\
-  !*** ./src/styles/game.scss ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "./src/styles/page.scss":
-/*!******************************!*\
-  !*** ./src/styles/page.scss ***!
-  \******************************/
+/***/ "./src/components/tasks/words/index.scss":
+/*!***********************************************!*\
+  !*** ./src/components/tasks/words/index.scss ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
