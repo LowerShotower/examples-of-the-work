@@ -5,5 +5,8 @@
 }
 
 .game-field {
+  display: flex;
+  flex-flow: row wrap;
   background-color: white;
+  min-width: 600px;
 }

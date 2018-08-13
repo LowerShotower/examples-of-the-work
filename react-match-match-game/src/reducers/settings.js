@@ -1,7 +1,7 @@
 
 const settingsDefaultState = {
-    difficulty: 'easy',
-    skirt: '0',
+    difficulty: '0',
+    skirtType: '0',
     startTime: 0,
     endTime: undefined
 };
@@ -14,9 +14,10 @@ export default (state = settingsDefaultState, action) => {
                 difficulty: action.difficulty
             };
         case "SET_SKIRT":
+            console.log(action.skirtType);
             return {
                 ...state,
-                skirt: action.skirt
+                skirtType: action.skirtType
             };
         default:
             return state;

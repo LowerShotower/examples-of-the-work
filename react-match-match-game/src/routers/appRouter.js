@@ -1,18 +1,40 @@
 import React from 'react';
-import { BrowserRouter, Switch, Link, NavLink, Route } from 'react-router-dom';
-
+import {connect} from 'react-redux';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import GameMenu from '../components/container/GameMenu.js';
+import HomePage from '../components/container/HomePage.js';
 import GamePage from '../components/container/GamePage.js';
+import ScorePage from '../components/container/ScorePage.js';
+import RegistrationPage from '../components/container/RegistrationPage.js';
+import NotFoundPage from '../components/container/NotFoundPage.js';
 
-
-const AppRouter = () => (
+const AppRouter = (props) => (
     <BrowserRouter>
         <div>
+            <GameMenu />
             <Switch>
-                <Route path="/" component={GamePage} />
-                {/* <Route  component={404Page}/> */}
+                <Route exact path="/" render={() =>{
+                    console.log(props.game.loggedIn)
+                return (
+                    !props.game.loggedIn ? (
+                        <Redirect to="/register" />
+                    ) : (
+                        <HomePage/>
+                    )
+                )}
+                } />
+                <Route path="/register" component={RegistrationPage} />
+                <Route path="/score" component={ScorePage} />
+                <Route path="/game" component={GamePage} />
+                <Route  component={NotFoundPage}/>
             </Switch>
         </div>
     </BrowserRouter>
 );
 
-export default AppRouter;
+const mapStateToProps = (state) => {
+    return ({
+        game: state.game,
+    })
+}
+export default connect(mapStateToProps)(AppRouter);

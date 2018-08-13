@@ -3,7 +3,11 @@
 const userDefaultState = {
     fName: "noname",
     lName: "noname",
-    email: 'none',
+    email: 'none@example.com',
+    points: 0,
+    emailValid: false,
+    nameValid: false,
+    formValid: true
 }
 
 export default (state = userDefaultState, action) => {
@@ -27,6 +31,26 @@ export default (state = userDefaultState, action) => {
             return {
                 ...state,
                 ...action.user
+            };
+        case 'SET_POINTS':
+            return {
+                ...state,
+                points: action.points
+            };
+        case 'SET_FORM_VALID':
+            return {
+                ...state,
+                formValid: action.formValid
+            };
+        case 'SET_EMAIL_VALID':
+            return {
+                ...state,
+                email: action.emailValid
+            };
+        case 'SET_NAME_VALID':
+            return {
+                ...state,
+                nameValid: action.nameValid
             };
         default:
             return state;

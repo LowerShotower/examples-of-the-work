@@ -1,6 +1,9 @@
 const gameDefaultState = {
     isPlaying: false,
     gameState: "description",
+    loggedIn:false,
+    scoreWasLoaded: false,
+    errorMessage: ''
 }
 
 export default (state = gameDefaultState, action) => {
@@ -19,6 +22,21 @@ export default (state = gameDefaultState, action) => {
             return {
                 ...state,
                 gameState: action.gameState,
+            };
+        case 'SET_LOGGEDIN':
+            return {
+                ...state,
+                loggedIn: action.loggedIn
+            };
+        case 'SET_SCORE_WAS_LOADED':
+            return {
+                ...state,
+                scoreWasLoaded: action.scoreWasLoaded
+            };
+        case 'DISPLAY_THE_ERROR':
+            return {
+                ...state,
+                errorMessage: action.errorMessage
             };
         default:
             return state;

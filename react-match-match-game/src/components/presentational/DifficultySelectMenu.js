@@ -11,9 +11,9 @@ const DifficultySelectMenu = (props) => (
         props.dispatch(setDifficulty(e.target.value));
       }}
     >
-      <option value="easy">Easy</option>
-      <option value="medium">Medium</option>
-      <option value="hard">Hard</option>
+      <option value="0">Easy</option>
+      <option value="1">Medium</option>
+      <option value="2">Hard</option>
     </select>
   </Fragment>
 );

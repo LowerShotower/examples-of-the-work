@@ -1,5 +1,102 @@
+// .card {
+//   width: $m-size*10;
+//   height: $m-size*10;
+//   background: $blue;
+// }
+
 .card {
-  width: $m-size*10;
-  height: $m-size*10;
-  background: $blue;
+  width: calc(#{$m-size} * 7);
+  height: calc(#{$m-size} * 7);
+	transform-style: preserve-3d;
+	position: relative;
+  margin: 1rem 0.2rem;
+  margin: calc( ( 100% - #{$m-size} * 7 * 8 ) / ( 8 * 2 ) );
+	cursor: pointer;
+	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+@media (max-width: $desktop-breakpoint) {
+  .card {
+    width: calc(#{$s-size} * 7);
+    height: calc(#{$s-size} * 7);
+    margin: calc( ( 100% - #{$s-size} * 7 * 8 ) / (8 * 2 ) );
+  }
+}
+@media (max-width: $tablet-breakpoint) {
+  .card {
+    width: calc(#{$xs-size} * 7);
+    height: calc(#{$xs-size} * 7);
+    margin: calc( ( 100% - #{$xs-size} * 7 * 8 ) / ( 8 * 2 ) );
+  }
+}
+
+.card.open {
+	cursor: default;
+	animation-name: flipInY;
+	animation-duration: .5s;
+	transform: rotateY(180deg);
+}
+
+.card.close {
+	cursor: pointer;
+	animation-name: flipInYback;
+	animation-duration: .5s;
+	transform: rotateY(0deg);
+}
+
+.card .face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+  border-radius: 5px;
+  background-size: calc( 100% * 12 );
+}
+
+.card .front {
+	background: url(../img/front.png) 0px 0px no-repeat,aqua;
+  // background-size:  300%;
+	background-size: calc( 100% * 3 );
+}
+
+.card .back {
+	background: url(../img/back.png) 0% 0% no-repeat,whitesmoke;
+  // background-size:  2400%;
+	background-size: calc( 100% * 12 );
+	transform: rotateY(180deg);
+}
+
+.card.match {
+	box-shadow: 0px 0px;
+}
+
+.card.match .face {
+	transition:opacity 0.2s;
+	opacity: 0;
+}
+
+.card.disabled {
+	pointer-events: none;
+}
+
+.card.match.disabled {
+	pointer-events: none;
+}
+
+@keyframes flipInY {
+	from {
+		transform: perspective(1200px) rotateY(0deg);
+		animation-timing-function: ease-in;
+	}
+	to {
+		 transform: perspective(1200px) rotateY(180deg);
+	}
+}
+@keyframes flipInYback {
+	from {
+		transform: perspective(1200px) rotateY(180deg);
+		animation-timing-function: ease-in;
+	}
+	to {
+		 transform: perspective(1200px) rotateY(0deg);
+	}
 }

@@ -12,9 +12,9 @@ const SkirtSelectMenu = (props) => {
                     props.dispatch(setSkirt(e.target.value));
                 }}
             >
-                <option value="0">Yelllow</option>
+                <option value="0">Blue</option>
                 <option value="1">Green</option>
-                <option value="2">Blue</option>
+                <option value="2">Yelllow</option>
             </select>
         </Fragment>
     )
